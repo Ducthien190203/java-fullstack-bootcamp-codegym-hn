@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let diemBaiKiemTra = +prompt("Nhập điểm bài kiểm tra");
+      let diemThiGiuaKy = +prompt("Nhập điểm thi giữa kỳ");
+      let diemThiCuoiKy = +prompt("Nhập điểm thi cuối kỳ");
+      if (
+        isNaN(diemBaiKiemTra) ||
+        isNaN(diemThiCuoiKy) ||
+        isNaN(diemThiGiuaKy) ||
+        diemBaiKiemTra < 0 ||
+        diemThiCuoiKy < 0 ||
+        diemThiGiuaKy < 0 ||
+        diemBaiKiemTra > 10 ||
+        diemThiCuoiKy > 10 ||
+        diemThiGiuaKy > 10
+      ) {
+        alert("Phải nhập điểm kiểu số (0-10)");
+      } else {
+        let diemTrungBinh =
+          (diemBaiKiemTra + diemThiCuoiKy + diemThiGiuaKy) / 3;
+        if (diemTrungBinh >= 9) {
+          alert("Học lực tốt");
+        } else if (diemTrungBinh >= 7) {
+          alert("Học lực khá");
+        } else if (diemTrungBinh >= 5) {
+          alert("Học lực trung bình");
+        } else {
+          alert("Học lực yếu");
+        }
+      }
+    </script>
+  </body>
+</html>

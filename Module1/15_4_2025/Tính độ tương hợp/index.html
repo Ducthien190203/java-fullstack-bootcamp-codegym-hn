@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra Tam hợp và Tứ hành xung</title>
+</head>
+<body>
+    <h2>Nhập thông tin ngày tháng năm sinh</h2>
+    <label for="dob1">Ngày sinh người 1:</label>
+    <input type="date" id="dob1"><br><br>
+    
+    <label for="dob2">Ngày sinh người 2:</label>
+    <input type="date" id="dob2"><br><br>
+    
+    <button onclick="checkCompatibility()">Kiểm tra</button>
+    
+    <h3>Kết quả:</h3>
+    <p id="result"></p>
+
+    <script>
+        const conGiap = ["Tý", "Sửu", "Dần", "Mão", "Thìn", "Tỵ", "Ngọ", "Mùi", "Thân", "Dậu", "Tuất", "Hợi"];
+        const tamHop = [
+            ["Thân", "Tý", "Thìn"],
+            ["Dần", "Ngọ", "Tuất"],
+            ["Hợi", "Mão", "Mùi"],
+            ["Tỵ", "Dậu", "Sửu"]
+        ];
+        const tuHanhXung = [
+            ["Dần", "Thân", "Tỵ", "Hợi"],
+            ["Tý", "Ngọ", "Mão", "Dậu"],
+            ["Thìn", "Tuất", "Sửu", "Mùi"]
+        ];
+
+        function getConGiap(year) {
+            return conGiap[(year % 100) % 12]; // Tính con giáp dựa vào năm sinh
+        }
+
+        function checkCompatibility() {
+            const dob1 = document.getElementById("dob1").value;
+            const dob2 = document.getElementById("dob2").value;
+            if (!dob1 || !dob2) {
+                document.getElementById("result").innerText = "Vui lòng nhập đầy đủ ngày sinh!";
+                return;
+            }
+            
+            const year1 = new Date(dob1).getFullYear();
+            const year2 = new Date(dob2).getFullYear();
+
+            const age1 = getConGiap(year1);
+            const age2 = getConGiap(year2);
+
+            let isTamHop = false;
+            let isTuHanhXung = false;
+
+            // Kiểm tra Tam hợp
+            for (let i = 0; i < tamHop.length; i++) {
+                if (tamHop[i].includes(age1) && tamHop[i].includes(age2)) {
+                    isTamHop = true;
+                    break;
+                }
+            }
+
+            // Kiểm tra Tứ hành xung
+            for (let i = 0; i < tuHanhXung.length; i++) {
+                if (tuHanhXung[i].includes(age1) && tuHanhXung[i].includes(age2)) {
+                    isTuHanhXung = true;
+                    break;
+                }
+            }
+
+            // Hiển thị kết quả
+            let resultText = `👤 Người 1: ${age1} (${year1})\n👤 Người 2: ${age2} (${year2})\n`;
+            
+            if (isTamHop) {
+                resultText += "✅ Hai tuổi thuộc nhóm Tam hợp → Rất hòa hợp!";
+            } else if (isTuHanhXung) {
+                resultText += "❌ Hai tuổi thuộc nhóm Tứ hành xung → Dễ xảy ra xung đột.";
+            } else {
+                resultText += "⚖️ Hai tuổi không thuộc Tam hợp hoặc Tứ hành xung → Mức độ trung bình.";
+            }
+
+            document.getElementById("result").innerText = resultText;
+        }
+    </script>
+</body>
+</html>

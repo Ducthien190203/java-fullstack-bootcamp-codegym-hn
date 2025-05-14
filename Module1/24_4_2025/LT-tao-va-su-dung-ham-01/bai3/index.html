@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const soThuNhat = +prompt("Nhập số thứ nhất");
+      const soThuHai = +prompt("Nhập số thứ hai");
+      function doSomething(a, b) {
+        return a > b;
+      }
+      const result = doSomething(soThuNhat, soThuHai);
+      alert(
+        result
+          ? "Số thứ nhất > số thứ hai"
+          : `Tổng 2 số = ${soThuNhat + soThuHai}`
+      );
+    </script>
+  </body>
+</html>

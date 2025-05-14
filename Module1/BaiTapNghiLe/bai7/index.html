@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function kiemTraMangKyTu(a, n) {
+        let mangSo = a.every((element) => !isNaN(element));
+        let mangKyTu = a.every((element) => isNaN(element));
+
+        if (mangSo) return 1;
+        else if (mangKyTu) return 0;
+        else return -1;
+      }
+    </script>
+  </body>
+</html>

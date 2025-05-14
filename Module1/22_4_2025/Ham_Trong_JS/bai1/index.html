@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Bình phương của <input type="text" id="input" oninput="calculate()"> = <span id="output"></span>
+    <script>
+        function binhPhuong(number){
+            let output=number*number
+            return output
+        }
+        function calculate(){
+            let input=document.getElementById('input').value
+            
+            document.getElementById('output').innerHTML=binhPhuong(input)
+
+        }
+    </script>
+  </body>
+</html>

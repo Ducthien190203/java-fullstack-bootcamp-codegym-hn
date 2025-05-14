@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="output"></div>
+    <script>
+      let arrA = [];
+      let arrB = [];
+      for (let i = 0; i < 10; i++) {
+        let value;
+        do {
+          value = parseInt(prompt(`Nhập phần tử thứ arrA[${i}]: `));
+        } while (isNaN(value) || arrA.includes(value)); // Kiểm tra giá trị hợp lệ và trùng lặp
+        arrA[i] = value; // Lưu giá trị hợp lệ vào mảng
+      }
+      for (let i = 0; i < 10; i++) {
+        let value;
+        do {
+          value = parseInt(prompt(`Nhập phần tử thứ arrB[${i}]: `));
+        } while (isNaN(value) || arrB.includes(value)); // Kiểm tra giá trị hợp lệ và trùng lặp
+        arrB[i] = value; // Lưu giá trị hợp lệ vào mảng
+      }
+      let arrC = arrA.concat(arrB);
+      let output = document.getElementById("output");
+      output.innerHTML = `
+        ArrA = ${arrA.join(", ")}<br>
+        ArrB = ${arrB.join(", ")}<br>
+        ArrC = ${arrC.join(", ")}
+      `;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = +prompt("Nhập cạnh a");
+      let b = +prompt("Nhập cạnh b");
+      if (isNaN(a) || a <= 0||isNaN(b) || b <= 0) {
+        alert("Vui lòng cạnh a và b > 0");
+      } else {
+        let S = a * b;
+        alert("Diện tích hình chữ nhật = " + S);
+      }
+    </script>
+  </body>
+</html>

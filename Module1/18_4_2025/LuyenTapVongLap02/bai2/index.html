@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div><p id="output"></p></div>
+    <script>
+      let soNguyenDuong;
+      let giaiThua = 1;
+
+      do {
+        soNguyenDuong = parseInt(prompt("Nhập một số nguyên dương"));
+        if (isNaN(soNguyenDuong)) {
+          alert("Vui lòng nhập số");
+        } else if (soNguyenDuong <= 0) {
+          alert("Vui lòng nhập số > 0");
+        }
+      } while (isNaN(soNguyenDuong) || soNguyenDuong <= 0);
+      for (let i = 1; i <= soNguyenDuong; i++) {
+        giaiThua *= i;
+      }
+      const output = document.getElementById("output");
+      output.innerHTML = "Giai thừa của " + soNguyenDuong + " = " + giaiThua;
+    </script>
+  </body>
+</html>

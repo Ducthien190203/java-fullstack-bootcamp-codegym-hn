@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table style="border-collapse: collapse; border: 1px solid black">
+      <tr>
+        <td colspan="4">
+          <input type="text" name="display" id="display" disabled />
+        </td>
+      </tr>
+      <tr>
+        <td><button type="button" onclick="mot()">1</button></td>
+        <td><button type="button" onclick="hai()">2</button></td>
+        <td><button type="button" onclick="ba()">3</button></td>
+        <td><button type="button" onclick="cong()">+</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" onclick="bon()">4</button></td>
+        <td><button type="button" onclick="nam()">5</button></td>
+        <td><button type="button" onclick="sau()">6</button></td>
+        <td><button type="button" onclick="tru()">-</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" onclick="bay()">7</button></td>
+        <td><button type="button" onclick="tam()">8</button></td>
+        <td><button type="button" onclick="chin()">9</button></td>
+        <td><button type="button" onclick="nhan()">x</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" onclick="xoa()">C</button></td>
+        <td><button type="button" onclick="khong()">0</button></td>
+        <td><button type="button" onclick="tinhToan()">=</button></td>
+        <td><button type="button" onclick="chia()">/</button></td>
+      </tr>
+    </table>
+
+    <script>
+      let display = document.getElementById("display");
+      let bieuThuc = "";
+      function mot() {
+        congChuoi("1");
+      }
+      function hai() {
+        congChuoi("2");
+      }
+      function ba() {
+        congChuoi("3");
+      }
+      function bon() {
+        congChuoi("4");
+      }
+      function nam() {
+        congChuoi("5");
+      }
+      function sau() {
+        congChuoi("6");
+      }
+      function bay() {
+        congChuoi("7");
+      }
+      function tam() {
+        congChuoi("8");
+      }
+      function chin() {
+        congChuoi("9");
+      }
+      function khong() {
+        congChuoi("0");
+      }
+      function cong() {
+        congChuoi("+");
+      }
+      function tru() {
+        congChuoi("-");
+      }
+      function nhan() {
+        congChuoi("*");
+      }
+      function chia() {
+        congChuoi("/");
+      }
+      function bang() {
+        congChuoi("=");
+      }
+      function xoa() {
+        clearDisplay();
+      }
+      function congChuoi(value) {
+        bieuThuc = bieuThuc + value;
+        display.value = bieuThuc;
+        console.log(bieuThuc);
+      }
+      function clearDisplay() {
+        bieuThuc = "";
+        display.value = "";
+      }
+      function tinhToan() {
+        try {
+          // Dùng eval() để tính toán biểu thức
+          let ketQua = eval(bieuThuc);
+
+          // Hiển thị kết quả
+          display.value = ketQua;
+
+          // Lưu lại kết quả để tiếp tục tính toán nếu cần
+          bieuThuc = ketQua.toString();
+        } catch (error) {
+          display.value = "Lỗi!";
+          bieuThuc = "";
+        }
+      }
+    </script>
+  </body>
+</html>

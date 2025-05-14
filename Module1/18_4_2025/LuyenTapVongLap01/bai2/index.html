@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let tempNow = +prompt("Nhập nhiệt độ hiện tại");
+      while(tempNow>100||tempNow<20){
+        if (tempNow>100){
+            tempNow = +prompt("Vui lòng nhập số độ <=100");
+        }else if (tempNow<20){
+            tempNow = +prompt("Vui lòng nhập số độ >=20");
+        }
+      }
+    </script>
+  </body>
+</html>

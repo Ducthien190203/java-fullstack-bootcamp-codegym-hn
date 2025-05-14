@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const input = +prompt("Nhập 1 số ngẫu nhiên");
+      alert(findMaxNumber(input));
+
+      function findMaxNumber(n) {
+        if (!isNaN(n) && n >= 1000 && n <= 9999) {
+          let m = n.toString();
+          let results = [];
+          for (let i = 0; i < m.length; i++) {
+            let new_n = m.slice(0, i) + m.slice(i + 1);
+            results.push(+new_n);
+          }
+          return Math.max(...results);
+        } else {
+          return -1;
+        }
+      }
+    </script>
+  </body>
+</html>

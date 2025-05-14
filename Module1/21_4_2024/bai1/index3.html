@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let value = +prompt("Nhập giá trị cần tìm");
+      let numbers = [-3, 5, 1, 3, 2, 10];
+      let index = -1;
+      for (let i = 0; i < numbers.length; i++) {
+        if (value == numbers[i]) {
+          index = i;
+        }
+      }
+      if (index > -1) {
+        alert("Giá trị " + value + " ở vị trí thứ " + index);
+      } else {
+        alert("Value " + value + " not found");
+      }
+    </script>
+  </body>
+</html>

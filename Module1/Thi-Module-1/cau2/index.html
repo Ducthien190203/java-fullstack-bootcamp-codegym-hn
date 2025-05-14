@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // let num1 = 123;
+      // let num2 = 456;
+        let num1 = 220;
+        let num2 = 284;
+      console.log(kiemTraSoThanThiet(num1, num2));
+
+      function tongUoc(n) {
+        let tong = 0;
+        for (let i = 1; i < n; i++) {
+          if (n % i === 0) {
+            tong += i;
+          }
+        }
+        return tong;
+      }
+
+      function kiemTraSoThanThiet(num1, num2) {
+        return tongUoc(num1) === num2 && tongUoc(num2) === num1;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function processConfirm(answer) {
+        let result = "";
+        if (answer) {
+          result = "choiw luon";
+        } else {
+          result = "chan/";
+        }
+        return result;
+      }
+      let confirmAnswer = confirm("Choiw game khong");
+      let theAnswer = processConfirm(confirmAnswer);
+      alert(theAnswer)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let array = [
+        ["item1", "item2", "item3"],
+        ["gun1", "gun2", "gun3"],
+        ["tg1", "tg2", "tg3"],
+      ];
+      array.push(["1111", "2222"]);
+      array.push(["7777", "8888"]);
+      array.unshift(["đb1", "đb2"]);
+      array.unshift(["đb0", "đb01"]);
+      array.pop();
+      array.shift();
+      array.sort();
+      array.reverse();
+      for (let i = 0; i < array.length; i++) {
+        for (let j = 0; j < array[i].length; j++) {
+          document.write(array[i][j] + ", ");
+        }
+      }
+      document.writeln("<br>");
+      let points = [1, 5, 2, 6, 3, 7, 4, 13, 6, 76];
+      points.sort((a, b) => -a + b);
+      for (i = 0; i < points.length; i++) {
+        document.write(points[i] + (i < points.length - 1 ? ", " : ""));
+      }
+    </script>
+  </body>
+</html>

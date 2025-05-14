@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span>1 + 1 = ?</span><br>  
+    <input type="radio" name="answer" id="2" value="2" required>2
+    <input type="radio" name="answer" id="3" value="3">3 &nbsp;
+    <button type="button" onclick="cc()">Gửi</button>
+    <p id="ketqua"></p>
+<script>
+    function cc(){
+        let chon2 = document.getElementById('2').checked;
+        let chon3 = document.getElementById('3').checked;
+        if (chon2){
+            document.getElementById("ketqua").innerText='✅ Chính xác!';
+        }else if(chon3){
+            document.getElementById("ketqua").innerText='❌ Sai rồi!';
+        }else{
+            document.getElementById("ketqua").innerText='Hãy chọn 1 đáp án!';
+        }
+    }
+</script>
+</body>
+</html>

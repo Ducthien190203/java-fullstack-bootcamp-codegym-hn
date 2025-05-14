@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let stars = "Polaris, Aldebaran, Deneb, Vega, Altair, Dubhe, Regulus";
+      stars = stars.split(",").map((star) => star.trim());
+      console.log(stars);
+      let constellations =
+        "Ursa Minor, Taurus, Cygnus, Lyra, Aquila, Ursa Major";
+      constellations = constellations
+        .split(",")
+        .map((constellation) => constellation.trim());
+      console.log(constellations);
+      let findElement = [];
+      findElement[0] = prompt("Nhập tên 1 ngôi sao");
+      console.log(findElement[0]);
+      function findStarAndConstellation() {
+        let found = false;
+        for (let i = 0; i < stars.length; i++) {
+          if (findElement[0] === stars[i]) {
+            let output = "";
+            switch (stars[i]) {
+              case "Polaris":
+                output = "Ursa Minor";
+                break;
+              case "Aldebaran":
+                output = "Taurus";
+                break;
+              case "Deneb":
+                output = "Cygnus";
+                break;
+              case "Vega":
+                output = "Lyra";
+                break;
+              case "Altair":
+                output = "Aquila";
+                break;
+              case "Dubhe":
+                output = "Ursa";
+                break;
+              case "Regulus":
+                output = "Major";
+                break;
+            }
+            alert(`${findElement[0]} thuộc chòm sao ${output}`);
+            found = true;
+            break;
+          }
+        }
+        if (!found) {
+          alert(`${findElement[0]} không tìm thấy!`);
+        }
+      }
+      findStarAndConstellation();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let soNguyen = +prompt("Nhập 1 số nguyên");
+      if (Number.isInteger(soNguyen)) {
+        if (soNguyen > 0) {
+          alert(soNguyen + " > 0");
+        } else if ((soNguyen < 0)) {
+          alert(soNguyen + " < 0");
+        } else {
+          alert(soNguyen + " = 0");
+        }
+      } else {
+        alert("Vui lòng nhập số nguyên");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+table{
+    border: 5px ;
+    width:100%;
+    border: 100px;
+}
+tr,th,td{
+    border: 0cap;
+    padding: 5px;
+    text-align: left;
+}
+form{
+    margin: 10px;
+    background-color: white;
+    width: 500px;
+    float: center;
+    
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(175, 231, 237) ;
+}

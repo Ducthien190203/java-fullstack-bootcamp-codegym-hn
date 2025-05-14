@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="">
+      <table>
+        <caption>
+          Tính chỉ số BMI
+        </caption>
+        <tr>
+          <td>Cân nặng (kg)</td>
+          <td style="width: 30px"></td>
+          <td>Chiều cao (mét)</td>
+        </tr>
+        <tr>
+          <td>
+            <input
+              type="number"
+              name="weight"
+              id="weight"
+              style="width: 70px"
+            />
+          </td>
+          <td></td>
+          <td>
+            <input
+              type="number"
+              name="height"
+              id="height"
+              style="width: 70px"
+            />
+          </td>
+          <td style="padding-left: 20px">
+            <button type="button" onclick="tinhBMI()">Tính BMI</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+    <p id="result"></p>
+    <script src="script.js"></script>
+  </body>
+</html>

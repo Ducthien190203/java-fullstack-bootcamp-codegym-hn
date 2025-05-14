@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Vẽ Trái Tim Bằng Hàm</title>
+</head>
+<body>
+  <pre id="heart"></pre>
+
+  <script>
+    function heartEquation(x, y) {
+      return Math.pow(x * x + y * y - 1, 3) - x * x * y * y * y;
+    }
+
+    function drawHeart(width = 40, height = 20) {
+      let result = "";
+
+      for (let y = 1.5; y >= -1.5; y -= 3 / height) {
+        for (let x = -1.5; x <= 1.5; x += 3 / width) {
+          const value = heartEquation(x, y);
+          result += value <= 0 ? "*" : " ";
+        }
+        result += "\n";
+      }
+
+      document.getElementById("heart").textContent = result;
+    }
+
+    drawHeart(); // bạn có thể truyền kích thước tuỳ thích
+  </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <p id="output1"></p>
+      <p id="output2"></p>
+    </div>
+    <script>
+      let numbers = 20;
+      let fib = [0, 1];
+      let Tong20 = fib[0] + fib[1];
+      let Tong5sodauchiahetcho5 = 0;
+      let count = 0;
+
+      const output1 = document.getElementById("output1");
+      const output2 = document.getElementById("output2");
+      if (fib[0] % 5 === 0) {
+        count++;
+        Tong5sodauchiahetcho5 += fib[0];
+      }
+      for (let i = 2; i < numbers; i++) {
+        fib[i] = fib[i - 1] + fib[i - 2];
+        Tong20 += fib[i];
+        if (fib[i] % 5 === 0&&count<5) {
+          Tong5sodauchiahetcho5 += fib[i];
+          count++;
+        }
+      }
+      output1.innerHTML = "Tổng 20 số đầu tiên trong dãy fib = " + Tong20;
+      output2.innerHTML = "Tổng 5 số đầu tiên %5=0 trong dãy fib = " + Tong5sodauchiahetcho5;
+    </script>
+  </body>
+</html>

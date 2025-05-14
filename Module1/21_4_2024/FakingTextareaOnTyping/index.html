@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fake Typing Textarea</title>
+  <style>
+    textarea {
+      width: 100%;
+      height: 150px;
+      font-size: 16px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Gõ thử đi... 😏</h2>
+  <textarea id="fakeArea" placeholder="Gõ bất kỳ phím nào..."></textarea>
+
+  <script>
+    const fixedText = "Đây là nội dung cố định đang được hiển thị dần khi bạn gõ phím.";
+    let currentIndex = 0;
+
+    const textarea = document.getElementById("fakeArea");
+
+    textarea.addEventListener("keydown", function(e) {
+      e.preventDefault(); // Ngăn không cho ký tự thật xuất hiện
+
+      if (currentIndex >= fixedText.length) {
+        // Nếu đã gõ hết thì reset lại
+        textarea.value = "";
+        currentIndex = 0;
+      }
+
+      textarea.value += fixedText[currentIndex];
+      currentIndex++;
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = +prompt("Phương trình ax^2+bx+c=0\nHãy nhập a");
+      let b = +prompt("Phương trình ax^2+bx+c=0\nHãy nhập b");
+      let c = +prompt("Phương trình ax^2+bx+c=0\nHãy nhập c");
+      if (isNaN(a) || isNaN(b) || isNaN(c)) {
+        alert("Vui lòng nhập a,b,c kiểu số");
+      } else if (a !== 0) {
+        const delta = b * b - 4 * a * c;
+        if (delta > 0) {
+          alert(
+            "Phương trình có 2 nghiệm phân biệt\nx1 = " +
+              (-b + Math.sqrt(delta)) / (2 * a) +
+              "\nx2 = " +
+              (-b - Math.sqrt(delta)) / (2 * a)
+          );
+        } else if (delta < 0) {
+          alert("Phương trình vô nghiệm.");
+        } else {
+          alert("Phương trình có nghiệm kép x =", -b / (2 * a));
+        }
+      }
+    </script>
+  </body>
+</html>

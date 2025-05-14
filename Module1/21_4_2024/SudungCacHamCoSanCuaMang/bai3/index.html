@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h3>Nhập 1 chuỗi kí tự</h3>
+      <input type="text" id="input" />
+      <button type="button" onclick="output()" id="btnOutput">Ok</button><br />
+      <span id="result"></span>
+    </div>
+    <script>
+      function output() {
+        let chuoiKiTu = document.getElementById("input").value;
+        let tachChuoiKiTu = chuoiKiTu.split("");
+        for (let i = 0; i < tachChuoiKiTu.length; i++) {
+          if (tachChuoiKiTu[i] === tachChuoiKiTu[i].toUpperCase()) {
+            tachChuoiKiTu[i] = tachChuoiKiTu[i].toLowerCase();
+          } else {
+            tachChuoiKiTu[i] = tachChuoiKiTu[i].toUpperCase();
+          }
+        }
+
+        document.getElementById("result").innerText = tachChuoiKiTu.join("");
+      }
+    </script>
+  </body>
+</html>

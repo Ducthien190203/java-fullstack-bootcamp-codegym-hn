@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="play()">Chơi</button>
+    <script>
+      function play() {
+        let min, max;
+        do {
+          min = +prompt("Nhập điểm bắt đầu của khoảng số");
+          max = +prompt("Nhập điểm kết thúc của khoảng số");
+          if (isNaN(min) || isNaN(max)) {
+            alert("Vui lòng nhập số hợp lệ!");
+          } else if (min >= max) {
+            alert("Điểm bắt đầu phải nhỏ hơn điểm kết thúc!");
+          }
+        } while (isNaN(min) || isNaN(max) || min >= max);
+          const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+
+        let guess;
+        let attempts = 0;
+
+        // Lặp cho đến khi đoán đúng
+        do {
+          guess = +prompt(`Hãy đoán một số từ ${min} đến ${max}:`);
+          attempts++;
+
+          if (isNaN(guess)) {
+            alert("Vui lòng nhập một số!");
+          } else if (guess < randomNumber) {
+            alert("Số bạn đoán nhỏ hơn!");
+          } else if (guess > randomNumber) {
+            alert("Số bạn đoán lớn hơn!");
+          } else {
+            alert(`🎉 Chúc mừng! Bạn đã đoán đúng sau ${attempts} lần.`);
+          }
+        } while (guess !== randomNumber);
+      }
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let array = [1, 20, 30, 4, 50, 6, 70, 8, 90];
+      array.map(String);
+      console.log(array);
+      let count = 0;
+      for (let i = 0; i < array.length; i++) {
+        if (array[i] >= "0" && array[i] <= "9") {
+          count++;
+        }
+      }
+      console.log(`Có ${count} kí tự số nằm trong khoảng 0 đến 9`);
+    </script>
+  </body>
+</html>

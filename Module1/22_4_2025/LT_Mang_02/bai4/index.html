@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const array = ["truong duc thien 123 444"];
+      const result = countWords(array[0]);
+      console.log(`Số từ trong chuỗi là ${result}`);
+
+      function countWords(str) {
+        const words = str.trim().split(/\s+/);
+        return words.length === 1 && words[0] === "" ? 0 : words.length;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      td:nth-of-type(n + 2) {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+      }
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+      }
+
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: 0.4s;
+        border-radius: 34px;
+      }
+
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        transition: 0.4s;
+        border-radius: 50%;
+      }
+
+      .switchGood input:checked + .slider {
+        background-color: #2eeb51;
+      }
+
+      .switchGood input:checked + .slider:before {
+        transform: translateX(26px);
+      }
+      .switchCheap input:checked + .slider {
+        background-color: #4e82f2;
+      }
+
+      .switchCheap input:checked + .slider:before {
+        transform: translateX(26px);
+      }
+      .switchFast input:checked + .slider {
+        background-color: #ee2727;
+      }
+
+      .switchFast input:checked + .slider:before {
+        transform: translateX(26px);
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>
+          <label class="switch switchGood">
+            <input type="checkbox" id="good" /><span class="slider"></span>
+          </label>
+        </td>
+        <td>GOOD</td>
+      </tr>
+      <tr>
+        <td>
+          <label class="switch switchCheap">
+            <input type="checkbox" id="cheap" /><span class="slider"></span>
+          </label>
+        </td>
+        <td>CHEAP</td>
+      </tr>
+      <tr>
+        <td>
+          <label class="switch switchFast">
+            <input type="checkbox" id="fast" /><span class="slider"></span>
+          </label>
+        </td>
+        <td>FAST</td>
+      </tr>
+    </table>
+
+    <script>
+      const good = document.getElementById("good");
+      const cheap = document.getElementById("cheap");
+      const fast = document.getElementById("fast");
+
+      // Gắn sự kiện change cho từng switch
+      good.addEventListener("change", enforceLimit);
+      cheap.addEventListener("change", enforceLimit);
+      fast.addEventListener("change", enforceLimit);
+
+      // Hàm xử lý để giới hạn tối đa 2 switch được bật.
+      function enforceLimit(){
+        if ()
+
+      }
+    </script>
+  </body>
+</html>

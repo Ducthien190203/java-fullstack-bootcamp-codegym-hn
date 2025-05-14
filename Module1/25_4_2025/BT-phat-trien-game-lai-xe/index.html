@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas
+      id="myCanvas"
+      width="400"
+      height="300"
+      style="border: 3px solid orange; border-radius: 5px"
+    ></canvas>
+    <p id="scoreDisplay">Điểm: 0</p>
+    <p id="statusDisplay"></p>
+    <script>
+      /**
+       * @type {CanvasRenderingContext2D}
+       */
+
+      const canvas = document.getElementById("myCanvas");
+      const ctx = canvas.getContext("2d");
+      const img = new Image();
+      let x = 100;
+      let y = 100;
+      let isSpeedUp = false;
+      let score = 0;
+      let isGameOver = false;
+
+      const OBSTACLE = { x: 200, y: 150, size: 40 };
+      const REWARD = { x: 300, y: 50, size: 30 };
+      function drawObstacle() {
+        ctx.fillStyle = "red";
+        ctx.fillRect(OBSTACLE.x, OBSTACLE.y, OBSTACLE.size, OBSTACLE.size);
+      }
+      function drawReward() {
+        ctx.fillStyle = "gold";
+        ctx.beginPath();
+        ctx.arc(
+          REWARD.x + REWARD.size / 2,
+          REWARD.y + REWARD.size / 2,
+          REWARD.size / 2,
+          0,
+          Math.PI * 2
+        );
+        ctx.fill();
+      }
+      function checkCollision(ax, ay, aw, ah, bx, by, bw, bh) {
+        return ax < bx + bw && ax + aw > bx && ay < by + bh && ay + ah > by;
+      }
+
+      img.src = "among.png";
+      img.onload = function () {
+        draw();
+      };
+      img.onerror = function () {
+        console.log("Ảnh không hiển thị được!");
+      };
+      function draw() {
+        if (isGameOver) return;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        drawObstacle();
+        drawReward();
+        const maxX = canvas.width - 50;
+        const maxY = canvas.height - 50;
+        if (x < 0) x = 0;
+        if (y < 0) y = 0;
+        if (x > maxX) x = maxX;
+        if (y > maxY) y = maxY;
+
+        ctx.drawImage(img, x, y, 50, 50);
+        // Kiểm tra va chạm chướng ngại vật
+        if (
+          checkCollision(
+            x,
+            y,
+            50,
+            50,
+            OBSTACLE.x,
+            OBSTACLE.y,
+            OBSTACLE.size,
+            OBSTACLE.size
+          )
+        ) {
+          document.getElementById("statusDisplay").innerText = "Game Over!";
+          isGameOver = true;
+        }
+
+        // Kiểm tra va chạm phần thưởng
+        if (
+          checkCollision(
+            x,
+            y,
+            50,
+            50,
+            REWARD.x,
+            REWARD.y,
+            REWARD.size,
+            REWARD.size
+          )
+        ) {
+          score += 10;
+          document.getElementById("scoreDisplay").innerText = "Điểm: " + score;
+
+          // Di chuyển phần thưởng đến vị trí mới ngẫu nhiên
+          REWARD.x = Math.random() * (canvas.width - REWARD.size);
+          REWARD.y = Math.random() * (canvas.height - REWARD.size);
+        }
+      }
+      document.addEventListener("keydown", function (e) {
+        if (isGameOver) return;
+        if (e.key === "Control") {
+          isSpeedUp = true;
+        }
+
+        const baseStep = 10;
+
+        const step = isSpeedUp ? baseStep * 5 : baseStep;
+
+        if (e.key === "ArrowUp") y -= step;
+        else if (e.key === "ArrowDown") y += step;
+        else if (e.key === "ArrowLeft") x -= step;
+        else if (e.key === "ArrowRight") x += step;
+        draw();
+      });
+      document.addEventListener("keyup", function (e) {
+        if (e.key === "Control") {
+          isSpeedUp = false;
+        }
+      });
+    </script>
+  </body>
+</html>

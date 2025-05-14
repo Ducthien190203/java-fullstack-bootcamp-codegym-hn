@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h3>Sample Screen</h3>
+      <p>
+        <input type="text" id="input" />
+        <button
+          type="button"
+          id="btnAdd"
+          value="Add"
+          onclick="addElementToArray()"
+        >
+          Add
+        </button>
+        <button
+          type="button"
+          id="btnDisplay"
+          value="Display"
+          onclick="displayArray()"
+        >
+          Display
+        </button>
+        <br />
+        <hr />
+      </p>
+      <p id="output"></p>
+    </div>
+    <script>
+      let x = 0;
+      let Array = [];
+      function addElementToArray() {
+        Array[x] = document.getElementById("input").value;
+        x++;
+        document.getElementById("input").value = "";
+      }
+      
+      function displayArray(){
+        let output = ''; // Khởi tạo biến output là chuỗi rỗng
+        for (let i = 0; i < Array.length; i++) {
+          output += Array[i] + "<br>"; // Nối phần tử mảng vào chuỗi output với dấu xuống dòng
+        }
+        document.getElementById("output").innerHTML = output; // Gán chuỗi đầy đủ vào innerHTML một lần
+      }
+    </script>
+  </body>
+</html>

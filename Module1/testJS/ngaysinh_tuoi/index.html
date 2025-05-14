@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span>Sinh nhật: <input type="date" id="birth" > <button onclick="getAge()">Xác nhận</button></span>
+
+    <div id="inTuoi"></div>
+     
+    
+    <script>
+        function getAge(){
+    let birthday =document.getElementById('birth').value;
+    let date = new Date(birthday);
+
+    let year = date.getFullYear();
+    let age = 2025 - year;
+    
+    document.getElementById('inTuoi').innerHTML = "Năm nay bạn đã: "+age+"tuổi.";
+}
+    </script>
+</body>
+</html>

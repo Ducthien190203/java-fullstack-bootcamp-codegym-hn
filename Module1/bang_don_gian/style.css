@@ -1,0 +1,9 @@
+table{
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+tr,td{
+    padding: 10px;
+}

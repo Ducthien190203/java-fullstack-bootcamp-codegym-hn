@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">This is a text!</p>
+    <p onclick="this.innerText = 'đã thay đổi!'">ádfahuifhef ádfasdfasd </p>
+    
+    <script>
+        // function do_sth(){
+        //     alert('tốt');
+        // }
+        var demo = document.getElementById('demo');
+        demo.addEventListener('click',clickFunction);
+        function clickFunction(){
+            alert('xin chào');
+        }
+    </script>
+</body>
+</html>

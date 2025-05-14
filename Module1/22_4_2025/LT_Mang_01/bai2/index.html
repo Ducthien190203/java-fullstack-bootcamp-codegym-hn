@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let mangSoNguyen = [];
+      for (let i = 0; i < 10; i++) {
+        let soNguyen;
+        do {
+          soNguyen = prompt(`Nhập số nguyên thứ ${i + 1}:`);
+        } while (
+          soNguyen === null ||
+          soNguyen.trim() === "" ||
+          !Number.isInteger(Number(soNguyen)) ||
+          mangSoNguyen.includes(Number(soNguyen))
+        );
+        mangSoNguyen.push(Number(soNguyen));
+      }
+      let total = mangSoNguyen[0];
+      let max = mangSoNguyen[0];
+      let demSoAm = 0;
+      for (let i = 1; i < 10; i++) {
+        if (mangSoNguyen[i] > max) {
+          max = mangSoNguyen[i];
+          total += mangSoNguyen[i];
+        }
+      }
+      // let max= Math.max(...mangSoNguyen)
+
+      alert(`Mảng ${mangSoNguyen.length} số vừa nhập là: ${mangSoNguyen} `);
+      alert(`Giá trị lớn nhất trong mảng là ${max}`);
+      alert(`Trung bình cộng = ${total / 10}`);
+      mangSoNguyen.reverse();
+      alert(
+        `Mảng ${mangSoNguyen.length} số được đảo ngược là: ${mangSoNguyen} `
+      );
+      for (let i = 0; i < 10; i++) {
+        if (mangSoNguyen[i] < 0) {
+          demSoAm++;
+        }
+      }
+      alert(`Mảng có ${demSoAm} số nguyên âm`);
+      
+    </script>
+  </body>
+</html>

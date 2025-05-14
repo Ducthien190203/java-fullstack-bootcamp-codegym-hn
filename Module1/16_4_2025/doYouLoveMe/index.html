@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Do you love me?</h1>
+    <button onclick="clickBtnYes()" id="btn-yes">YES</button>
+    <button
+      onmouseover="changePositionBtnNo()"
+      id="btn-no"
+      style="position: absolute"
+    >
+      NO
+    </button>
+
+    <script>
+      function changePositionBtnNo() {
+        let btnNo = document.getElementById("btn-no");
+        let numberRandom = Math.random() * (500 - 100) + 100;
+        btnNo.style.left = numberRandom + "px";
+        btnNo.style.top = numberRandom + "px";
+      }
+      function clickBtnYes(){
+        alert("ok yeu")
+      }
+    </script>
+  </body>
+</html>

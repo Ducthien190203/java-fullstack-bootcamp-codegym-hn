@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = [];
+      let n;
+      do {
+        n = +prompt("Nhập số phẩn tử của mảng");
+      } while (n > 20 || isNaN(n) || n <= 0);
+      for (let i = 0; i < n; i++) {
+        do {
+          a[i] = +prompt("Nhập phần tử thứ " + (i + 1));
+        } while (isNaN(a[i]));
+      }
+      let check = true;
+      for (let i = 1; i < n; i++) {
+        if (a[i] < a[i - 1]) {
+          check = false;
+          break;
+        }
+      }
+      document.write(check ? "OK" : "NO");
+    </script>
+  </body>
+</html>

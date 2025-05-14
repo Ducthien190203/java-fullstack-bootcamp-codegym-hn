@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let n;
+      do {
+        n = +prompt("Nhập số phần tử của mảng");
+      } while (n <= 0 || n > 50 || !Number.isInteger(n));
+
+      let mangSoNguyen = [];
+
+      for (let i = 0; i < n; i++) {
+        let number;
+        do {
+          number = +prompt(`Nhập số nguyên thứ ${i + 1} của mảng`);
+        } while (isNaN(number) || !Number.isInteger(number));
+        mangSoNguyen[i] = number;
+      }
+      console.log(mangSoNguyen);
+
+      let sum = 0;
+      let count = 0;
+
+      for (let i = 0; i < n; i++) {
+        if (i % 2 === 0 && mangSoNguyen[i] % 2 !== 0) {
+          sum += mangSoNguyen[i];
+          count++;
+        }
+      }
+
+      if (count === 0) {
+        alert("Không có số lẻ ở vị trí chẵn!");
+      } else {
+        alert("Trung bình cộng các số lẻ ở vị trí chẵn là: " + sum / count);
+      }
+    </script>
+  </body>
+</html>

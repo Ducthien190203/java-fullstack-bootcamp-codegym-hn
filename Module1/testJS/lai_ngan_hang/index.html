@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Lãi ngân hàng</h3>
+    <p>Số tiền gửi <input type="number" id="soTien"> &nbsp;Tháng gửi <input type="number" id="soThang">&nbsp;<button onclick="sum()">Kết quả</button></p>
+    <br>
+    <p id="tong"></p>
+
+    <script>
+    function sum(){
+    let a = +document.getElementById('soTien').value;
+    let b = +document.getElementById('soThang').value;
+    let c = (7/(100*12)*a*b + a);
+    document.getElementById('tong').innerHTML= 'Tổng lãi và gốc sau '+b+' tháng: '+ c.toFixed(2)+' VNĐ.';
+}
+    </script>
+</body>
+</html>

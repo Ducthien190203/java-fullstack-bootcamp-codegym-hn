@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h3>Nhập 1 chuỗi số</h3>
+      <input type="number" id="input" />
+      <button type="button" onclick="chenDau()" id="btnChenDau">Ok</button
+      ><br />
+      <span id="output"></span>
+    </div>
+    <script>
+      function chenDau() {
+        let chuoiSo = document.getElementById("input").value;
+        let tachChuoi = chuoiSo.split("");
+
+        for (let i = 0; i < tachChuoi.length; i++) {
+          if (tachChuoi[i] % 2 === 0 && tachChuoi[i + 1] % 2 === 0) {
+            tachChuoi.splice(i + 1, 0, "-");
+            i++;
+          }
+        }
+        document.getElementById("output").innerText = tachChuoi.join("");
+      }
+    </script>
+  </body>
+</html>

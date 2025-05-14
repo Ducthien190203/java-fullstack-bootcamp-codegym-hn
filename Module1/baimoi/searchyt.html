@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table border="1">
+      <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+        <th>Header 3</th>
+      </tr>
+      <tr>
+        <td class="re">Row 1, Col 1</td>
+        <td>Row 1, Col 2</td>
+        <td>Row 1, Col 3</td>
+      </tr>
+      <tr>
+        <td class="re">Row 2, Col 1</td>
+        <td>Row 2, Col 2</td>
+        <td>Row 2, Col 3</td>
+      </tr>
+      <tr>
+        <td class="re">Row 3, Col 1</td>
+        <td>Row 3, Col 2</td>
+        <td>Row 3, Col 3</td>
+      </tr>
+    </table>
+  </body>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    .re {
+      border: none;
+    }
+
+    tr:nth-child(3) {
+      border: none;
+    }
+    tr td:first-child {
+      border: none;
+    }
+  </style>
+</html>

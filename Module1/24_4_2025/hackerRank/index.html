@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      countingValleys(8, "UDDDUDUU");
+
+      function countingValleys(steps, path) {
+        let sea_level = 0;
+        let valleys = 0;
+
+        for (let i = 0; i < steps; i++) {
+          if (path[i] === "U") sea_level++;
+          if (path[i] === "D") sea_level--;
+
+          // Nếu vừa đi lên đến mực nước biển từ dưới
+          if (sea_level === 0 && path[i] === "U") {
+            valleys++;
+          }
+        }
+
+        return valleys;
+      }
+    </script>
+  </body>
+</html>

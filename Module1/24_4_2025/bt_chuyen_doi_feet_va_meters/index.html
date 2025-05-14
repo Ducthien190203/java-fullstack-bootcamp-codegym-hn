@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>Feet</td>
+        <td>Meters</td>
+      </tr>
+      <tr>
+        <td><input type="number" id="inputFeet" /></td>
+        <td><input type="number" id="inputMeter" /></td>
+      </tr>
+      <tr>
+        <td>
+          <button type="button" onclick="feetToMeter()">Feet to Meter</button>
+        </td>
+        <td>
+          <button type="button" onclick="meterToFeet()">Meter to Feet</button>
+        </td>
+      </tr>
+      <tr>
+        <td id="outputFeetToMeter"></td>
+        <td id="outputMeterToFeet"></td>
+      </tr>
+    </table>
+
+    <script>
+      function convertFeetToMeter(foot) {
+        const meter = 0.305 * foot;
+        return meter;
+      }
+      function convertMeterToFoot(meter) {
+        const foot = 3.279 * meter;
+        return foot;
+      }
+      function feetToMeter() {
+        const inputFeet = +document.getElementById("inputFeet").value;
+        if (isNaN(inputFeet)) {
+          alert("Vui lòng nhập một số hợp lệ cho feet.");
+          return;
+        }
+        const result = convertFeetToMeter(inputFeet);
+        document.getElementById("outputFeetToMeter").innerText =
+          result.toFixed(4);
+      }
+
+      function meterToFeet() {
+        const inputMeter = +document.getElementById("inputMeter").value;
+        if (isNaN(inputMeter)) {
+          alert("Vui lòng nhập một số hợp lệ cho meters.");
+          return;
+        }
+        const result = convertMeterToFoot(inputMeter);
+        document.getElementById("outputMeterToFeet").innerText =
+          result.toFixed(4);
+      }
+    </script>
+  </body>
+</html>

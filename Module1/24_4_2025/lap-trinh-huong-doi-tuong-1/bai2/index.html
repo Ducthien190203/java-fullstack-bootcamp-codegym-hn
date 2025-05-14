@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Person {
+        constructor(id, name, age) {
+          this.id = id;
+          this.name = name;
+          this.age = age;
+        }
+        sayHello() {
+          alert(`${this.id}. Tên: ${this.name}. Tuổi: ${this.age}`);
+        }
+      }
+      let person1 = new Person("01", "Trương Đức Thiện", 22);
+      let person2 = new Person("02", "Nguyen Ngoc Thiện", 20);
+      person1.sayHello();
+      person2.sayHello();
+    </script>
+  </body>
+</html>

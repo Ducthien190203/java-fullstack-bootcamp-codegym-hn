@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="">
+      <table>
+        <tr>
+          <th><label for="Amount">Amount</label></th>
+          <th><label for="From_Currency"> From Currency</label></th>
+          <th><label for="To_Currency">To Currency</label></th>
+          <th></th>
+        </tr>
+        <tr>
+          <td>
+            <input type="number" name="Amount" id="Amount" placeholder="1" />
+          </td>
+          <td>
+            <select name="From_Currency" id="From_Currency">
+              <option value="VietNam">VietNam</option>
+              <option value="China">China</option>
+              <option value="Japan">Japan</option>
+            </select>
+          </td>
+
+          <td>
+            <select name="To_Currency" id="To_Currency">
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+              <option value="KRW">KRW</option>
+            </select>
+          </td>
+          <td><button type="button" onclick="result()">Convert</button></td>
+        </tr>
+      </table>
+    </form>
+    
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>

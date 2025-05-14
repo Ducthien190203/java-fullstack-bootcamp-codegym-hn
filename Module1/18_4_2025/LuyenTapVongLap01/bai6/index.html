@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <p id="output"></p>
+    </div>
+    <script>
+      let numbers = 30;
+      let sum = 0;
+      const output = document.getElementById("output");
+      for (let i = 0; i < numbers; i++) {
+        sum += i;
+      }
+      output.innerHTML = "Tổng 30 số tự nhiên đầu tiên = "+sum;
+    </script>
+  </body>
+</html>

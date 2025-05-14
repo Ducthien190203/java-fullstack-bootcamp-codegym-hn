@@ -1,0 +1,47 @@
+/* CSS Document 
+id -> #tên id
+class -> .tên class
+tag -> tên tag
+ưu tiên: id > class > tag
+*/
+
+#h1 {
+    color: #32e043;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+.p {
+    color: #d042a6;
+    font-size: 16px;
+    font-weight: normal;
+}
+p {
+    color: #1f2ecf;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+tr,td,th,caption{
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+    border-style: dashed;
+    border-color: #b32b2b;
+    border-radius: 5px;
+}
+tr {
+    background-color: #ffcccc;
+}
+
+td {
+    background-color: #ccffcc;
+}
+
+th {
+    background-color: #ccccff;
+}
+
+caption {
+    background-color: #ffffcc;
+}

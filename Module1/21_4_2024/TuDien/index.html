@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h3>Nhập từ tiếng tiếng Anh</h3>
+      <input type="text" id="input" />
+      <button type="button" onclick="output()" id="btnOutput">Ok</button><br />
+      <span id="result"></span>
+    </div>
+    <script>
+      let tiengViet = ["chạy", "nhảy", "bay", "bơi", "ngủ"];
+      let tiengAnh = ["run", "jump", "fly", "swim", "sleep"];
+      const input = document.getElementById("input").value;
+      function output() {
+        let input = document.getElementById("input").value;
+        for (let i = 0; i < tiengViet.length; i++) {
+          if (input === tiengAnh[i]) {
+            input = tiengViet[i];
+          } 
+        }
+        document.getElementById("result").innerText=input;
+      }
+    </script>
+  </body>
+</html>

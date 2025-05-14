@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ứng Dụng Quản Lý Sản Phẩm</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table, th, td {
+      border: 1px solid black;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    button {
+      padding: 5px 10px;
+      margin: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Ứng Dụng Quản Lý Sản Phẩm</h1>
+
+  <!-- Form thêm sản phẩm -->
+  <h3>Thêm sản phẩm mới</h3>
+  <input type="text" id="newProduct" placeholder="Nhập tên sản phẩm">
+  <button onclick="addProduct()">Thêm</button>
+
+  <!-- Danh sách sản phẩm -->
+  <h3>Danh sách sản phẩm</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Số thứ tự</th>
+        <th>Tên sản phẩm</th>
+        <th>Hành động</th>
+      </tr>
+    </thead>
+    <tbody id="productList"></tbody>
+  </table>
+
+  <script src="app.js"></script>
+</body>
+</html>

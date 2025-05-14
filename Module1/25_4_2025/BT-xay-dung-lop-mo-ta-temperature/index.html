@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Temperature {
+        constructor(tempC) {
+          this.tempC = tempC;
+        }
+        c_to_f() {
+          return (this.tempC * 9) / 5 + 32;
+        }
+        c_to_k() {
+          return this.tempC + 273.15;
+        }
+      }
+      const inputTempC = 25;
+      const output = new Temperature(inputTempC);
+      if (inputTempC >= -273) {
+        console.log(output.c_to_f());
+        console.log(output.c_to_k());
+      }else{ console.log('Độ C phải >=-273')}
+    </script>
+  </body>
+</html>

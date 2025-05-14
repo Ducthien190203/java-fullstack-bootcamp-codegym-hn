@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let doC = +prompt("Nhập số độ C");
+      if (isNaN(doC) || doC <= 0) {
+        alert("Vui lòng nhập số độ C > 0");
+      } else {
+        let doF = (doC * 9) / 5 + 32;
+        alert(doC + " độ C = " + doF + " độ F");
+      }
+    </script>
+  </body>
+</html>

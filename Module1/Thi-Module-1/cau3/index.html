@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Quản lí sách</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Quản lí sách</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Mã số sách</th>
+          <th>Tên sách</th>
+          <th>Năm xuất bản</th>
+          <th>Số quyển</th>
+          <th>Tình trạng</th>
+        </tr>
+      </thead>
+      <tbody id="bookList"></tbody>
+    </table>
+
+    
+    <div class="functionBtn">
+      <button onclick="addExistingBook()">Thêm sách đã có</button>
+      <button onclick="addNewBook()">Thêm sách mới</button>
+      <button onclick="borrowBook()">Mượn sách</button>
+      <button onclick="showMostAvailableBook()">Hiển thị sách nhiều nhất</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

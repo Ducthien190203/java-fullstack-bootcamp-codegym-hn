@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" id="value" />
+    <button type="button" onclick="input()">Do Something</button>
+    <script>
+      function plusOne(n) {
+        return n + 1;
+      }
+      function input() {
+        const so = +document.getElementById("value").value;
+        const result = plusOne(so);
+        alert(result)
+      }
+    </script>
+  </body>
+</html>

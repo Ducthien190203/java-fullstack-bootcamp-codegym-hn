@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="" method="">
+      <table>
+        <caption>
+          Calculator
+        </caption>
+        <tr>
+          <td colspan="2">
+            <input
+              type="number"
+              name="number"
+              id="first_number"
+              placeholder="First Number"
+            />
+          </td>
+          <td colspan="2">
+            <input
+              type="number"
+              name="number"
+              id="second_number"
+              placeholder="Second Number"
+            />
+          </td>
+        </tr>
+
+        <tr style="height: 50px">
+          <td><button type="button" onclick="cong()">Addition(+)</button></td>
+          <td><button type="button" onclick="tru()">Subtraction(-)</button></td>
+          <td>
+            <button type="button" onclick="nhan()">Multiplication(x)</button>
+          </td>
+          <td><button type="button" onclick="chia()">Division(/)</button></td>
+        </tr>
+      </table>
+      <p>Result <span id="Result"></span></p>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

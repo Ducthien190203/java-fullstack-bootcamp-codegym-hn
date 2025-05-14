@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="inSoNguyenTo"></div>
+    <script>
+      let numbers = 20;
+      let count = 0;
+      let N = 2;
+      const inSoNguyenTo = document.getElementById("inSoNguyenTo");
+      while (count < numbers) {
+        let xetSoNguyenTo = true;
+        for (let i = 2; i <= Math.sqrt(N); i++) {
+          if (N % i === 0) {
+            xetSoNguyenTo = false;
+            break;
+          }
+        }
+        if (xetSoNguyenTo) {
+          inSoNguyenTo.innerHTML += N + (count < numbers - 1 ? ", " : "");
+          count++;
+        }
+        N++;
+      }
+    </script>
+  </body>
+</html>

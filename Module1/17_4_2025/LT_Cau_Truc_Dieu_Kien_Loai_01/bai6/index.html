@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const tiLeHoaHong = 0.05;
+      let doanhSo = +prompt(
+        "Tỉ lệ hoa hồng = 5% \nHãy nhập doanh số bán hàng(ít nhất 100.000VNĐ)"
+      );
+      if (isNaN(doanhSo) || doanhSo < 100000) {
+        alert("Vui lòng nhập doanh số tối thiểu 100.000VNĐ");
+      } else {
+        let hoaHong = doanhSo * tiLeHoaHong;
+        alert("Hoa hồng của bạn là " + hoaHong + " VNĐ");
+      }
+    </script>
+  </body>
+</html>

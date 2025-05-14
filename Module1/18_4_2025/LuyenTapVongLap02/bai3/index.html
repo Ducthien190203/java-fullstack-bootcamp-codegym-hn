@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <span id="output"></span>
+    <script>
+      let chieuCao = parseInt(prompt("Nhập chiều cao"));
+      const output = document.getElementById("output");
+      for (let i = 1; i <= chieuCao; i++) {
+        let line = "";
+        for (let j = 1; j <= i; j++) {
+          line += "*";
+        }
+
+        output.innerHTML += line + "<br>";
+      }
+    </script>
+  </body>
+</html>

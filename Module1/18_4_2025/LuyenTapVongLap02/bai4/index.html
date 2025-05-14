@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hình chữ nhật rỗng</title>
+  </head>
+  <body>
+    <pre id="output"></pre>
+    <script>
+      function drawHollowRectangle(width, height) {
+        const output = document.getElementById("output");
+        let result = "";
+
+        for (let i = 1; i <= height; i++) {
+          for (let j = 1; j <= width; j++) {
+            if (i === 1 || i === height || j === 1 || j === width) {
+              result += "*";
+            } else {
+              result += " ";
+            }
+          }
+          result += "\n";
+        }
+
+        output.textContent = result;
+      }
+
+      drawHollowRectangle(10, 5);
+    </script>
+  </body>
+</html>

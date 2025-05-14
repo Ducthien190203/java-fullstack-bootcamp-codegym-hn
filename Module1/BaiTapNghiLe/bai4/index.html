@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const input = prompt("Nhập chuỗi để kiểm tra phân số và rút gọn");
+      find(input);
+      
+      function find(x) {
+        let tuSo = "";
+        let mauSo = "";
+        let index = x.indexOf("/");
+
+        // for (let j = 0; j < index; j++) {
+        //   tuSo += x[j];
+        // }
+        // for (let j = index+1; j < x.length; j++) {
+        //   mauSo += x[j];
+        // }
+        tuSo = x.substring(0, index);
+        mauSo = x.substring(index + 1);
+
+        tuSo = +tuSo;
+        mauSo = +mauSo;
+
+        function UCLN(a, b) {
+          while (b !== 0) {
+            let r = a % b;
+            a = b;
+            b = r;
+          }
+          return Math.abs(a);
+        }
+        if (isNaN(tuSo) || isNaN(mauSo) || mauSo == 0) {
+          alert("Không phải là phân số");
+        } else {
+          let u = UCLN(tuSo, mauSo);
+          tuSo = tuSo / u;
+          mauSo = mauSo / u;
+          alert(`${tuSo}/${mauSo}`);
+        }
+      }
+    </script>
+  </body>
+</html>

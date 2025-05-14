@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let mangSoNguyen = [];
+      for (let i = 0; i < 10; i++) {
+        let soNguyen;
+        do {
+          soNguyen = prompt(`Nhập số nguyên thứ ${i + 1}:`);
+        } while (
+          soNguyen === null ||
+          soNguyen.trim() === "" ||
+          !Number.isInteger(Number(soNguyen)) ||
+          mangSoNguyen.includes(Number(soNguyen))
+        );
+        mangSoNguyen.push(Number(soNguyen));
+      }
+      mangSoNguyen.sort((a,b)=>b-a)
+      alert(`Mảng giảm dần là: ${mangSoNguyen} `);
+
+    </script>
+  </body>
+</html>

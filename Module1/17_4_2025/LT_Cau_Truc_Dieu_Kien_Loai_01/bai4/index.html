@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let soThuNhat = +prompt("Nhập số nguyên thứ nhất");
+      let soThuHai = +prompt("Nhập số nguyên thứ hai");
+      let soThuBa = +prompt("Nhập số nguyên thứ Ba");
+
+      if (
+        Number.isInteger(soThuNhat) &&
+        Number.isInteger(soThuHai) &&
+        Number.isInteger(soThuBa)
+      ) {
+        let max = soThuNhat;
+        if (max < soThuHai) {
+          max = soThuHai;
+        }
+        if (max < soThuBa) {
+          max = soThuBa;
+        }
+        alert(max + " là số lớn nhất");
+      } else {
+        alert("Vui lòng nhập số nguyên");
+      }
+    </script>
+  </body>
+</html>
