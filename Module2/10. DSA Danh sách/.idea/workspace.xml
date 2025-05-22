@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="434bee15-77d2-4ea7-9a4e-3dcc84ef4d23" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/use-arraylist-by-library/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/use-arraylist-by-library/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/use-arraylist-by-library/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/use-arraylist-by-library/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/use-arraylist-by-library/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/use-arraylist-by-library/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/use-arraylist-by-library/src/main/java/codegym/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/use-arraylist-by-library/src/main/java/codegym/MyList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/use-arraylist-by-library/src/main/java/demo/Hello.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/5. Access modifier, static method, static property/Access modifier/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/5. Access modifier, static method, static property/Access modifier/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/5. Access modifier, static method, static property/Access modifier/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/5. Access modifier, static method, static property/Access modifier/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/5. Access modifier, static method, static property/Static Method/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/5. Access modifier, static method, static property/Static Method/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/5. Access modifier, static method, static property/Static Method/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/5. Access modifier, static method, static property/Static Method/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/5. Access modifier, static method, static property/Static Property/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/5. Access modifier, static method, static property/Static Property/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/5. Access modifier, static method, static property/Static Property/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/5. Access modifier, static method, static property/Static Property/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/Circle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/IntroductionToJava/BodyMassIndex/BodyMassIndex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/IntroductionToJava/CurrencyConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/IntroductionToJava/DayOfMonth/DayOfMonth.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/IntroductionToJava/Demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/IntroductionToJava/LeapYearCalculator/LeapYearCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/IntroductionToJava/LinearEquationResolver/LinearEquationResolver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/IntroductionToJava/NumberToText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/LoopJava/First20IsPrime/First20IsPrime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/LoopJava/GreatestCommonFactor/GreatestCommonFactor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/LoopJava/Interest/Interest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/LoopJava/IsPrime/IsPrime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/LoopJava/demo/demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/LoopJava/draw_geometry/Geometry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/LoopJava/menu_shape/DisplayShape.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/SystemTime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/Access modifier/bin/VariableDataType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/customer-and-test/bin/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../5. Access modifier, static method, static property/customer-and-test/src/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntroductionToJava/BodyMassIndex/BodyMassIndex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntroductionToJava/CurrencyConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntroductionToJava/DayOfMonth/DayOfMonth.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntroductionToJava/DayOfMonth/DayOfMonth.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntroductionToJava/Demo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntroductionToJava/LeapYearCalculator/LeapYearCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntroductionToJava/LinearEquationResolver/LinearEquationResolver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntroductionToJava/NumberToText.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntroductionToJava/Rectangle/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntroductionToJava/Rectangle/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntroductionToJava/SystemTime/SystemTime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntroductionToJava/SystemTime/SystemTime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntroductionToJava/VariableDataType/VariableDataType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../IntroductionToJava/VariableDataType/VariableDataType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LoopJava/First20IsPrime/First20IsPrime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LoopJava/First20IsPrime/First20IsPrime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LoopJava/GreatestCommonFactor/GreatestCommonFactor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LoopJava/Interest/Interest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LoopJava/IsPrime/IsPrime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LoopJava/demo/demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LoopJava/demo/demo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LoopJava/draw_geometry/Geometry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LoopJava/menu_shape/DisplayShape.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/5. Access modifier, static method, static property/Access modifier/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/5. Access modifier, static method, static property/Access modifier/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/5. Access modifier, static method, static property/Access modifier/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/5. Access modifier, static method, static property/Access modifier/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/5. Access modifier, static method, static property/Access modifier/bin/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/5. Access modifier, static method, static property/Access modifier/bin/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/5. Access modifier, static method, static property/Access modifier/bin/5. Access modifier, static method, static property/Access modifier/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/5. Access modifier, static method, static property/Access modifier/bin/5. Access modifier, static method, static property/Access modifier/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/5. Access modifier, static method, static property/Access modifier/bin/5. Access modifier, static method, static property/Access modifier/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/5. Access modifier, static method, static property/Access modifier/bin/5. Access modifier, static method, static property/Access modifier/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/5. Access modifier, static method, static property/Access modifier/bin/5. Access modifier, static method, static property/Static Method/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/5. Access modifier, static method, static property/Access modifier/bin/5. Access modifier, static method, static property/Static Method/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/5. Access modifier, static method, static property/Access modifier/bin/5. Access modifier, static method, static property/Static Method/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/5. Access modifier, static method, static property/Access modifier/bin/5. Access modifier, static method, static property/Static Method/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/5. Access modifier, static method, static property/Access modifier/bin/5. Access modifier, static method, static property/Static Property/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/5. Access modifier, static method, static property/Access modifier/bin/5. Access modifier, static method, static property/Static Property/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/5. Access modifier, static method, static property/Access modifier/bin/5. Access modifier, static method, static property/Static Property/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/5. Access modifier, static method, static property/Access modifier/bin/5. Access modifier, static method, static property/Static Property/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/5. Access modifier, static method, static property/Access modifier/src/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/5. Access modifier, static method, static property/Access modifier/src/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/5. Access modifier, static method, static property/Static Method/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/5. Access modifier, static method, static property/Static Method/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/5. Access modifier, static method, static property/Static Method/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/5. Access modifier, static method, static property/Static Method/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/5. Access modifier, static method, static property/Static Method/src/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/5. Access modifier, static method, static property/Static Method/src/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/5. Access modifier, static method, static property/Static Property/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/5. Access modifier, static method, static property/Static Property/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/5. Access modifier, static method, static property/Static Property/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/5. Access modifier, static method, static property/Static Property/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/5. Access modifier, static method, static property/Static Property/src/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/5. Access modifier, static method, static property/Static Property/src/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/IntroductionToJava/BodyMassIndex/BodyMassIndex.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/IntroductionToJava/CurrencyConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/IntroductionToJava/DayOfMonth/DayOfMonth.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/IntroductionToJava/Demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/IntroductionToJava/LeapYearCalculator/LeapYearCalculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/IntroductionToJava/LinearEquationResolver/LinearEquationResolver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/IntroductionToJava/NumberToText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/IntroductionToJava/Rectangle/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/IntroductionToJava/SystemTime/SystemTime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/IntroductionToJava/VariableDataType/VariableDataType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/LoopJava/First20IsPrime/First20IsPrime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/LoopJava/GreatestCommonFactor/GreatestCommonFactor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/LoopJava/Interest/Interest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/LoopJava/IsPrime/IsPrime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/LoopJava/demo/demo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/LoopJava/draw_geometry/Geometry.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bin/LoopJava/menu_shape/DisplayShape.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2xQoNyXM9MVmQ0sfrCQxeWgqBo6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/ducth/OneDrive/Máy tính/CodeGym/Module2/10. DSA Danh sách"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.109" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="434bee15-77d2-4ea7-9a4e-3dcc84ef4d23" name="Changes" comment="" />
+      <created>1747879622171</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747879622171</updated>
+      <workItem from="1747879623662" duration="98000" />
+      <workItem from="1747882493384" duration="116000" />
+    </task>
+    <servers />
+  </component>
+</project>
