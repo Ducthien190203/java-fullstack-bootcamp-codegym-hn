@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1eac7dc5-7f40-45d9-af1f-41c122df9c2a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../12. Java Collection Framework/.idea/12.Java Collection Framework.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12. Java Collection Framework/CollectionFrameworkPractice/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13. Thuat toan tim kiem/.idea/13.Thuat toan tim kiem.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2. Vòng lặp trong Java/.idea/2. Vòng lặp trong Java.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2. Vòng lặp trong Java/ShapeMenu/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2. Vòng lặp trong Java/ShapeMenu/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../2. Vòng lặp trong Java/ShapeMenu/src/main/java/ShapeMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.IntroductionToJava/BodyMassIndex/BodyMassIndex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.IntroductionToJava/CurrencyConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.IntroductionToJava/DayOfMonth/DayOfMonth.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.IntroductionToJava/DayOfMonth/DayOfMonth.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.IntroductionToJava/Demo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.IntroductionToJava/LeapYearCalculator/LeapYearCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.IntroductionToJava/LinearEquationResolver/LinearEquationResolver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.IntroductionToJava/NumberToText.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.IntroductionToJava/Rectangle/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.IntroductionToJava/Rectangle/Rectangle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.IntroductionToJava/SystemTime/SystemTime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.IntroductionToJava/SystemTime/SystemTime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.IntroductionToJava/VariableDataType/VariableDataType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../1.IntroductionToJava/VariableDataType/VariableDataType.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/BubbleSortPractice">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="BubbleSortPractice" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2xer1cwdwwod28R6GHsddfecv9U" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Application.BubbleSort.executor": "Run",
+    "Gradle.BubbleSortPractice [:BubbleSort.main()].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/java-fullstack-bootcamp-codegym-hn/Module2/14. Thuật toán sắp xếp",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1eac7dc5-7f40-45d9-af1f-41c122df9c2a" name="Changes" comment="" />
+      <created>1748309166073</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748309166073</updated>
+      <workItem from="1748309167841" duration="898000" />
+      <workItem from="1748310143674" duration="198000" />
+    </task>
+    <servers />
+  </component>
+</project>
