@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="ArrayList" target="1.8" />
+      <module name="ArrayList.main" target="1.8" />
+      <module name="ArrayList.test" target="1.8" />
+      <module name="LinkedList" target="1.8" />
+      <module name="LinkedList.main" target="1.8" />
+      <module name="LinkedList.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

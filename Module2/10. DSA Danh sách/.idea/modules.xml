@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/10. DSA Danh sách.iml" filepath="$PROJECT_DIR$/.idea/10. DSA Danh sách.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ArrayList.iml" filepath="$PROJECT_DIR$/ArrayList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ArrayList.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ArrayList.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ArrayList.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ArrayList.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LinkedList.iml" filepath="$PROJECT_DIR$/LinkedList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LinkedList.main.iml" filepath="$PROJECT_DIR$/.idea/modules/LinkedList.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LinkedList.test.iml" filepath="$PROJECT_DIR$/.idea/modules/LinkedList.test.iml" />
+    </modules>
+  </component>
+</project>
