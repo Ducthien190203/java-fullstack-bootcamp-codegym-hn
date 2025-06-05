@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="FactoryMethodPractice" target="1.8" />
+      <module name="FactoryMethodPractice.main" target="1.8" />
+      <module name="FactoryMethodPractice.test" target="1.8" />
+      <module name="MemoryPool" target="1.8" />
+      <module name="MemoryPool.main" target="1.8" />
+      <module name="MemoryPool.test" target="1.8" />
+      <module name="ObjectPoolPractice" target="1.8" />
+      <module name="ObjectPoolPractice.main" target="1.8" />
+      <module name="ObjectPoolPractice.test" target="1.8" />
+      <module name="SingletonPractice" target="1.8" />
+      <module name="SingletonPractice.main" target="1.8" />
+      <module name="SingletonPractice.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

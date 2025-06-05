@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/21. Design Patterns.iml" filepath="$PROJECT_DIR$/.idea/21. Design Patterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FactoryMethodPractice.iml" filepath="$PROJECT_DIR$/FactoryMethodPractice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FactoryMethodPractice.main.iml" filepath="$PROJECT_DIR$/.idea/modules/FactoryMethodPractice.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FactoryMethodPractice.test.iml" filepath="$PROJECT_DIR$/.idea/modules/FactoryMethodPractice.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MemoryPool.iml" filepath="$PROJECT_DIR$/MemoryPool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MemoryPool.main.iml" filepath="$PROJECT_DIR$/.idea/modules/MemoryPool.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MemoryPool.test.iml" filepath="$PROJECT_DIR$/.idea/modules/MemoryPool.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ObjectPoolPractice.iml" filepath="$PROJECT_DIR$/ObjectPoolPractice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ObjectPoolPractice.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ObjectPoolPractice.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ObjectPoolPractice.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ObjectPoolPractice.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SingletonPractice.iml" filepath="$PROJECT_DIR$/SingletonPractice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SingletonPractice.main.iml" filepath="$PROJECT_DIR$/.idea/modules/SingletonPractice.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SingletonPractice.test.iml" filepath="$PROJECT_DIR$/.idea/modules/SingletonPractice.test.iml" />
+    </modules>
+  </component>
+</project>

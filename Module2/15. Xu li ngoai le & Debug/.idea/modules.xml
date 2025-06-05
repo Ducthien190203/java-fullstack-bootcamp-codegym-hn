@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/15. Xu li ngoai le &amp; Debug.iml" filepath="$PROJECT_DIR$/.idea/15. Xu li ngoai le &amp; Debug.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ArrayIndexOutOfBoundsException.iml" filepath="$PROJECT_DIR$/ArrayIndexOutOfBoundsException.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ArrayIndexOutOfBoundsException.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ArrayIndexOutOfBoundsException.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ArrayIndexOutOfBoundsException.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ArrayIndexOutOfBoundsException.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IllegalTriangleException.iml" filepath="$PROJECT_DIR$/IllegalTriangleException.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/IllegalTriangleException.main.iml" filepath="$PROJECT_DIR$/.idea/modules/IllegalTriangleException.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/IllegalTriangleException.test.iml" filepath="$PROJECT_DIR$/.idea/modules/IllegalTriangleException.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LinearEquationResolve.main.iml" filepath="$PROJECT_DIR$/.idea/modules/LinearEquationResolve.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LinearEquationResolve.test.iml" filepath="$PROJECT_DIR$/.idea/modules/LinearEquationResolve.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LinearEquationResolver.iml" filepath="$PROJECT_DIR$/LinearEquationResolver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LinearEquationResolver1.iml" filepath="$PROJECT_DIR$/LinearEquationResolver1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LinearEquationResolver1.main.iml" filepath="$PROJECT_DIR$/.idea/modules/LinearEquationResolver1.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LinearEquationResolver1.test.iml" filepath="$PROJECT_DIR$/.idea/modules/LinearEquationResolver1.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NumberFormatException.iml" filepath="$PROJECT_DIR$/NumberFormatException.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NumberFormatException.main.iml" filepath="$PROJECT_DIR$/.idea/modules/NumberFormatException.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NumberFormatException.test.iml" filepath="$PROJECT_DIR$/.idea/modules/NumberFormatException.test.iml" />
+    </modules>
+  </component>
+</project>

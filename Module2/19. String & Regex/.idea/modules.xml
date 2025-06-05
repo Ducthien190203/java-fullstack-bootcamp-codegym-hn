@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/19. String &amp; Regex.iml" filepath="$PROJECT_DIR$/.idea/19. String &amp; Regex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BaiTap.iml" filepath="$PROJECT_DIR$/BaiTap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BaiTap.main.iml" filepath="$PROJECT_DIR$/.idea/modules/BaiTap.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BaiTap.test.iml" filepath="$PROJECT_DIR$/.idea/modules/BaiTap.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ClassNameValidate.iml" filepath="$PROJECT_DIR$/ClassNameValidate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ClassNameValidate.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ClassNameValidate.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ClassNameValidate.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ClassNameValidate.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CrawlNews.iml" filepath="$PROJECT_DIR$/CrawlNews.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CrawlNews.main.iml" filepath="$PROJECT_DIR$/.idea/modules/CrawlNews.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CrawlNews.test.iml" filepath="$PROJECT_DIR$/.idea/modules/CrawlNews.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo.iml" filepath="$PROJECT_DIR$/Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Demo.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Demo.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Demo.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Demo.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Practice2.iml" filepath="$PROJECT_DIR$/Practice2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Practice2.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Practice2.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Practice2.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Practice2.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Practice3.iml" filepath="$PROJECT_DIR$/Practice3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Practice3.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Practice3.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Practice3.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Practice3.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Practice4.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Practice4.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Practice4.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Practice4.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pratice1.iml" filepath="$PROJECT_DIR$/Pratice1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Pratice1.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Pratice1.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Pratice1.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Pratice1.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ValidatePhoneNumber.iml" filepath="$PROJECT_DIR$/ValidatePhoneNumber.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ValidatePhoneNumber.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ValidatePhoneNumber.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ValidatePhoneNumber.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ValidatePhoneNumber.test.iml" />
+    </modules>
+  </component>
+</project>

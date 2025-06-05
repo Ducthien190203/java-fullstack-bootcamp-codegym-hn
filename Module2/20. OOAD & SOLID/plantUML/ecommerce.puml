@@ -1,0 +1,151 @@
+@startuml
+title Ecommerce Class Diagram (with Methods)
+
+class ProductType {
+  - productTypeName: String
+  + getProductTypeName(): String
+  + setProductTypeName(name: String): void
+}
+
+class Provider {
+  - providerName: String
+  + getProviderName(): String
+  + setProviderName(name: String): void
+}
+
+class Product {
+  - productID: String
+  - name: String
+  - configurationInfo: String
+  + getProductID(): String
+  + getName(): String
+  + getConfigurationInfo(): String
+  + setProductID(id: String): void
+  + setName(name: String): void
+  + setConfigurationInfo(info: String): void
+}
+
+class Price {
+  - priceID: String
+  - productID: String
+  - unitPrice: double
+  - dateStart: Date
+  - dateEnd: Date
+  + isValid(date: Date): boolean
+  + getUnitPrice(): double
+}
+
+class Promotion {
+  - promotionID: String
+  - productID: String
+  - description: String
+  - amount: double
+  - dateStart: Date
+  - dateEnd: Date
+  + isActive(date: Date): boolean
+  + getDiscountAmount(): double
+}
+
+class ShoppingCart {
+  - cartID: String
+  - date: Date
+  + getCartID(): String
+  + getDate(): Date
+}
+
+class CartDetail {
+  - cartID: String
+  - productID: String
+  - quantity: int
+  - unitPrice: double
+  - promotionAmount: double
+  + calculateTotal(): double
+}
+
+class Order {
+  - orderID: String
+  - date: Date
+  - customerID: String
+  + getOrderID(): String
+  + getDate(): Date
+}
+
+class OrderDetail {
+  - orderID: String
+  - productID: String
+  - quantity: int
+  - unitPrice: double
+  - promotionID: String
+  + calculateTotal(): double
+}
+
+class Payment {
+  - paymentID: String
+  - orderID: String
+  - amount: double
+  - date: Date
+  - method: String
+  + processPayment(): boolean
+}
+
+class ShippingOrder {
+  - shippingID: String
+  - orderID: String
+  - shippingDate: Date
+  - destinationDate: Date
+  - fee: double
+  - shippingType: String
+  + calculateETA(): int
+  + getShippingCost(): double
+}
+
+class Customer {
+  - customerID: String
+  - name: String
+  - address: String
+  - phone: String
+  + getContactInfo(): String
+}
+
+class Guest {
+  - cartID: String
+  + getCartID(): String
+}
+
+class User {
+  - userID: String
+  - name: String
+  - role: String
+  + login(): boolean
+  + logout(): void
+}
+
+class ChatSession {
+  - sessionID: String
+  - userID: String
+  - guestID: String
+  - messageID: String
+  - message: String
+  - date: Date
+  + sendMessage(msg: String): void
+  + getMessages(): List<String>
+}
+
+' ===== RELATIONSHIPS =====
+Product --> ProductType
+Product --> Provider
+Product --> Price
+Product --> Promotion
+CartDetail --> ShoppingCart
+CartDetail --> Product
+OrderDetail --> Order
+OrderDetail --> Product
+OrderDetail --> Promotion
+ShoppingCart --> Guest
+Order --> Customer
+Payment --> Order
+ShippingOrder --> Order
+ChatSession --> User
+ChatSession --> Guest
+
+@enduml

@@ -1,0 +1,20 @@
+@startuml
+|Người dùng|
+start
+:Chọn loại sản phẩm;
+
+|Hệ thống|
+fork
+  :Lấy danh sách sản phẩm theo loại;
+fork again
+  :Lấy giá sản phẩm;
+fork again
+  :Lấy khuyến mãi sản phẩm;
+end fork
+
+:Hệ thống hiển thị sản phẩm cùng giá và khuyến mãi;
+
+|Người dùng|
+:Người dùng xem sản phẩm;
+stop
+@enduml

@@ -1,0 +1,48 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+
+actor Guest
+actor Customer
+actor Sales
+actor Admin
+
+rectangle "Hệ thống eCommerce" {
+
+    (Xem sản phẩm) as UC1
+    (Xem khuyến mãi) as UC2
+    (Đăng ký tài khoản) as UC3
+    (Đăng nhập/Đăng xuất) as UC4
+    (Thêm vào giỏ hàng) as UC5
+    (Quản lý giỏ hàng) as UC6
+    (Đặt hàng) as UC7
+    (Thanh toán) as UC8
+    (Theo dõi đơn hàng) as UC9
+    (Trò chuyện với hỗ trợ) as UC10
+    (Quản lý sản phẩm) as UC11
+    (Quản lý đơn hàng) as UC12
+    (Tạo khuyến mãi) as UC13
+
+    Guest --> UC1
+    Guest --> UC2
+    Guest --> UC3
+    Guest --> UC4
+    Guest --> UC10
+
+    Customer --> UC1
+    Customer --> UC2
+    Customer --> UC4
+    Customer --> UC5
+    Customer --> UC6
+    Customer --> UC7
+    Customer --> UC8
+    Customer --> UC9
+    Customer --> UC10
+
+    Sales --> UC10
+
+    Admin --> UC11
+    Admin --> UC12
+    Admin --> UC13
+}
+@enduml

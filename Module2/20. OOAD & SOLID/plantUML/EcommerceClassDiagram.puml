@@ -1,0 +1,104 @@
+@startuml
+
+' Class chính Products, liên kết với ProductTypes và Providers
+class Products {
+  +productID: int
+  +productName: String
+  +price: float
+  +description: String
+  +stockQuantity: int
+}
+
+class ProductTypes {
+  +typeID: int
+  +typeName: String
+}
+
+class Providers {
+  +providerID: int
+  +providerName: String
+  +contactInfo: String
+}
+
+Products --> ProductTypes : belongs to
+Products --> Providers : supplied by
+
+' Class Promotions cho khuyến mãi
+class Promotions {
+  +promoID: int
+  +promoName: String
+  +startDate: Date
+  +endDate: Date
+  +discountPercent: float
+}
+
+' Class Shopping Carts
+class ShoppingCarts {
+  +cartID: int
+  +createdDate: Date
+  +totalPrice: float
+  +addProduct()
+  +removeProduct()
+}
+
+ShoppingCarts "1" --> "*" Products : contains
+
+' Classes liên quan đến Chat
+class Sales {
+  +salesID: int
+  +name: String
+  +email: String
+}
+
+class Guest {
+  +guestID: int
+  +nickname: String
+}
+
+class ChatSession {
+  +sessionID: int
+  +startTime: DateTime
+  +endTime: DateTime
+  +sendMessage()
+}
+
+ChatSession "1" --> "*" Sales : participants
+ChatSession "1" --> "*" Guest : participants
+
+' Class Customers (đăng ký thành viên)
+class Customers {
+  +customerID: int
+  +name: String
+  +email: String
+  +password: String
+  +register()
+}
+
+' Classes liên quan đến đơn hàng và thanh toán
+class Orders {
+  +orderID: int
+  +orderDate: Date
+  +status: String
+  +calculateTotal()
+}
+
+class Payments {
+  +paymentID: int
+  +paymentDate: Date
+  +amount: float
+  +paymentMethod: String
+}
+
+class ShippingOrders {
+  +shippingID: int
+  +shippingDate: Date
+  +carrier: String
+  +trackingNumber: String
+}
+
+Orders --> Customers : placed by
+Orders --> Payments : paid by
+Orders --> ShippingOrders : shipped by
+Orders "1" --> "*" Products : ordered items
+
+@enduml

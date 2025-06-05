@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="CopyFileText" target="1.8" />
+      <module name="CopyFileText.main" target="1.8" />
+      <module name="CopyFileText.test" target="1.8" />
+      <module name="FindMaxFromTextFile" target="1.8" />
+      <module name="FindMaxFromTextFile.main" target="1.8" />
+      <module name="FindMaxFromTextFile.test" target="1.8" />
+      <module name="practice1" target="1.8" />
+      <module name="practice1.main" target="1.8" />
+      <module name="practice1.test" target="1.8" />
+      <module name="ReadFileCSV" target="1.8" />
+      <module name="ReadFileCSV.main" target="1.8" />
+      <module name="ReadFileCSV.test" target="1.8" />
+      <module name="TextFileNumberSum" target="1.8" />
+      <module name="TextFileNumberSum.main" target="1.8" />
+      <module name="TextFileNumberSum.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

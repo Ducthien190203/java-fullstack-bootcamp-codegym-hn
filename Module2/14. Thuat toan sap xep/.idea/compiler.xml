@@ -9,6 +9,7 @@
         <module name="BubbleSortByStepPractice" />
         <module name="InsertionSortPractice" />
         <module name="SelectionSortPractice" />
+        <module name="InsertionSortPractice2" />
         <module name="BubbleSortPractice2" />
       </profile>
     </annotationProcessing>

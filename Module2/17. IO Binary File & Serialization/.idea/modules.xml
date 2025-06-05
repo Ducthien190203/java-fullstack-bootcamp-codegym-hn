@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/17. IO Binary File &amp; Serialization.iml" filepath="$PROJECT_DIR$/.idea/17. IO Binary File &amp; Serialization.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo.iml" filepath="$PROJECT_DIR$/Demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Demo.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Demo.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Demo.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Demo.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LargeFileCopy.iml" filepath="$PROJECT_DIR$/LargeFileCopy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LargeFileCopy.main.iml" filepath="$PROJECT_DIR$/.idea/modules/LargeFileCopy.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LargeFileCopy.test.iml" filepath="$PROJECT_DIR$/.idea/modules/LargeFileCopy.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProductManagerBinaryFile.iml" filepath="$PROJECT_DIR$/ProductManagerBinaryFile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ProductManagerBinaryFile.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ProductManagerBinaryFile.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ProductManagerBinaryFile.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ProductManagerBinaryFile.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StudentBinaryIO.iml" filepath="$PROJECT_DIR$/StudentBinaryIO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/StudentBinaryIO.main.iml" filepath="$PROJECT_DIR$/.idea/modules/StudentBinaryIO.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/StudentBinaryIO.test.iml" filepath="$PROJECT_DIR$/.idea/modules/StudentBinaryIO.test.iml" />
+    </modules>
+  </component>
+</project>

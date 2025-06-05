@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="BaiTap" target="1.8" />
+      <module name="BaiTap.main" target="1.8" />
+      <module name="BaiTap.test" target="1.8" />
+      <module name="ClassNameValidate" target="1.8" />
+      <module name="ClassNameValidate.main" target="1.8" />
+      <module name="ClassNameValidate.test" target="1.8" />
+      <module name="CrawlNews" target="1.8" />
+      <module name="CrawlNews.main" target="1.8" />
+      <module name="CrawlNews.test" target="1.8" />
+      <module name="Demo" target="1.8" />
+      <module name="Demo.main" target="1.8" />
+      <module name="Demo.test" target="1.8" />
+      <module name="Practice2" target="1.8" />
+      <module name="Practice2.main" target="1.8" />
+      <module name="Practice2.test" target="1.8" />
+      <module name="Practice3" target="1.8" />
+      <module name="Practice3.main" target="1.8" />
+      <module name="Practice3.test" target="1.8" />
+      <module name="Practice4.main" target="1.8" />
+      <module name="Practice4.test" target="1.8" />
+      <module name="Pratice1" target="1.8" />
+      <module name="Pratice1.main" target="1.8" />
+      <module name="Pratice1.test" target="1.8" />
+      <module name="ValidatePhoneNumber" target="1.8" />
+      <module name="ValidatePhoneNumber.main" target="1.8" />
+      <module name="ValidatePhoneNumber.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

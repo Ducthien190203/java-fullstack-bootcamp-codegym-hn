@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/16.iml" filepath="$PROJECT_DIR$/.idea/16.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CopyFileText.iml" filepath="$PROJECT_DIR$/.idea/modules/CopyFileText.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CopyFileText.main.iml" filepath="$PROJECT_DIR$/.idea/modules/CopyFileText.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CopyFileText.test.iml" filepath="$PROJECT_DIR$/.idea/modules/CopyFileText.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FindMaxFromTextFile.iml" filepath="$PROJECT_DIR$/FindMaxFromTextFile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FindMaxFromTextFile.main.iml" filepath="$PROJECT_DIR$/.idea/modules/FindMaxFromTextFile.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FindMaxFromTextFile.test.iml" filepath="$PROJECT_DIR$/.idea/modules/FindMaxFromTextFile.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ReadFileCSV.iml" filepath="$PROJECT_DIR$/ReadFileCSV.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ReadFileCSV.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ReadFileCSV.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ReadFileCSV.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ReadFileCSV.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TextFileNumberSum.iml" filepath="$PROJECT_DIR$/TextFileNumberSum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TextFileNumberSum.main.iml" filepath="$PROJECT_DIR$/.idea/modules/TextFileNumberSum.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TextFileNumberSum.test.iml" filepath="$PROJECT_DIR$/.idea/modules/TextFileNumberSum.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practice1.iml" filepath="$PROJECT_DIR$/practice1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/practice1.main.iml" filepath="$PROJECT_DIR$/.idea/modules/practice1.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/practice1.test.iml" filepath="$PROJECT_DIR$/.idea/modules/practice1.test.iml" />
+    </modules>
+  </component>
+</project>

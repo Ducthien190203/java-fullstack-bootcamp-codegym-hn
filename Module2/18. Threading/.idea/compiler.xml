@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="CountNumberPractice" target="1.8" />
+      <module name="CountNumberPractice.main" target="1.8" />
+      <module name="CountNumberPractice.test" target="1.8" />
+      <module name="CreateRunnableThreadPractice" target="1.8" />
+      <module name="CreateRunnableThreadPractice.main" target="1.8" />
+      <module name="CreateRunnableThreadPractice.test" target="1.8" />
+      <module name="Demo" target="1.8" />
+      <module name="Demo.main" target="1.8" />
+      <module name="Demo.test" target="1.8" />
+      <module name="RacingCarsPractice" target="1.8" />
+      <module name="RacingCarsPractice.main" target="1.8" />
+      <module name="RacingCarsPractice.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

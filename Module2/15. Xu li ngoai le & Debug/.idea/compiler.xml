@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="ArrayIndexOutOfBoundsException" target="1.8" />
+      <module name="ArrayIndexOutOfBoundsException.main" target="1.8" />
+      <module name="ArrayIndexOutOfBoundsException.test" target="1.8" />
+      <module name="IllegalTriangleException" target="1.8" />
+      <module name="IllegalTriangleException.main" target="1.8" />
+      <module name="IllegalTriangleException.test" target="1.8" />
+      <module name="LinearEquationResolve.main" target="1.8" />
+      <module name="LinearEquationResolve.test" target="1.8" />
+      <module name="LinearEquationResolver" target="1.8" />
+      <module name="LinearEquationResolver1" target="1.8" />
+      <module name="LinearEquationResolver1.main" target="1.8" />
+      <module name="LinearEquationResolver1.test" target="1.8" />
+      <module name="NumberFormatException" target="1.8" />
+      <module name="NumberFormatException.main" target="1.8" />
+      <module name="NumberFormatException.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="Demo" target="1.8" />
+      <module name="Demo.main" target="1.8" />
+      <module name="Demo.test" target="1.8" />
+      <module name="LargeFileCopy" target="1.8" />
+      <module name="LargeFileCopy.main" target="1.8" />
+      <module name="LargeFileCopy.test" target="1.8" />
+      <module name="ProductManagerBinaryFile" target="1.8" />
+      <module name="ProductManagerBinaryFile.main" target="1.8" />
+      <module name="ProductManagerBinaryFile.test" target="1.8" />
+      <module name="StudentBinaryIO" target="1.8" />
+      <module name="StudentBinaryIO.main" target="1.8" />
+      <module name="StudentBinaryIO.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
