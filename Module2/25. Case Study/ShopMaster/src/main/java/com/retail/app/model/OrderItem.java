@@ -1,10 +1,15 @@
 package com.retail.app.model;
 
-public class OrderItem {
+import java.io.Serializable;
+
+public class OrderItem implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     private Product product;
     private int quantity;
 
-    public OrderItem() {}
+    public OrderItem() {
+    }
 
     public OrderItem(Product product, int quantity) {
         this.product = product;
@@ -14,6 +19,7 @@ public class OrderItem {
     public Product getProduct() {
         return product;
     }
+
     public void setProduct(Product product) {
         this.product = product;
     }
@@ -21,6 +27,7 @@ public class OrderItem {
     public int getQuantity() {
         return quantity;
     }
+
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }

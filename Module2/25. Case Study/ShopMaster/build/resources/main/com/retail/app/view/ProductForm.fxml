@@ -11,20 +11,23 @@
         <Insets top="20" right="20" bottom="20" left="20"/>
     </padding>
 
-    <Label text="Product ID:" GridPane.rowIndex="0" GridPane.columnIndex="0" style="-fx-font-weight:bold;"/>
-    <TextField fx:id="productIdField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+    <Label text="Category:" GridPane.rowIndex="0" GridPane.columnIndex="0" style="-fx-font-weight:bold;"/>
+    <ComboBox fx:id="categoryComboBox" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
 
-    <Label text="Product Name:" GridPane.rowIndex="1" GridPane.columnIndex="0" style="-fx-font-weight:bold;"/>
-    <TextField fx:id="nameField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+    <Label text="Product ID:" GridPane.rowIndex="1" GridPane.columnIndex="0" style="-fx-font-weight:bold;"/>
+    <TextField fx:id="productIdField" GridPane.rowIndex="1" GridPane.columnIndex="1" editable="false"/>
 
-    <Label text="Price:" GridPane.rowIndex="2" GridPane.columnIndex="0" style="-fx-font-weight:bold;"/>
-    <TextField fx:id="priceField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+    <Label text="Product Name:" GridPane.rowIndex="2" GridPane.columnIndex="0" style="-fx-font-weight:bold;"/>
+    <TextField fx:id="nameField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
 
-    <Label text="Stock Quantity:" GridPane.rowIndex="3" GridPane.columnIndex="0" style="-fx-font-weight:bold;"/>
-    <TextField fx:id="stockField" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+    <Label text="Price:" GridPane.rowIndex="3" GridPane.columnIndex="0" style="-fx-font-weight:bold;"/>
+    <TextField fx:id="priceField" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
 
-    <Button text="Save" onAction="#handleConfirm" GridPane.rowIndex="4" GridPane.columnIndex="0"
+    <Label text="Stock Quantity:" GridPane.rowIndex="4" GridPane.columnIndex="0" style="-fx-font-weight:bold;"/>
+    <TextField fx:id="stockField" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+    <Button text="Save" onAction="#handleConfirm" GridPane.rowIndex="5" GridPane.columnIndex="0"
             style="-fx-background-color:#22c55e; -fx-text-fill:white; -fx-font-weight:bold; -fx-background-radius:8;"/>
-    <Button text="Cancel" onAction="#handleCancel" GridPane.rowIndex="4" GridPane.columnIndex="1"
+    <Button text="Cancel" onAction="#handleCancel" GridPane.rowIndex="5" GridPane.columnIndex="1"
             style="-fx-background-color:#64748b; -fx-text-fill:white; -fx-font-weight:bold; -fx-background-radius:8;"/>
 </GridPane>

@@ -8,10 +8,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
-import javafx.scene.control.ButtonType;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -45,10 +42,27 @@ public class InventoryController {
     @FXML
     public void initialize() {
         logger.info("Initializing InventoryController");
+        // Add null checks for TableColumn bindings
+        if (productIdColumn == null || nameColumn == null || priceColumn == null || stockColumn == null) {
+            logger.severe("One or more TableColumn fields are not injected. Check fx:id in FXML.");
+            throw new IllegalStateException("TableColumn fx:id mismatch between FXML and controller.");
+        }
         productIdColumn.setCellValueFactory(new PropertyValueFactory<>("productId"));
         nameColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
         priceColumn.setCellValueFactory(new PropertyValueFactory<>("price"));
         stockColumn.setCellValueFactory(new PropertyValueFactory<>("stockQuantity"));
+
+        // Double-click to edit product
+        productTable.setRowFactory(tv -> {
+            TableRow<Product> row = new TableRow<>();
+            row.setOnMouseClicked(event -> {
+                if (event.getClickCount() == 2 && !row.isEmpty()) {
+                    Product selectedProduct = row.getItem();
+                    openProductForm(selectedProduct);
+                }
+            });
+            return row;
+        });
 
         loadProducts();
     }
@@ -113,7 +127,7 @@ public class InventoryController {
     private void handleExportReport() {
         logger.info("Export Report button clicked");
         List<Product> products = inventoryService.getAllProducts();
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter("inventory_report.txt"))) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("inventory_report.csv"))) {
             writer.write("Inventory Report:\n");
             writer.write("=================\n\n");
             for (Product product : products) {
@@ -123,7 +137,7 @@ public class InventoryController {
                 writer.write("Stock Quantity: " + product.getStockQuantity() + "\n");
                 writer.write("---------------------\n");
             }
-            logger.info("Inventory report exported to inventory_report.txt");
+            logger.info("Inventory report exported to inventory_report.csv");
             showAlert(Alert.AlertType.INFORMATION, "Export Report", "Report exported successfully to inventory_report.txt");
         } catch (IOException e) {
             logger.log(Level.SEVERE, "Failed to export inventory report", e);

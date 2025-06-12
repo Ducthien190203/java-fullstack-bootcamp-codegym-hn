@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class InventoryService {
-    private final String fileName = "products.txt";
+    private final String fileName = "products.csv";
     private List<Product> products;
 
     public InventoryService() {
@@ -53,7 +53,7 @@ public class InventoryService {
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             String line;
             while ((line = reader.readLine()) != null) {
-                String[] parts = line.split("\\|");
+                String[] parts = line.split(",", -1);
                 if (parts.length >= 4) {
                     String productId = parts[0];
                     String name = parts[1];
@@ -71,9 +71,9 @@ public class InventoryService {
     private boolean saveProductsToFile() {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
             for (Product product : products) {
-                writer.write(product.getProductId() + "|" +
-                        product.getName() + "|" +
-                        product.getPrice() + "|" +
+                writer.write(product.getProductId() + "," +
+                        product.getName() + "," +
+                        product.getPrice() + "," +
                         product.getStockQuantity());
                 writer.newLine();
             }

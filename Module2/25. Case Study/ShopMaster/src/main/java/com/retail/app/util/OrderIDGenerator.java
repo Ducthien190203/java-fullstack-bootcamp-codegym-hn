@@ -1,7 +1,11 @@
 package com.retail.app.util;
 
-import java.io.*;
-import java.util.regex.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class OrderIDGenerator {
     private static int nextOrderNumber = 1;
@@ -10,14 +14,14 @@ public class OrderIDGenerator {
     private static void initialize() {
         if (initialized) return;
         initialized = true;
-        File file = new File("orders.txt");
+        File file = new File("orders.csv");
         if (!file.exists()) return;
         int max = 0;
         Pattern pattern = Pattern.compile("^A(\\d{3})");
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             String line;
             while ((line = reader.readLine()) != null) {
-                String[] parts = line.split("\\|");
+                String[] parts = line.split(",", -1);
                 if (parts.length > 0) {
                     Matcher m = pattern.matcher(parts[0]);
                     if (m.find()) {

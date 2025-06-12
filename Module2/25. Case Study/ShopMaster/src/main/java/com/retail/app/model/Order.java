@@ -1,10 +1,12 @@
 package com.retail.app.model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class Order {
+public class Order implements Serializable {
+    private static final long serialVersionUID = 1L;
     private String orderId;
     private String customerName;
     private String customerPhone;
@@ -33,6 +35,7 @@ public class Order {
     public String getOrderId() {
         return orderId;
     }
+
     public void setOrderId(String orderId) {
         this.orderId = orderId;
     }
@@ -40,6 +43,7 @@ public class Order {
     public String getCustomerName() {
         return customerName;
     }
+
     public void setCustomerName(String customerName) {
         this.customerName = customerName;
     }
@@ -47,6 +51,7 @@ public class Order {
     public String getCustomerPhone() {
         return customerPhone;
     }
+
     public void setCustomerPhone(String customerPhone) {
         this.customerPhone = customerPhone;
     }
@@ -54,6 +59,7 @@ public class Order {
     public String getOrderNote() {
         return orderNote;
     }
+
     public void setOrderNote(String orderNote) {
         this.orderNote = orderNote;
     }
@@ -61,6 +67,7 @@ public class Order {
     public double getTotalAmount() {
         return totalAmount;
     }
+
     public void setTotalAmount(double totalAmount) {
         this.totalAmount = totalAmount;
     }
@@ -68,6 +75,7 @@ public class Order {
     public Date getOrderDate() {
         return orderDate;
     }
+
     public void setOrderDate(Date orderDate) {
         this.orderDate = orderDate;
     }
@@ -75,13 +83,23 @@ public class Order {
     public String getStatus() {
         return status;
     }
+
     public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getOrderStatus() {
+        return status;
+    }
+
+    public void setOrderStatus(String status) {
         this.status = status;
     }
 
     public List<OrderItem> getItems() {
         return items;
     }
+
     public void setItems(List<OrderItem> items) {
         this.items = items;
     }

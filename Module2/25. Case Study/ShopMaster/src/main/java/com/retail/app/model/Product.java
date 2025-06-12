@@ -6,7 +6,8 @@ public class Product {
     private double price;
     private int stockQuantity; // Số lượng tồn kho
 
-    public Product() {}
+    public Product() {
+    }
 
     public Product(String productId, String name, double price, int stockQuantity) {
         this.productId = productId;
@@ -18,6 +19,7 @@ public class Product {
     public String getProductId() {
         return productId;
     }
+
     public void setProductId(String productId) {
         this.productId = productId;
     }
@@ -25,6 +27,7 @@ public class Product {
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -32,6 +35,7 @@ public class Product {
     public double getPrice() {
         return price;
     }
+
     public void setPrice(double price) {
         this.price = price;
     }
@@ -39,6 +43,7 @@ public class Product {
     public int getStockQuantity() {
         return stockQuantity;
     }
+
     public void setStockQuantity(int stockQuantity) {
         this.stockQuantity = stockQuantity;
     }

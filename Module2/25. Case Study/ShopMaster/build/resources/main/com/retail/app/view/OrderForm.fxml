@@ -10,59 +10,57 @@
     <center>
         <HBox spacing="2" alignment="CENTER" style="-fx-padding:32;">
             <!-- Order Information Column -->
-            <VBox spacing="14" alignment="TOP_LEFT" prefWidth="320"
+            <VBox spacing="14" alignment="TOP_LEFT" prefWidth="340"
                   style="-fx-background-radius:18; -fx-padding:24; -fx-background-color:white; -fx-effect:dropshadow(gaussian,rgba(0,0,0,0.10),18,0,0,2);">
                 <Label text="Order Information" style="-fx-font-size:20px; -fx-font-weight:bold;"/>
                 <Label text="Order ID:"/>
                 <TextField fx:id="orderIdField" editable="false" style="-fx-opacity:0.8;"/>
                 <Label text="Customer Name:"/>
                 <TextField fx:id="customerNameField" promptText="Enter customer name"/>
-                <Label text="Customer Phone:"/>
+                <Label text="Phone Number:"/>
                 <TextField fx:id="customerPhoneField" promptText="Enter phone number"/>
-                <Label text="Table Number:"/>
-                <TextField fx:id="tableNumberField" promptText="e.g. 5, 12A"/>
-                <Label text="Order Note:"/>
-                <TextArea fx:id="orderNoteField" promptText="Enter note" prefRowCount="2"/>
-                <Label text="Order Type:"/>
-                <HBox spacing="10">
-                    <RadioButton fx:id="dineInRadio" text="Dine-in" selected="true"/>
-                    <RadioButton fx:id="takeAwayRadio" text="Take-away"/>
-                </HBox>
+                <Label text="Order Time:"/>
+                <TextField fx:id="orderTimeField" editable="false" style="-fx-opacity:0.8;"/>
+                <Label text="Pickup Time or Note:"/>
+                <TextArea fx:id="orderNoteField" promptText="Enter pickup time or note" prefRowCount="2"/>
             </VBox>
 
-            <!-- Menu Column (wider) -->
+            <!-- Available Items Column (wider) -->
             <VBox spacing="14" alignment="TOP_CENTER" prefWidth="500"
                   style="-fx-background-radius:18; -fx-padding:24; -fx-background-color:white; -fx-effect:dropshadow(gaussian,rgba(0,0,0,0.10),18,0,0,2);">
-                <Label text="Menu" style="-fx-font-size:20px; -fx-font-weight:bold;"/>
+                <Label text="Available Items" style="-fx-font-size:20px; -fx-font-weight:bold;"/>
                 <ScrollPane fitToWidth="true" fitToHeight="true" prefHeight="600" prefWidth="460"
                             style="-fx-background-radius:12;">
                     <GridPane fx:id="menuGrid" hgap="16" vgap="16">
                         <padding>
                             <Insets top="12" right="12" bottom="12" left="12"/>
                         </padding>
-                        <!-- Dish buttons will be dynamically added here -->
+                        <!-- Item buttons will be dynamically added here -->
                     </GridPane>
                 </ScrollPane>
             </VBox>
 
-            <!-- Selected Dishes Column (Modern VBox List) -->
-            <VBox spacing="14" alignment="TOP_CENTER" prefWidth="420"
+            <!-- Selected Items Column (Modern VBox List) -->
+            <VBox fx:id="rootVBox" spacing="14" alignment="TOP_CENTER" prefWidth="420"
                   style="-fx-background-radius:18; -fx-padding:24; -fx-background-color:#f9fafb; -fx-effect:dropshadow(gaussian,rgba(0,0,0,0.11),18,0,0,2);">
-                <Label text="Selected Dishes"
+                <Label text="Selected Items"
                        style="-fx-font-size:20px; -fx-font-weight:bold; -fx-text-fill:#2563eb; -fx-padding:0 0 8 0;"/>
                 <VBox fx:id="selectedItemsList" spacing="10"
                       style="-fx-background-radius:14; -fx-background-color:white; -fx-padding:10; -fx-border-radius:14; -fx-border-color:#e0e7ef;"/>
                 <HBox spacing="14" alignment="CENTER_RIGHT" style="-fx-padding:10 0 0 0;">
-                    <Label text="Total:"
+                    <Label text="Total Amount:"
                            style="-fx-font-size:18px; -fx-font-weight:600; -fx-text-fill:#64748b;"/>
                     <TextField fx:id="totalAmountField" editable="false" prefWidth="120"
                                style="-fx-background-color:#f1f5f9; -fx-font-size:18px; -fx-font-weight:bold; -fx-background-radius:8; -fx-border-color:#e0e7ef; -fx-border-radius:8;"/>
                 </HBox>
-                <HBox spacing="14" alignment="CENTER" style="-fx-padding:10 0 0 0;">
-                    <Button text="Confirm" onAction="#handleConfirmOrder" prefWidth="110" prefHeight="38"
-                            style="-fx-background-color:linear-gradient(to right,#22c55e,#16a34a); -fx-text-fill:white; -fx-font-size:16px; -fx-font-weight:bold; -fx-background-radius:10;"/>
-                    <Button text="Exit" onAction="#handleExit" prefWidth="110" prefHeight="38"
-                            style="-fx-background-color:linear-gradient(to right,#64748b,#334155); -fx-text-fill:white; -fx-font-size:16px; -fx-font-weight:bold; -fx-background-radius:10;"/>
+                <!-- Remove old button row and add new HBox for three buttons -->
+                <HBox spacing="18" alignment="BOTTOM_RIGHT" style="-fx-padding:18 0 0 0;">
+                    <Button text="Confirm &amp; Pay" fx:id="confirmPayBtn" onAction="#handleConfirmAndPay"
+                            prefWidth="150" prefHeight="44"
+                            style="-fx-background-color:linear-gradient(to right,#22c55e,#16a34a); -fx-text-fill:white; -fx-font-size:16px; -fx-font-weight:bold; -fx-background-radius:12;"/>
+                    <Button text="Exit" fx:id="exitBtn" onAction="#handleExit"
+                            prefWidth="100" prefHeight="44"
+                            style="-fx-background-color:linear-gradient(to right,#64748b,#334155); -fx-text-fill:white; -fx-font-size:16px; -fx-font-weight:bold; -fx-background-radius:12;"/>
                 </HBox>
             </VBox>
         </HBox>

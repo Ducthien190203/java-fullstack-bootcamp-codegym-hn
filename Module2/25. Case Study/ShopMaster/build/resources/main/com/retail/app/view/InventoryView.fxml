@@ -15,16 +15,17 @@
             <Label text="Inventory Management"
                    style="-fx-font-size:26px; -fx-font-weight:bold; -fx-text-fill:#2d3748; -fx-padding:0 0 12 0;"/>
             <TableView fx:id="productTable" prefWidth="700" VBox.vgrow="ALWAYS"
-                       style="-fx-background-radius:10; -fx-background-color:#f1f5f9; -fx-border-radius:10; -fx-border-color:#cbd5e1;">
+                       style="-fx-background-radius:12; -fx-background-color:#f8fafc; -fx-border-radius:12; -fx-border-color:#cbd5e1; -fx-table-cell-border-color: #e2e8f0;"
+            >
                 <columns>
                     <TableColumn fx:id="productIdColumn" text="Product ID" prefWidth="120"
-                                 style="-fx-font-size:15px; -fx-alignment:CENTER;" resizable="false"/>
-                    <TableColumn fx:id="nameColumn" text="Product Name" prefWidth="200"
-                                 style="-fx-font-size:15px; -fx-alignment:CENTER;" resizable="false"/>
-                    <TableColumn fx:id="priceColumn" text="Price" prefWidth="150"
-                                 style="-fx-font-size:15px; -fx-alignment:CENTER;" resizable="false"/>
-                    <TableColumn fx:id="stockColumn" text="Stock Quantity" prefWidth="180"
-                                 style="-fx-font-size:15px; -fx-alignment:CENTER;" resizable="false"/>
+                                 style="-fx-font-size:15px; -fx-alignment:CENTER-LEFT;"/>
+                    <TableColumn fx:id="nameColumn" text="Product Name" prefWidth="220"
+                                 style="-fx-font-size:15px; -fx-alignment:CENTER-LEFT;"/>
+                    <TableColumn fx:id="priceColumn" text="Price" prefWidth="140"
+                                 style="-fx-font-size:15px; -fx-alignment:CENTER-RIGHT;"/>
+                    <TableColumn fx:id="stockColumn" text="Stock Quantity" prefWidth="160"
+                                 style="-fx-font-size:15px; -fx-alignment:CENTER-RIGHT;"/>
                 </columns>
             </TableView>
             <HBox spacing="16" alignment="CENTER" style="-fx-padding:18 0 0 0;">
