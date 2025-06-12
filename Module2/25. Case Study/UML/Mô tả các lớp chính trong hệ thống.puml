@@ -1,0 +1,64 @@
+@startuml
+class Product {
+    - String productId
+    - String name
+    - double price
+    - String description
+    + getProductId()
+    + getName()
+    + getPrice()
+    + getDescription()
+}
+
+class ElectronicProduct {
+    - String brand
+    - String model
+    - int warranty
+    - String specifications
+    + getBrand()
+    + getModel()
+    + getWarranty()
+    + getSpecifications()
+}
+
+ElectronicProduct --|> Product
+
+class OrderItem {
+    - ElectronicProduct product
+    - int quantity
+    + getProduct()
+    + getQuantity()
+}
+
+class Order {
+    - String orderId
+    - List<OrderItem> items
+    - String status
+    + addItem(OrderItem item)
+    + getOrderId()
+    + getStatus()
+}
+
+Order *-- OrderItem
+
+class InventoryService {
+    - Map<String, Integer> productStock
+    - List<ElectronicProduct> products
+    + addProduct(ElectronicProduct product, int quantity)
+    + updateStock(String productId, int quantityChange)
+    + getProducts()
+    + getStock(String productId)
+}
+
+class OrderService {
+    - Map<String, Order> orders
+    - List<Order> orderList
+    + addOrder(Order order)
+    + getOrder(String orderId)
+    + cancelOrder(String orderId)
+}
+
+InventoryService ..> ElectronicProduct
+OrderService ..> Order
+
+@enduml

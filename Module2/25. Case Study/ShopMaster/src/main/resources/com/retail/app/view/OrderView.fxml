@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.retail.app.controller.OrderController"
+            prefWidth="800" prefHeight="600"
+            style="-fx-background-color:linear-gradient(to bottom,#f8fafc,#e2e8f0);">
+    <center>
+        <VBox spacing="18" alignment="CENTER"
+              style="-fx-background-radius:16; -fx-padding:24; -fx-background-color:white; -fx-effect:dropshadow(gaussian,rgba(0,0,0,0.08),16,0,0,4);">
+            <Label text="Order Management"
+                   style="-fx-font-size:26px; -fx-font-weight:bold; -fx-text-fill:#2d3748; -fx-padding:0 0 12 0;"/>
+            <TableView fx:id="orderTable" prefWidth="700" VBox.vgrow="ALWAYS"
+                       style="-fx-background-radius:10; -fx-background-color:#f1f5f9; -fx-border-radius:10; -fx-border-color:#cbd5e1;">
+                <columns>
+                    <TableColumn fx:id="orderIdColumn" text="Order ID" prefWidth="120"
+                                 style="-fx-font-size:15px; -fx-alignment:CENTER;"
+                                 resizable="false"/>
+                    <TableColumn fx:id="customerColumn" text="Customer Name" prefWidth="200"
+                                 style="-fx-font-size:15px; -fx-alignment:CENTER;"
+                                 resizable="false"/>
+                    <TableColumn fx:id="totalColumn" text="Total Amount" prefWidth="150"
+                                 style="-fx-font-size:15px; -fx-alignment:CENTER;"
+                                 resizable="false"/>
+                    <TableColumn fx:id="dateColumn" text="Order Date" prefWidth="180"
+                                 style="-fx-font-size:15px; -fx-alignment:CENTER;"
+                                 resizable="false"/>
+                    <TableColumn fx:id="statusColumn" text="Status" prefWidth="100"
+                                 style="-fx-font-size:15px; -fx-alignment:CENTER;"
+                                 resizable="false"/>
+                </columns>
+            </TableView>
+            <HBox spacing="16" alignment="CENTER" style="-fx-padding:18 0 0 0;">
+                <Button text="Add Order" onAction="#handleAddOrder" prefWidth="120"
+                        style="-fx-background-color:#2563eb; -fx-text-fill:white; -fx-font-weight:bold; -fx-background-radius:8;"/>
+                <Button text="Edit Order" onAction="#handleEditOrder" prefWidth="120"
+                        style="-fx-background-color:#0ea5e9; -fx-text-fill:white; -fx-font-weight:bold; -fx-background-radius:8;"/>
+                <Button text="Delete Order" onAction="#handleDeleteOrder" prefWidth="120"
+                        style="-fx-background-color:#ef4444; -fx-text-fill:white; -fx-font-weight:bold; -fx-background-radius:8;"/>
+                <Button text="Payment" onAction="#handlePayment" prefWidth="120"
+                        style="-fx-background-color:#22c55e; -fx-text-fill:white; -fx-font-weight:bold; -fx-background-radius:8;"/>
+                <Button text="Back" onAction="#handleBack" prefWidth="120"
+                        style="-fx-background-color:#64748b; -fx-text-fill:white; -fx-font-weight:bold; -fx-background-radius:8;"/>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

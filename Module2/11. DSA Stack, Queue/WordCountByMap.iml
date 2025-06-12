@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="WordCountByMap" external.linked.project.path="$MODULE_DIR$/WordCountByMap" external.root.project.path="$MODULE_DIR$/WordCountByMap" external.system.id="GRADLE" external.system.module.group="org.example" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/WordCountByMap">
+      <sourceFolder url="file://$MODULE_DIR$/WordCountByMap" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/WordCountByMap/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/WordCountByMap/build" />
+    </content>
+    <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

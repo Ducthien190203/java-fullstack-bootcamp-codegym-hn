@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.retail.app.controller.ProductFormController"
+          hgap="10" vgap="10" alignment="CENTER"
+          style="-fx-background-color:white; -fx-background-radius:12; -fx-padding:24; -fx-effect:dropshadow(gaussian,rgba(0,0,0,0.08),12,0,0,2);">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Product ID:" GridPane.rowIndex="0" GridPane.columnIndex="0" style="-fx-font-weight:bold;"/>
+    <TextField fx:id="productIdField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+    <Label text="Product Name:" GridPane.rowIndex="1" GridPane.columnIndex="0" style="-fx-font-weight:bold;"/>
+    <TextField fx:id="nameField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+    <Label text="Price:" GridPane.rowIndex="2" GridPane.columnIndex="0" style="-fx-font-weight:bold;"/>
+    <TextField fx:id="priceField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+    <Label text="Stock Quantity:" GridPane.rowIndex="3" GridPane.columnIndex="0" style="-fx-font-weight:bold;"/>
+    <TextField fx:id="stockField" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+    <Button text="Save" onAction="#handleConfirm" GridPane.rowIndex="4" GridPane.columnIndex="0"
+            style="-fx-background-color:#22c55e; -fx-text-fill:white; -fx-font-weight:bold; -fx-background-radius:8;"/>
+    <Button text="Cancel" onAction="#handleCancel" GridPane.rowIndex="4" GridPane.columnIndex="1"
+            style="-fx-background-color:#64748b; -fx-text-fill:white; -fx-font-weight:bold; -fx-background-radius:8;"/>
+</GridPane>

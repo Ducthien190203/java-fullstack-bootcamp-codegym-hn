@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ClassAnimalInterfaceEdible/ClassAnimalInterfaceEdible.iml" filepath="$PROJECT_DIR$/ClassAnimalInterfaceEdible/ClassAnimalInterfaceEdible.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ClassCircleClassCylinder/ClassCircleClassCylinder.iml" filepath="$PROJECT_DIR$/ClassCircleClassCylinder/ClassCircleClassCylinder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ComparableInterfaceForGeometric/ComparableInterfaceForGeometric.iml" filepath="$PROJECT_DIR$/ComparableInterfaceForGeometric/ComparableInterfaceForGeometric.iml" />
+      <module fileurl="file://$PROJECT_DIR$/convert-temperature/convert-temperature.iml" filepath="$PROJECT_DIR$/convert-temperature/convert-temperature.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simple-calculator/simple-calculator.iml" filepath="$PROJECT_DIR$/simple-calculator/simple-calculator.iml" />
+    </modules>
+  </component>
+</project>

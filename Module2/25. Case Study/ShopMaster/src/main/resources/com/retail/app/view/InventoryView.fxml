@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.retail.app.controller.InventoryController"
+            prefWidth="800" prefHeight="600"
+            style="-fx-background-color:linear-gradient(to bottom,#f8fafc,#e2e8f0);">
+    <center>
+        <VBox spacing="18" alignment="CENTER"
+              style="-fx-background-radius:16; -fx-padding:24; -fx-background-color:white; -fx-effect:dropshadow(gaussian,rgba(0,0,0,0.08),16,0,0,4);">
+            <Label text="Inventory Management"
+                   style="-fx-font-size:26px; -fx-font-weight:bold; -fx-text-fill:#2d3748; -fx-padding:0 0 12 0;"/>
+            <TableView fx:id="productTable" prefWidth="700" VBox.vgrow="ALWAYS"
+                       style="-fx-background-radius:10; -fx-background-color:#f1f5f9; -fx-border-radius:10; -fx-border-color:#cbd5e1;">
+                <columns>
+                    <TableColumn fx:id="productIdColumn" text="Product ID" prefWidth="120"
+                                 style="-fx-font-size:15px; -fx-alignment:CENTER;" resizable="false"/>
+                    <TableColumn fx:id="nameColumn" text="Product Name" prefWidth="200"
+                                 style="-fx-font-size:15px; -fx-alignment:CENTER;" resizable="false"/>
+                    <TableColumn fx:id="priceColumn" text="Price" prefWidth="150"
+                                 style="-fx-font-size:15px; -fx-alignment:CENTER;" resizable="false"/>
+                    <TableColumn fx:id="stockColumn" text="Stock Quantity" prefWidth="180"
+                                 style="-fx-font-size:15px; -fx-alignment:CENTER;" resizable="false"/>
+                </columns>
+            </TableView>
+            <HBox spacing="16" alignment="CENTER" style="-fx-padding:18 0 0 0;">
+                <Button text="Add Product" onAction="#handleAddProduct" prefWidth="120"
+                        style="-fx-background-color:#2563eb; -fx-text-fill:white; -fx-font-weight:bold; -fx-background-radius:8;"/>
+                <Button text="Edit Product" onAction="#handleEditProduct" prefWidth="120"
+                        style="-fx-background-color:#0ea5e9; -fx-text-fill:white; -fx-font-weight:bold; -fx-background-radius:8;"/>
+                <Button text="Delete Product" onAction="#handleDeleteProduct" prefWidth="120"
+                        style="-fx-background-color:#ef4444; -fx-text-fill:white; -fx-font-weight:bold; -fx-background-radius:8;"/>
+                <Button text="Export Report" onAction="#handleExportReport" prefWidth="120"
+                        style="-fx-background-color:#22c55e; -fx-text-fill:white; -fx-font-weight:bold; -fx-background-radius:8;"/>
+                <Button text="Back" onAction="#handleBack" prefWidth="120"
+                        style="-fx-background-color:#64748b; -fx-text-fill:white; -fx-font-weight:bold; -fx-background-radius:8;"/>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

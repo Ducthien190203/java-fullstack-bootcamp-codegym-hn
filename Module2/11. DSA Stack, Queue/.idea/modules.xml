@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/11. DSA Stack, Queue.iml" filepath="$PROJECT_DIR$/.idea/11. DSA Stack, Queue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MapPractice.main.iml" filepath="$PROJECT_DIR$/.idea/modules/MapPractice.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MapPractice.test.iml" filepath="$PROJECT_DIR$/.idea/modules/MapPractice.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QueuePractice.iml" filepath="$PROJECT_DIR$/QueuePractice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/QueuePractice.main.iml" filepath="$PROJECT_DIR$/.idea/modules/QueuePractice.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/QueuePractice.test.iml" filepath="$PROJECT_DIR$/.idea/modules/QueuePractice.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ReverseIntegerArrayByStack.iml" filepath="$PROJECT_DIR$/ReverseIntegerArrayByStack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ReverseIntegerArrayByStack.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ReverseIntegerArrayByStack.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ReverseIntegerArrayByStack.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ReverseIntegerArrayByStack.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WordCountByMap.iml" filepath="$PROJECT_DIR$/WordCountByMap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/WordCountByMap.main.iml" filepath="$PROJECT_DIR$/.idea/modules/WordCountByMap.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/WordCountByMap.test.iml" filepath="$PROJECT_DIR$/.idea/modules/WordCountByMap.test.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="MapPractice" target="1.8" />
+      <module name="MapPractice.main" target="1.8" />
+      <module name="MapPractice.test" target="1.8" />
+      <module name="QueuePractice" target="1.8" />
+      <module name="QueuePractice.main" target="1.8" />
+      <module name="QueuePractice.test" target="1.8" />
+      <module name="ReverseIntegerArrayByStack" target="1.8" />
+      <module name="ReverseIntegerArrayByStack.main" target="1.8" />
+      <module name="ReverseIntegerArrayByStack.test" target="1.8" />
+      <module name="WordCountByMap" target="1.8" />
+      <module name="WordCountByMap.main" target="1.8" />
+      <module name="WordCountByMap.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

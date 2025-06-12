@@ -10,7 +10,6 @@ public class Tiger extends Animal implements Edible {
 
 	@Override
 	public String howToEat() {
-		// TODO Auto-generated method stub
 		return "Boild it";
 	}
 

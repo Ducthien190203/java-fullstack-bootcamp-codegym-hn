@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.retail.app.controller.MainMenuController"
+           style="-fx-background-color:linear-gradient(to bottom right, #2563eb, #0ea5e9 80%, #f8fafc);">
+    <VBox alignment="CENTER" spacing="36" prefWidth="800" prefHeight="600"
+          style="-fx-background-color:rgba(255,255,255,0.95); -fx-background-radius:24; -fx-padding:48 64 48 64; -fx-effect:dropshadow(gaussian,rgba(0,0,0,0.10),32,0,0,8);">
+        <Label text="Shop Master"
+               style="-fx-font-size:48px; -fx-font-weight:bold; -fx-text-fill:#2563eb; -fx-padding:0 0 16 0; -fx-effect:dropshadow(gaussian,#0ea5e9,8,0,0,2);"/>
+        <Label text="Welcome! Please choose a management area."
+               style="-fx-font-size:20px; -fx-text-fill:#64748b; -fx-padding:0 0 24 0;"/>
+        <Button text="📦 Manage Inventory" onAction="#handleManageInventory" prefWidth="260" prefHeight="54"
+                style="-fx-background-color:#2563eb; -fx-text-fill:white; -fx-font-size:20px; -fx-font-weight:bold; -fx-background-radius:14; -fx-effect:dropshadow(gaussian,#2563eb,8,0,0,2);"/>
+        <Button text="🛒 Manage Orders" onAction="#handleManageOrders" prefWidth="260" prefHeight="54"
+                style="-fx-background-color:#0ea5e9; -fx-text-fill:white; -fx-font-size:20px; -fx-font-weight:bold; -fx-background-radius:14; -fx-effect:dropshadow(gaussian,#0ea5e9,8,0,0,2);"/>
+    </VBox>
+</StackPane>

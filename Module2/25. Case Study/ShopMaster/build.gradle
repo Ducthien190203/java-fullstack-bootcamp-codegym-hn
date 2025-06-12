@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    // Để Gradle tìm các thư viện cần thiết từ Maven Central
+    mavenCentral()
+}
+
+dependencies {
+    // Dependency cho SQLite JDBC
+    implementation 'org.xerial:sqlite-jdbc:3.36.0.3'
+
+    // Dependency cho unit test với JUnit 4 (vì Java 8 thường dùng JUnit 4)
+    testImplementation 'junit:junit:4.13.2'
+}
+
+application {
+    // Cấu hình lớp chính của ứng dụng
+    mainClass = 'com.retail.app.MainApp'
+}
+
+java {
+    // Cấu hình source và target compatibility cho Java 8
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}

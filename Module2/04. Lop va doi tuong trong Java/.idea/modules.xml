@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/04. Lớp và đối tượng trong Java.iml" filepath="$PROJECT_DIR$/.idea/04. Lớp và đối tượng trong Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CreateFanClass.iml" filepath="$PROJECT_DIR$/CreateFanClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CreateFanClass.main.iml" filepath="$PROJECT_DIR$/.idea/modules/CreateFanClass.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CreateFanClass.test.iml" filepath="$PROJECT_DIR$/.idea/modules/CreateFanClass.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CreateQuadraticEquation.iml" filepath="$PROJECT_DIR$/CreateQuadraticEquation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CreateQuadraticEquation.main.iml" filepath="$PROJECT_DIR$/.idea/modules/CreateQuadraticEquation.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CreateQuadraticEquation.test.iml" filepath="$PROJECT_DIR$/.idea/modules/CreateQuadraticEquation.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CreateRectangleClass.iml" filepath="$PROJECT_DIR$/CreateRectangleClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CreateRectangleClass.main.iml" filepath="$PROJECT_DIR$/.idea/modules/CreateRectangleClass.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CreateRectangleClass.test.iml" filepath="$PROJECT_DIR$/.idea/modules/CreateRectangleClass.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CreateStopWatchClass.iml" filepath="$PROJECT_DIR$/CreateStopWatchClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CreateStopWatchClass.main.iml" filepath="$PROJECT_DIR$/.idea/modules/CreateStopWatchClass.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/CreateStopWatchClass.test.iml" filepath="$PROJECT_DIR$/.idea/modules/CreateStopWatchClass.test.iml" />
+    </modules>
+  </component>
+</project>

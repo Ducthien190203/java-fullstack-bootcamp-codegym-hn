@@ -1,0 +1,22 @@
+Order ID: 1, Customer: Tao, Total: 1.0, Date: 12/12/2012, Payment Method: Transfer
+Order ID: A001, Customer: sdfgsdfgw, Phone: 12341, Total: 6500.0, Order Date: 10/06/2025 22:13:34, Status: Pending, Payment: Transfer
+Order ID: A001, Customer: sdfgsdfgw, Phone: 12341, Total: 6500.0, Order Date: 10/06/2025 22:13:34, Status: Completed, Payment: Cash
+Order ID: A001, Customer: sdfgsdfgw, Phone: 12341, Total: 6500.0, Order Date: 10/06/2025 22:13:34, Status: Completed, Payment: Cash
+Order ID: A004, Customer: , Phone: , Total: 0.0, Order Date: 10/06/2025 22:07:00, Status: Pending, Payment: Cash
+Order ID: A004, Customer: , Phone: , Total: 0.0, Order Date: 10/06/2025 22:07:00, Status: Completed, Payment: Transfer
+Order ID: A003, Customer: , Phone: , Total: 0.0, Order Date: 10/06/2025 22:06:14, Status: Pending, Payment: Cash
+Order ID: A003, Customer: , Phone: , Total: 0.0, Order Date: 10/06/2025 22:06:14, Status: Completed, Payment: Transfer
+Order ID: A003, Customer: , Phone: , Total: 0.0, Order Date: 10/06/2025 22:06:14, Status: Completed, Payment: Cash
+Order ID: A001, Customer: tuiensij, Phone: 5432`, Total: 3500.0, Order Date: 10/06/2025 22:38:51, Status: Pending, Payment Method: Cash
+Order ID: A002, Customer: nhi, Phone: 543, Total: 60000.0, Order Date: 11/06/2025 02:48:51, Status: Paid, Payment Method: Card
+Order ID: A001, Customer: a Thiện, Phone: 09432154234, Total: 40000.0, Order Date: 11/06/2025 08:15:47, Status: Paid, Payment Method: Cash
+Order ID: A002, Customer: duc, Phone: 07895432, Total: 2490000.0, Order Date: 11/06/2025 09:06:48, Status: Paid, Payment Method: E-wallet
+Order ID: A003, Customer: nịkml, Phone: 46576879, Total: 40000.0, Order Date: 11/06/2025 09:21:25, Status: Paid, Payment Method: E-wallet
+Order ID: A004, Customer: cc, Phone: 542353245, Total: 140000.0, Order Date: 11/06/2025 09:26:56, Status: Paid, Payment Method: Card
+Order ID: A005, Customer: ádfqwefq, Phone: 41324, Total: 98000.0, Order Date: 11/06/2025 10:42:05, Status: Paid, Payment Method: Cash
+Order ID: A006, Customer: frege, Phone: 1234132, Total: 25000.0, Order Date: 11/06/2025 11:15:47, Status: Paid, Payment Method: Cash
+Order ID: A007, Customer: truong duc thien, Phone: 452798, Total: 55000.0, Order Date: 11/06/2025 11:22:33, Status: Paid, Payment Method: Card
+Order ID: A008, Customer: fewrfqwef, Phone: 3214314, Total: 120000.0, Order Date: 11/06/2025 11:24:59, Status: Paid, Payment Method: E-wallet
+Order ID: A010, Customer: gewrgerwg, Phone: 5432523, Total: 168000.0, Order Date: 11/06/2025 14:32:13, Status: Paid, Payment Method: E-wallet
+Order ID: A015, Customer: ẻwtrwet, Phone: , Total: 487000.0, Order Date: 11/06/2025 15:37:29, Status: Paid, Payment Method: Cash
+Order ID: A012, Customer: gfsdfg, Phone: , Total: 33000.0, Order Date: 11/06/2025 14:41:28, Status: Paid, Payment Method: E-wallet

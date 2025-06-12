@@ -1,21 +1,11 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class AbsoluteNumberCalculatorTest {
-
-	@BeforeEach
-	void setUp() throws Exception {
-	}
-
-	@AfterEach
-	void tearDown() throws Exception {
-	}
+public class AbsoluteNumberCalculatorTest {
 
 	@Test
-	void testFindAbsolute() {
+	void testFindAbsoluteZero() {
 		int number = 0;
 		int expected = 0;
 
@@ -24,21 +14,20 @@ class AbsoluteNumberCalculatorTest {
 	}
 
 	@Test
-	void testFindAbsolute1() {
-		int number = 1;
-		int expected = 1;
+	void testFindAbsolutePositive() {
+		int number = 5;
+		int expected = 5;
 
 		int result = AbsoluteNumberCalculator.findAbsolute(number);
 		assertEquals(expected, result);
 	}
 
 	@Test
-	void testFindAbsoluteNegative1() {
-		int number = -1;
-		int expected = 1;
+	void testFindAbsoluteNegative() {
+		int number = -7;
+		int expected = 7;
 
 		int result = AbsoluteNumberCalculator.findAbsolute(number);
 		assertEquals(expected, result);
 	}
-
 }

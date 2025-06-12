@@ -1,0 +1,9 @@
+@startuml
+[*] --> Created
+Created --> Processing : Được xử lý
+Processing --> Shipped : Đã giao hàng
+Processing --> Cancelled : Bị hủy
+Shipped --> Completed : Hoàn tất
+Cancelled --> [*]
+Completed --> [*]
+@enduml

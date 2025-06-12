@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/03. Mang va phuong thuc trong Java.iml" filepath="$PROJECT_DIR$/.idea/03. Mang va phuong thuc trong Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AddElementToArray.iml" filepath="$PROJECT_DIR$/AddElementToArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AddElementToArray.main.iml" filepath="$PROJECT_DIR$/.idea/modules/AddElementToArray.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AddElementToArray.test.iml" filepath="$PROJECT_DIR$/.idea/modules/AddElementToArray.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DeleteElementInArray.iml" filepath="$PROJECT_DIR$/DeleteElementInArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DeleteElementInArray.main.iml" filepath="$PROJECT_DIR$/.idea/modules/DeleteElementInArray.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DeleteElementInArray.test.iml" filepath="$PROJECT_DIR$/.idea/modules/DeleteElementInArray.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Demo.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Demo.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Demo.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Demo.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FindMaxElement.iml" filepath="$PROJECT_DIR$/FindMaxElement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FindMaxElement.main.iml" filepath="$PROJECT_DIR$/.idea/modules/FindMaxElement.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FindMaxElement.test.iml" filepath="$PROJECT_DIR$/.idea/modules/FindMaxElement.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MergeArray.iml" filepath="$PROJECT_DIR$/MergeArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MergeArray.main.iml" filepath="$PROJECT_DIR$/.idea/modules/MergeArray.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MergeArray.test.iml" filepath="$PROJECT_DIR$/.idea/modules/MergeArray.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ReverseArray.iml" filepath="$PROJECT_DIR$/ReverseArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ReverseArray.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ReverseArray.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ReverseArray.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ReverseArray.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/StudentArray.iml" filepath="$PROJECT_DIR$/StudentArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/StudentArray.main.iml" filepath="$PROJECT_DIR$/.idea/modules/StudentArray.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/StudentArray.test.iml" filepath="$PROJECT_DIR$/.idea/modules/StudentArray.test.iml" />
+    </modules>
+  </component>
+</project>

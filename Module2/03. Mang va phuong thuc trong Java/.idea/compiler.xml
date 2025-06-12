@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="AddElementToArray" target="1.8" />
+      <module name="AddElementToArray.main" target="1.8" />
+      <module name="AddElementToArray.test" target="1.8" />
+      <module name="DeleteElementInArray" target="1.8" />
+      <module name="DeleteElementInArray.main" target="1.8" />
+      <module name="DeleteElementInArray.test" target="1.8" />
+      <module name="Demo" target="1.8" />
+      <module name="Demo.main" target="1.8" />
+      <module name="Demo.test" target="1.8" />
+      <module name="FindMaxElement" target="1.8" />
+      <module name="FindMaxElement.main" target="1.8" />
+      <module name="FindMaxElement.test" target="1.8" />
+      <module name="MergeArray" target="1.8" />
+      <module name="MergeArray.main" target="1.8" />
+      <module name="MergeArray.test" target="1.8" />
+      <module name="ReverseArray" target="1.8" />
+      <module name="ReverseArray.main" target="1.8" />
+      <module name="ReverseArray.test" target="1.8" />
+      <module name="StudentArray" target="1.8" />
+      <module name="StudentArray.main" target="1.8" />
+      <module name="StudentArray.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

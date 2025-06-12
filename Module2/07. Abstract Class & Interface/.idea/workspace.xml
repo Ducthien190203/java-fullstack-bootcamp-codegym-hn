@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="85110f1e-efd3-456a-aad7-1a34ff7f51cf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/11. DSA Stack, Queue.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_5_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_params_5_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/libraries/Gradle__org_opentest4j_opentest4j_1_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/modules/ReverseIntegerArrayByStack.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/modules/ReverseIntegerArrayByStack.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/ReverseIntegerArrayByStack.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/ReverseIntegerArrayByStack/src/main/java/another/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/ReverseIntegerArrayByStack/src/main/java/another/ReverseArrayUsingStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/ReverseIntegerArrayByStack/src/main/java/another2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/ReverseIntegerArrayByStack/src/main/java/another2/ReverseArrayUsingStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06. Kế thừa/ClassCircleClassCylinder/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06. Kế thừa/ClassCircleClassCylinder/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06. Kế thừa/ClassCircleClassCylinder/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06. Kế thừa/ClassCircleClassCylinder/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06. Kế thừa/ClassCircleClassCylinder/bin/app/CircleTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06. Kế thừa/ClassCircleClassCylinder/bin/app/CylinderTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06. Kế thừa/ClassCircleClassCylinder/bin/shape/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06. Kế thừa/ClassCircleClassCylinder/bin/shape/Cylinder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06. Kế thừa/ClassCircleClassCylinder/src/main/java/app/CircleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06. Kế thừa/ClassCircleClassCylinder/src/main/java/app/CylinderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06. Kế thừa/ClassCircleClassCylinder/src/main/java/shape/Circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06. Kế thừa/ClassCircleClassCylinder/src/main/java/shape/Cylinder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassAnimalInterfaceEdible/bin/animal/Animal.class" beforeDir="false" afterPath="$PROJECT_DIR$/ClassAnimalInterfaceEdible/bin/animal/Animal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassAnimalInterfaceEdible/bin/animal/Chicken.class" beforeDir="false" afterPath="$PROJECT_DIR$/ClassAnimalInterfaceEdible/bin/animal/Chicken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassAnimalInterfaceEdible/bin/animal/Tiger.class" beforeDir="false" afterPath="$PROJECT_DIR$/ClassAnimalInterfaceEdible/bin/animal/Tiger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassAnimalInterfaceEdible/bin/behavior/Edible.class" beforeDir="false" afterPath="$PROJECT_DIR$/ClassAnimalInterfaceEdible/bin/behavior/Edible.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassAnimalInterfaceEdible/bin/fruit/Fruit.class" beforeDir="false" afterPath="$PROJECT_DIR$/ClassAnimalInterfaceEdible/bin/fruit/Fruit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassAnimalInterfaceEdible/bin/fruit/Orange.class" beforeDir="false" afterPath="$PROJECT_DIR$/ClassAnimalInterfaceEdible/bin/fruit/Orange.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassAnimalInterfaceEdible/bin/test/TestAnimal.class" beforeDir="false" afterPath="$PROJECT_DIR$/ClassAnimalInterfaceEdible/bin/test/TestAnimal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassAnimalInterfaceEdible/bin/test/TestFruit.class" beforeDir="false" afterPath="$PROJECT_DIR$/ClassAnimalInterfaceEdible/bin/test/TestFruit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassAnimalInterfaceEdible/src/animal/Chicken.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClassAnimalInterfaceEdible/src/animal/Chicken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassAnimalInterfaceEdible/src/animal/Tiger.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClassAnimalInterfaceEdible/src/animal/Tiger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassAnimalInterfaceEdible/src/fruit/Fruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClassAnimalInterfaceEdible/src/fruit/Fruit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassAnimalInterfaceEdible/src/fruit/Orange.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClassAnimalInterfaceEdible/src/fruit/Orange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClassCircleClassCylinder/src/main/java/shape/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/ClassCircleClassCylinder/src/main/java/shape/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ComparableInterfaceForGeometric/src/main/java/geometry/ComparableCircle.java" beforeDir="false" afterPath="$PROJECT_DIR$/ComparableInterfaceForGeometric/src/main/java/geometry/ComparableCircle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ComparableInterfaceForGeometric/src/main/java/geometry/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/ComparableInterfaceForGeometric/src/main/java/geometry/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ComparableInterfaceForGeometric/src/main/java/geometry/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/ComparableInterfaceForGeometric/src/main/java/geometry/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/convert-temperature/bin/ConvertTemperature.class" beforeDir="false" afterPath="$PROJECT_DIR$/convert-temperature/bin/ConvertTemperature.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/convert-temperature/src/ConvertTemperature.java" beforeDir="false" afterPath="$PROJECT_DIR$/convert-temperature/src/ConvertTemperature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10. DSA Danh sách/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10. DSA Danh sách/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../10. DSA Danh sách/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../10. DSA Danh sách/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Ducthien190203"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Ducthien190203/java-fullstack-bootcamp-codegym-hn.git",
+    "accountId": "df20d851-e3ab-47ae-9d83-9148fb3da95e"
+  }
+}]]></component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2yFbwFZ5zKMpKL0h4FvtRqpyJwY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CircleTest.executor": "Debug",
+    "Application.ComparableCircleTest.executor": "Debug",
+    "Application.ConvertTemperature.executor": "Debug",
+    "Application.CylinderTest.executor": "Debug",
+    "Application.RectangleTest.executor": "Debug",
+    "Application.ShapeTest.executor": "Debug",
+    "Application.SquareTest.executor": "Debug",
+    "Application.TestAnimal.executor": "Debug",
+    "Application.TestFruit.executor": "Debug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "actions.on.save"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="85110f1e-efd3-456a-aad7-1a34ff7f51cf" name="Changes" comment="" />
+      <created>1749433510419</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1749433510419</updated>
+      <workItem from="1749433511617" duration="3319000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

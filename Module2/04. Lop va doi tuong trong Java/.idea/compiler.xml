@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="CreateFanClass" target="1.8" />
+      <module name="CreateFanClass.main" target="1.8" />
+      <module name="CreateFanClass.test" target="1.8" />
+      <module name="CreateQuadraticEquation" target="1.8" />
+      <module name="CreateQuadraticEquation.main" target="1.8" />
+      <module name="CreateQuadraticEquation.test" target="1.8" />
+      <module name="CreateRectangleClass" target="1.8" />
+      <module name="CreateRectangleClass.main" target="1.8" />
+      <module name="CreateRectangleClass.test" target="1.8" />
+      <module name="CreateStopWatchClass" target="1.8" />
+      <module name="CreateStopWatchClass.main" target="1.8" />
+      <module name="CreateStopWatchClass.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

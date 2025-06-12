@@ -5,30 +5,86 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="434bee15-77d2-4ea7-9a4e-3dcc84ef4d23" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/10. DSA Danh sách.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_5_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_params_5_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_opentest4j_opentest4j_1_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/ArrayList.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/ArrayList.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/LinkedList.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/LinkedList.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArrayList.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArrayList/src/main/java/MyList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkedList.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkedList/src/main/java/MyLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LinkedList/src/main/java/MyLinkedListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/11. DSA Stack, Queue.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/libraries/Gradle__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_5_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_api_5_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_engine_5_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/libraries/Gradle__org_junit_jupiter_junit_jupiter_params_5_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/libraries/Gradle__org_junit_platform_junit_platform_commons_1_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/libraries/Gradle__org_junit_platform_junit_platform_engine_1_10_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/libraries/Gradle__org_opentest4j_opentest4j_1_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/modules/ReverseIntegerArrayByStack.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/modules/ReverseIntegerArrayByStack.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/ReverseIntegerArrayByStack.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/ReverseIntegerArrayByStack/src/main/java/another/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/ReverseIntegerArrayByStack/src/main/java/another/ReverseArrayUsingStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/ReverseIntegerArrayByStack/src/main/java/another2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../11. DSA Stack, Queue/ReverseIntegerArrayByStack/src/main/java/another2/ReverseArrayUsingStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06. Kế thừa/ClassCircleClassCylinder/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06. Kế thừa/ClassCircleClassCylinder/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06. Kế thừa/ClassCircleClassCylinder/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06. Kế thừa/ClassCircleClassCylinder/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06. Kế thừa/ClassCircleClassCylinder/bin/app/CircleTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06. Kế thừa/ClassCircleClassCylinder/bin/app/CylinderTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06. Kế thừa/ClassCircleClassCylinder/bin/shape/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06. Kế thừa/ClassCircleClassCylinder/bin/shape/Cylinder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06. Kế thừa/ClassCircleClassCylinder/src/main/java/app/CircleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06. Kế thừa/ClassCircleClassCylinder/src/main/java/app/CylinderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06. Kế thừa/ClassCircleClassCylinder/src/main/java/shape/Circle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../06. Kế thừa/ClassCircleClassCylinder/src/main/java/shape/Cylinder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassAnimalInterfaceEdible/bin/animal/Animal.class" beforeDir="false" afterPath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassAnimalInterfaceEdible/bin/animal/Animal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassAnimalInterfaceEdible/bin/animal/Chicken.class" beforeDir="false" afterPath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassAnimalInterfaceEdible/bin/animal/Chicken.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassAnimalInterfaceEdible/bin/animal/Tiger.class" beforeDir="false" afterPath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassAnimalInterfaceEdible/bin/animal/Tiger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassAnimalInterfaceEdible/bin/behavior/Edible.class" beforeDir="false" afterPath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassAnimalInterfaceEdible/bin/behavior/Edible.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassAnimalInterfaceEdible/bin/fruit/Fruit.class" beforeDir="false" afterPath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassAnimalInterfaceEdible/bin/fruit/Fruit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassAnimalInterfaceEdible/bin/fruit/Orange.class" beforeDir="false" afterPath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassAnimalInterfaceEdible/bin/fruit/Orange.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassAnimalInterfaceEdible/bin/test/TestAnimal.class" beforeDir="false" afterPath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassAnimalInterfaceEdible/bin/test/TestAnimal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassAnimalInterfaceEdible/bin/test/TestFruit.class" beforeDir="false" afterPath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassAnimalInterfaceEdible/bin/test/TestFruit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassAnimalInterfaceEdible/src/animal/Chicken.java" beforeDir="false" afterPath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassAnimalInterfaceEdible/src/animal/Chicken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassAnimalInterfaceEdible/src/animal/Tiger.java" beforeDir="false" afterPath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassAnimalInterfaceEdible/src/animal/Tiger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassAnimalInterfaceEdible/src/fruit/Fruit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassAnimalInterfaceEdible/src/fruit/Fruit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassAnimalInterfaceEdible/src/fruit/Orange.java" beforeDir="false" afterPath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassAnimalInterfaceEdible/src/fruit/Orange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassCircleClassCylinder/bin/app/CircleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassCircleClassCylinder/bin/app/CircleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassCircleClassCylinder/bin/app/CylinderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassCircleClassCylinder/bin/app/CylinderTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassCircleClassCylinder/bin/shape/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassCircleClassCylinder/bin/shape/Circle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassCircleClassCylinder/bin/shape/Cylinder.class" beforeDir="false" afterPath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassCircleClassCylinder/bin/shape/Cylinder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassCircleClassCylinder/src/main/java/shape/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ClassCircleClassCylinder/src/main/java/shape/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ComparableInterfaceForGeometric/bin/app/CircleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ComparableInterfaceForGeometric/bin/app/CircleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ComparableInterfaceForGeometric/bin/app/ComparableCircleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ComparableInterfaceForGeometric/bin/app/ComparableCircleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ComparableInterfaceForGeometric/bin/app/RectangleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ComparableInterfaceForGeometric/bin/app/RectangleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ComparableInterfaceForGeometric/bin/app/ShapeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ComparableInterfaceForGeometric/bin/app/ShapeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ComparableInterfaceForGeometric/bin/app/SquareTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ComparableInterfaceForGeometric/bin/app/SquareTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ComparableInterfaceForGeometric/bin/geometry/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ComparableInterfaceForGeometric/bin/geometry/Circle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ComparableInterfaceForGeometric/bin/geometry/ComparableCircle.class" beforeDir="false" afterPath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ComparableInterfaceForGeometric/bin/geometry/ComparableCircle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ComparableInterfaceForGeometric/bin/geometry/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ComparableInterfaceForGeometric/bin/geometry/Rectangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ComparableInterfaceForGeometric/bin/geometry/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ComparableInterfaceForGeometric/bin/geometry/Shape.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ComparableInterfaceForGeometric/bin/geometry/Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ComparableInterfaceForGeometric/bin/geometry/Square.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ComparableInterfaceForGeometric/src/main/java/geometry/ComparableCircle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ComparableInterfaceForGeometric/src/main/java/geometry/ComparableCircle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ComparableInterfaceForGeometric/src/main/java/geometry/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ComparableInterfaceForGeometric/src/main/java/geometry/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ComparableInterfaceForGeometric/src/main/java/geometry/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/ComparableInterfaceForGeometric/src/main/java/geometry/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/convert-temperature/bin/ConvertTemperature.class" beforeDir="false" afterPath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/convert-temperature/bin/ConvertTemperature.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/convert-temperature/src/ConvertTemperature.java" beforeDir="false" afterPath="$PROJECT_DIR$/../07. Abstract Class &amp; Interface/convert-temperature/src/ConvertTemperature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09. Automated Testing &amp; TDD/absolute-number-calculator/bin/AbsoluteNumberCalculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/../09. Automated Testing &amp; TDD/absolute-number-calculator/bin/AbsoluteNumberCalculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09. Automated Testing &amp; TDD/absolute-number-calculator/bin/AbsoluteNumberCalculatorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../09. Automated Testing &amp; TDD/absolute-number-calculator/bin/AbsoluteNumberCalculatorTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09. Automated Testing &amp; TDD/absolute-number-calculator/src/main/java/AbsoluteNumberCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../09. Automated Testing &amp; TDD/absolute-number-calculator/src/main/java/AbsoluteNumberCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../09. Automated Testing &amp; TDD/absolute-number-calculator/src/test/java/AbsoluteNumberCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../09. Automated Testing &amp; TDD/absolute-number-calculator/src/test/java/AbsoluteNumberCalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArrayList/.gradle/8.13/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ArrayList/.gradle/8.13/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArrayList/.gradle/8.13/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ArrayList/.gradle/8.13/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArrayList/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ArrayList/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArrayList/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/ArrayList/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkedList/.gradle/8.13/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedList/.gradle/8.13/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkedList/.gradle/8.13/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedList/.gradle/8.13/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkedList/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedList/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkedList/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedList/.gradle/file-system.probe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,18 +126,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Ducthien190203"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Ducthien190203&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Ducthien190203/java-fullstack-bootcamp-codegym-hn.git",
-    "accountId": "df20d851-e3ab-47ae-9d83-9148fb3da95e"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Ducthien190203/java-fullstack-bootcamp-codegym-hn.git&quot;,
+    &quot;accountId&quot;: &quot;df20d851-e3ab-47ae-9d83-9148fb3da95e&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -94,7 +150,7 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.TestMyArrayList.executor": "Run",
-    "Gradle.ArrayList [:MyListTest.main()].executor": "Debug",
+    "Gradle.ArrayList [:MyListTest.main()].executor": "Run",
     "Gradle.LinkedList [:MyLinkedListTest.main()].executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -106,6 +162,9 @@
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
@@ -127,6 +186,10 @@
       <workItem from="1747879623662" duration="98000" />
       <workItem from="1747882493384" duration="116000" />
       <workItem from="1749108144666" duration="4263000" />
+      <workItem from="1749115323584" duration="100000" />
+      <workItem from="1749365299076" duration="252000" />
+      <workItem from="1749432109642" duration="29000" />
+      <workItem from="1749441696420" duration="1499000" />
     </task>
     <servers />
   </component>

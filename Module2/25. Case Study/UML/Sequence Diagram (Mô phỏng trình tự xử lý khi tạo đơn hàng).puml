@@ -1,0 +1,16 @@
+@startuml
+actor User
+participant "OrderController" as Controller
+participant "OrderService" as Service
+participant "InventoryService" as Inventory
+
+User -> Controller : Nhấn "Tạo đơn hàng"
+Controller -> Service : createOrder(orderId, items)
+Service -> Inventory : Kiểm tra tồn kho
+Inventory --> Service : Kết quả kiểm tra
+Service -> Inventory : Trừ số lượng tồn kho
+Inventory --> Service : Cập nhật tồn kho
+Service -> Controller : Trả về kết quả đơn hàng
+Controller --> User : Hiển thị xác nhận
+
+@enduml

@@ -1,0 +1,33 @@
+Inventory Report:
+=================
+
+Product ID: 01
+Product Name: Phở bò
+Price: 25000.0
+Stock Quantity: 9
+---------------------
+Product ID: 02
+Product Name: Cháo Gà
+Price: 30000.0
+Stock Quantity: 1
+---------------------
+Product ID: 03
+Product Name: Bún Chả
+Price: 33000.0
+Stock Quantity: 9
+---------------------
+Product ID: 04
+Product Name: Bánh Ngọt
+Price: 8000.0
+Stock Quantity: 10
+---------------------
+Product ID: 05
+Product Name: Coca
+Price: 10000.0
+Stock Quantity: 40
+---------------------
+Product ID: 06
+Product Name: Bia
+Price: 15000.0
+Stock Quantity: 39
+---------------------

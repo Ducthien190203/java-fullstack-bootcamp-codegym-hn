@@ -1,0 +1,37 @@
+RetailOrderInventorySystem/
+ ├── build.gradle
+ ├── settings.gradle
+ ├── gradle/
+ │    └── wrapper/
+ ├── src/
+ │    ├── main/
+ │    │    ├── java/com/retail/app/
+ │    │    │    ├── model/
+ │    │    │    │    ├── Product.java
+ │    │    │    │    ├── ElectronicProduct.java
+ │    │    │    │    ├── Order.java
+ │    │    │    │    ├── OrderItem.java
+ │    │    │    ├── service/
+ │    │    │    │    ├── InventoryService.java
+ │    │    │    │    ├── OrderService.java
+ │    │    │    ├── controller/
+ │    │    │    │    ├── MainController.java
+ │    │    │    │    ├── InventoryController.java
+ │    │    │    │    ├── OrderController.java
+ │    │    │    ├── view/
+ │    │    │    │    ├── MainMenu.fxml
+ │    │    │    │    ├── InventoryView.fxml
+ │    │    │    │    ├── OrderView.fxml
+ │    │    │    ├── util/
+ │    │    │    │    ├── FileExportUtil.java
+ │    │    └── resources/
+ │    │         ├── fxml/
+ │    │         └── application.properties
+ │    ├── test/
+ │    │    ├── java/com/retail/app/
+ │    │    │    ├── service/
+ │    │    │    │    ├── InventoryServiceTest.java
+ │    │    │    │    ├── OrderServiceTest.java
+ │    │    ├── resources/
+ └── gradlew
+ └── gradlew.bat

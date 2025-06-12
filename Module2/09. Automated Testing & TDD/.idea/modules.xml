@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.metadata/.plugins/org.eclipse.egit.core/.org.eclipse.egit.core.cmp/.org.eclipse.egit.core.cmp.iml" filepath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.egit.core/.org.eclipse.egit.core.cmp/.org.eclipse.egit.core.cmp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/9. Automated Testing &amp; TDD.iml" filepath="$PROJECT_DIR$/9. Automated Testing &amp; TDD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/absolute-number-calculator/absolute-number-calculator.iml" filepath="$PROJECT_DIR$/absolute-number-calculator/absolute-number-calculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/absolute-number-calculator1.main.iml" filepath="$PROJECT_DIR$/.idea/modules/absolute-number-calculator1.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/absolute-number-calculator1.test.iml" filepath="$PROJECT_DIR$/.idea/modules/absolute-number-calculator1.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fizzbuzz-unit-test/fizzbuzz-unit-test.iml" filepath="$PROJECT_DIR$/fizzbuzz-unit-test/fizzbuzz-unit-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/next-day-calculator/next-day-calculator.iml" filepath="$PROJECT_DIR$/next-day-calculator/next-day-calculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/triangle-classifier/triangle-classifier.iml" filepath="$PROJECT_DIR$/triangle-classifier/triangle-classifier.iml" />
+    </modules>
+  </component>
+</project>
