@@ -13,9 +13,9 @@ public class MainApp extends Application {
         Scene scene = new Scene(root, 800, 600); // Default window size
         scene.getStylesheets().add(getClass().getResource("/com/retail/app/css/style.css").toExternalForm());
 
-        primaryStage.setTitle("ShopMaster");
+        primaryStage.setTitle("Phần mềm quản lý bán hàng - ShopMaster");
         primaryStage.setScene(scene);
-        primaryStage.setResizable(false); // Allow user to resize
+        primaryStage.setResizable(true); // Allow user to resize
         // No fullscreen or maximized settings
         primaryStage.show();
     }

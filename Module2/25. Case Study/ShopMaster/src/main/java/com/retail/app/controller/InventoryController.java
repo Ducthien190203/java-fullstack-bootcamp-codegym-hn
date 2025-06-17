@@ -138,7 +138,7 @@ public class InventoryController {
                 writer.write("---------------------\n");
             }
             logger.info("Inventory report exported to inventory_report.csv");
-            showAlert(Alert.AlertType.INFORMATION, "Export Report", "Report exported successfully to inventory_report.txt");
+            showAlert(Alert.AlertType.INFORMATION, "Export Report", "Report exported successfully to inventory_report.csv");
         } catch (IOException e) {
             logger.log(Level.SEVERE, "Failed to export inventory report", e);
             showAlert(Alert.AlertType.ERROR, "Export Error", "Failed to export report!");

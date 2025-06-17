@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="Practicec:test" external.linked.project.path="$MODULE_DIR$/../../Practicec" external.root.project.path="$MODULE_DIR$/../../Practicec" external.system.id="GRADLE" external.system.module.group="com.retail.app" external.system.module.type="sourceSet" external.system.module.version="1.0" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output-test url="file://$MODULE_DIR$/../../Practicec/build/classes/java/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../Practicec/src/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../Practicec/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../Practicec/src/test/resources" type="java-test-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Practicec.main" />
+    <orderEntry type="library" name="Gradle: org.apache.commons:commons-csv:1.9.0" level="project" />
+    <orderEntry type="library" name="Gradle: ch.qos.logback:logback-classic:1.5.13" level="project" />
+    <orderEntry type="library" name="Gradle: com.opencsv:opencsv:5.7.1" level="project" />
+    <orderEntry type="library" name="Gradle: ch.qos.logback:logback-core:1.5.13" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:2.0.15" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.commons:commons-text:1.10.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.commons:commons-lang3:3.12.0" level="project" />
+    <orderEntry type="library" name="Gradle: commons-beanutils:commons-beanutils:1.9.4" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.commons:commons-collections4:4.4" level="project" />
+    <orderEntry type="library" name="Gradle: commons-logging:commons-logging:1.2" level="project" />
+    <orderEntry type="library" name="Gradle: commons-collections:commons-collections:3.2.2" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="Practicec.main" />
+</module>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/08. Clean Code &amp; Refactoring/apj-2023-calculator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/08. Clean Code &amp; Refactoring/apj-2023-fizzbuzz" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/case-study-project-management-software" vcs="Git" />
+  </component>
+</project>

@@ -13,9 +13,9 @@
                style="-fx-font-size:48px; -fx-font-weight:bold; -fx-text-fill:#2563eb; -fx-padding:0 0 16 0; -fx-effect:dropshadow(gaussian,#0ea5e9,8,0,0,2);"/>
         <Label text="Welcome! Please choose a management area."
                style="-fx-font-size:20px; -fx-text-fill:#64748b; -fx-padding:0 0 24 0;"/>
-        <Button text="Manage Inventory" onAction="#handleManageInventory" prefWidth="260" prefHeight="54"
+        <Button text="🏪Manage Inventory" onAction="#handleManageInventory" prefWidth="260" prefHeight="54"
                 style="-fx-background-color:#2563eb; -fx-text-fill:white; -fx-font-size:20px; -fx-font-weight:bold; -fx-background-radius:14; -fx-effect:dropshadow(gaussian,#2563eb,8,0,0,2);"/>
-        <Button text="Manage Orders" onAction="#handleManageOrders" prefWidth="260" prefHeight="54"
+        <Button text="🪛Manage Orders" onAction="#handleManageOrders" prefWidth="260" prefHeight="54"
                 style="-fx-background-color:#0ea5e9; -fx-text-fill:white; -fx-font-size:20px; -fx-font-weight:bold; -fx-background-radius:14; -fx-effect:dropshadow(gaussian,#0ea5e9,8,0,0,2);"/>
     </VBox>
 </StackPane>

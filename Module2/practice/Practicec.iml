@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="Practicec" external.linked.project.path="$MODULE_DIR$/Practicec" external.root.project.path="$MODULE_DIR$/Practicec" external.system.id="GRADLE" external.system.module.group="com.retail.app" external.system.module.version="1.0" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/Practicec">
+      <excludeFolder url="file://$MODULE_DIR$/Practicec/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/Practicec/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
