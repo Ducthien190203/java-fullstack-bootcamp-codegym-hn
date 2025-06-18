@@ -1,0 +1,73 @@
+@startuml
+
+'=== Các bảng thực thể ===
+entity "DV_KHACH" as DVK {
+  * MaDV : varchar
+  --
+  TenDV : varchar
+  DiaChi : varchar
+  DienThoai : varchar
+}
+
+entity "NGUOI_DAT" as ND {
+  * MaND : varchar
+  --
+  HoTenND : varchar
+}
+
+entity "NGUOI_NHAN" as NN {
+  * MaNN : varchar
+  --
+  HoTenNN : varchar
+}
+
+entity "HANG" as H {
+  * MaHang : varchar
+  --
+  TenHang : varchar
+  DonViTinh : varchar
+  MoTaHang : varchar
+}
+
+entity "NGUOI_GIAO" as NG {
+  * MaNG : varchar
+  --
+  HoTenNG : varchar
+}
+
+entity "NOI_GIAO" as N {
+  * MaDDG : varchar
+  --
+  TenNoiGiao : varchar
+}
+
+'=== Mối quan hệ Đặt ===
+entity "DAT" as D {
+  * SoDH : varchar
+  --
+  NgayDat : date
+  SoLuong : int
+}
+
+'=== Mối quan hệ Giao ===
+entity "GIAO" as G {
+  * SoPG : varchar
+  --
+  NgayGiao : date
+  SoLuong : int
+  DonGia : float
+}
+
+'=== Quan hệ giữa các thực thể ===
+DVK ||--o{ ND : "Thuộc 1"
+DVK ||--o{ NN : "Thuộc 2"
+
+ND ||--o{ D : "Đặt"
+H  ||--o{ D : "Đặt"
+
+NN ||--o{ G : "Giao"
+H  ||--o{ G : "Giao"
+NG ||--o{ G : "Giao"
+N  ||--o{ G : "Giao"
+
+@enduml
