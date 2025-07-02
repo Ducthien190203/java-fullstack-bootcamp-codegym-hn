@@ -1,0 +1,51 @@
+/* Cài đặt nền và font chữ tổng thể */
+body {
+    background-color: #fdf6e3;
+    /* font-family: Dancing Script, sans-serif; */
+    color: #333;
+    line-height: 1.8;
+    margin: 0;
+    padding: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề chương */
+h1 {
+    color: #6b3e26;
+    font-size: 2.5rem;
+    border-bottom: 2px solid #d8c3a5;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    
+}
+
+/* Đoạn giới thiệu ngắn */
+p:first-of-type {
+    font-style: italic;
+    font-weight: bold;
+    color: #5a3d2b;
+    margin-bottom: 1rem;
+}
+
+/* Nội dung truyện */
+p {
+    text-align: justify;
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+    /* background-repeat: ; */
+}
+
+/* Tùy chọn responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}

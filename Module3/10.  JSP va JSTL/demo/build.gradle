@@ -1,0 +1,27 @@
+plugins {
+  id 'java'
+  id 'war'                                    // plugin để đóng gói .war
+}
+
+group = 'com.example'
+version = '1.0.0'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  // Nếu bạn đã có Jakarta EE 8 API ở container, đánh dấu providedCompile
+  providedCompile 'jakarta.platform:jakarta.jakartaee-api:8.0.0'
+
+  // Thêm JSTL 1.2 vào war
+  implementation 'javax.servlet:jstl:1.2'
+
+  // (Tuỳ chọn) Thêm taglibs-standard nếu cần
+  implementation 'taglibs:standard:1.1.2'
+}
+
+// Đảm bảo Gradle đóng gói đúng
+war {
+  archiveFileName = 'your-app.war'
+}

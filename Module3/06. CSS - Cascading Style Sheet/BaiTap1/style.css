@@ -1,0 +1,19 @@
+body{
+            background-color: rgb(181, 235, 158);
+            font-size: 100%;
+        }
+        h1{
+            color: blue;
+            font-family: Tahoma;
+            font-size: 200%;
+        }
+        p{
+            color: red;
+            font-family: Arial;
+            font-size: 120%;
+            border: 1px solid grey;
+            padding: 10px;
+        }
+        #element1{
+            color:coral;
+        }

@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin-top: 24px;
+  padding-bottom: 24px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #4d4d4d;
+  /* width: 100%; */
+  text-transform: capitalize;
+  background-color: #f0f0f0;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+  background-color: #f0f0f0;
+}
+.logo img {
+  width: auto;
+  height: 200px;
+}
+.banner img {
+  width: auto;
+  height: auto;
+}
+
+nav {
+  background-color: #333;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 12px;
+  transition: background-color 0.3s;
+}
+.menu ul li a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+.search input[type="text"] {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+.three-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+.left-column .box1 {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* flex: 1; */
+}
+.left-column .box1 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.left-column .box1 ul li {
+  margin-bottom: 10px;
+}
+.left-column .box1 ul li a {
+  display: block;
+  padding: 10px 15px;
+  /* background-color: #4CAF50; */
+  color: rgb(38, 51, 106);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+.left-column .box1 ul li a:hover {
+  background-color: #afe4b2;
+}
+.left-column .box2 {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.center-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff;
+}
+/* Áp dụng cho tất cả các hàng như row1, row2, row3 */
+.row1,
+.row2,
+.row3 {
+  display: flex;
+  gap: 20px; /* cách nhau 20px */
+  margin-bottom: 20px; /* khoảng cách giữa các hàng */
+}
+
+/* Đảm bảo các article chia đều hoặc tự căn */
+.row1 article,
+.row2 article,
+.row3 article {
+  flex: 1; /* hoặc dùng width cố định nếu muốn */
+  background-color: #fff; /* màu nền dễ nhìn */
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  overflow: hidden;
+  display: flex; /* nếu muốn ảnh và nội dung nằm ngang */
+}
+.row1 article:hover,
+.row2 article:hover,
+.row3 article:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.02);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.center-column > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+.center-column > div img {
+  width: auto;
+  height: 200px;
+  border-radius: 5px;
+  padding: 10px;
+}
+.center-column .box1 {
+  display: flex;
+}
+.center-column .row1 .box1 .box-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.center-column .row1 .box1 .box-left h3 {
+  background-color: #fefc77;
+  border: 1px solid #ebaaaa;
+  position: absolute;
+  bottom: 0;
+  color: brown;
+  /* border-radius: 3px; */
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.right-footer ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+.right-footer ul li {
+  margin: 0 15px;
+}
+.right-footer ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+.right-footer ul li a:hover {
+  color: #55d85b;
+}
+a {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+.row3 {
+  display: flex;
+  gap: 16px; /* Optional: adds space between articles */
+}
+
+.row3 > a {
+  flex: 1;
+}
+
+.row3 > a > article {
+  width: 100%;
+  box-sizing: border-box;
+}
+.calendar-box {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  #calendar {
+    text-align: center;
+  }
+  
+  .calendar-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+  
+  .calendar-grid div {
+    padding: 5px 0;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+  }
+  
+  .calendar-grid .today {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+  }
+  
