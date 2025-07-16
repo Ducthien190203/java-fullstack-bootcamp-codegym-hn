@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="BaiTap1:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/BaiTap1_jar</output-path>
+    <root id="archive" name="BaiTap1.jar">
+      <element id="module-output" name="BaiTap1" />
+    </root>
+  </artifact>
+</component>
