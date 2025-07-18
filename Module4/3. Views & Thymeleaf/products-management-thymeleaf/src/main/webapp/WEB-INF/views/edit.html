@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Product</title>
+</head>
+<body>
+    <h1>Edit Product</h1>
+    <p>
+        <a href="/products">Back to product list</a>
+    </p>
+    <form th:action="@{/products/update}" th:object="${product}" method="post">
+        <table>
+            <tr>
+                <td>ID:</td>
+                <td><input type="text" th:field="*{id}" readonly/></td>
+            </tr>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" th:field="*{name}"/></td>
+                <td th:if="${#fields.hasErrors('name')}" th:errors="*{name}" style="color: red;"></td>
+            </tr>
+            <tr>
+                <td>Price:</td>
+                <td><input type="number" th:field="*{price}"/></td>
+                <td th:if="${#fields.hasErrors('price')}" th:errors="*{price}" style="color: red;"></td>
+            </tr>
+            <tr>
+                <td>Description:</td>
+                <td><input type="text" th:field="*{description}"/></td>
+                <td th:if="${#fields.hasErrors('description')}" th:errors="*{description}" style="color: red;"></td>
+            </tr>
+            <tr>
+                <td>Manufacturer:</td>
+                <td><input type="text" th:field="*{manufacturer}"/></td>
+                <td th:if="${#fields.hasErrors('manufacturer')}" th:errors="*{manufacturer}" style="color: red;"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Update Product"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
