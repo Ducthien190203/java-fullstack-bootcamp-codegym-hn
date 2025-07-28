@@ -1,0 +1,51 @@
+plugins {
+    id 'java'
+    id 'war'
+}
+
+group 'vn.codegym'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    junitVersion = '5.10.2'
+}
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+dependencies {
+    compileOnly('javax.servlet:javax.servlet-api:4.0.1')
+    implementation group: 'org.springframework', name: 'spring-webmvc', version: '5.3.20'
+    implementation group: 'org.springframework', name: 'spring-orm', version: '5.3.20'
+    implementation group: 'org.springframework.data', name: 'spring-data-jpa', version: '2.7.0'
+
+    implementation group: 'org.hibernate', name: 'hibernate-core', version: '5.6.15.Final'
+    implementation group: 'org.hibernate', name: 'hibernate-entitymanager', version: '5.6.15.Final'
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.28'
+
+    implementation group: 'org.thymeleaf', name: 'thymeleaf-spring5', version: '3.1.2.RELEASE'
+    implementation group: 'nz.net.ultraq.thymeleaf', name: 'thymeleaf-layout-dialect', version: '3.1.0'
+    implementation group: 'org.hibernate.validator', name: 'hibernate-validator', version: '6.2.0.Final'
+
+
+    testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
+    testImplementation 'org.mockito:mockito-core:3.12.4'
+    testImplementation 'org.mockito:mockito-junit-jupiter:3.12.4'
+    testImplementation 'org.springframework:spring-test:5.3.20'
+    testImplementation 'org.springframework.boot:spring-boot-test-autoconfigure:2.7.0' // Add this line
+    testImplementation 'org.assertj:assertj-core:3.22.0'
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+    testImplementation 'com.h2database:h2:1.4.200'
+}
+
+test {
+    useJUnitPlatform()
+}

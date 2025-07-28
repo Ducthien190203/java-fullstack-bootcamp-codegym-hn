@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Result</title>
+</head>
+<body>
+    <h1>Registration Successful!</h1>
+    <p>User Details:</p>
+    <ul>
+        <li>First Name: <span th:text="${user.firstName}"></span></li>
+        <li>Last Name: <span th:text="${user.lastName}"></span></li>
+        <li>Phone Number: <span th:text="${user.phoneNumber}"></span></li>
+        <li>Age: <span th:text="${user.age}"></span></li>
+        <li>Email: <span th:text="${user.email}"></span></li>
+    </ul>
+    <a href="/">Register another user</a>
+</body>
+</html>

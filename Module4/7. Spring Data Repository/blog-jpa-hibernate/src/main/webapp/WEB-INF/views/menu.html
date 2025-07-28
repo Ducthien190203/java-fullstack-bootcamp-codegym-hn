@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+</head>
+<body>
+<div th:fragment="menu">
+    <h3>Categories</h3>
+    <ul>
+        <li><a th:href="@{/blogs}">All Blogs</a></li>
+        <li th:each="category : ${categories}">
+            <a th:href="@{/blogs/category/{id}(id=${category.id})}" th:text="${category.name}"></a>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

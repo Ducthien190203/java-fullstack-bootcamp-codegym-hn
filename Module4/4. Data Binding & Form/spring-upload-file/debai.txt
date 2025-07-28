@@ -1,0 +1,474 @@
+
+[Thực hành] Upload file (v.2023)
+Mục tiêu
+- Luyện tập upload file trong ứng dụng Spring MVC
+
+Mô tả
+- Trong phần này, chúng ta sẽ phát triển một ứng dụng gallery đơn giản.
+
+- Ứng dụng có các chức năng chính:
+
+Upload file ảnh.
+Hiển thị danh sách các ảnh đã upload.
+Xem các ảnh đã upload.
+Hướng dẫn
+Bước 1: Tạo dự án Spring MVC sử dụng thư viện gradle, đặt tên spring-upload-file
+
+- Cấu trúc thư mục dự án sau khi hoàn thiện:
+
+
+
+Bước 2: Bổ sung các thư viện cần thiết trong file build.gradle
+
+dependencies {
+    compileOnly('javax.servlet:javax.servlet-api:4.0.1')
+
+    // https://mvnrepository.com/artifact/org.springframework/spring-webmvc
+    implementation group: 'org.springframework', name: 'spring-webmvc', version: '5.3.23'
+
+    // https://mvnrepository.com/artifact/org.thymeleaf/thymeleaf-spring5
+    implementation group: 'org.thymeleaf', name: 'thymeleaf-spring5', version: '3.1.1.RELEASE'
+    // https://mvnrepository.com/artifact/nz.net.ultraq.thymeleaf/thymeleaf-layout-dialect
+    implementation group: 'nz.net.ultraq.thymeleaf', name: 'thymeleaf-layout-dialect', version: '3.1.0'
+
+    implementation group: 'commons-fileupload', name: 'commons-fileupload', version: '1.4'
+}
+- commons-fileupload: cho phép gửi và nhận các định dạng file thông qua lớp MultipathFile.
+
+Bước 3: Cấu hình ứng dụng
+
+3.1. Tạo và cài đặt các Bean trong file AppConfiguration:
+
+package com.codegym.configuration;
+
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.web.multipart.commons.CommonsMultipartResolver;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.thymeleaf.spring5.SpringTemplateEngine;
+import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
+import org.thymeleaf.spring5.view.ThymeleafViewResolver;
+import org.thymeleaf.templatemode.TemplateMode;
+
+@Configuration
+@EnableWebMvc
+@ComponentScan(basePackages = "com.codegym")
+public class AppConfiguration implements WebMvcConfigurer, ApplicationContextAware {
+    private ApplicationContext applicationContext;
+
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+       this.applicationContext = applicationContext;
+    }
+
+    //Thymeleaf
+    @Bean
+    public SpringResourceTemplateResolver templateResolver() {
+       SpringResourceTemplateResolver templateResolver = new SpringResourceTemplateResolver();
+       templateResolver.setApplicationContext(applicationContext);
+       templateResolver.setPrefix("/WEB-INF/views");
+       templateResolver.setSuffix(".html");
+       templateResolver.setTemplateMode(TemplateMode.HTML);
+       templateResolver.setCharacterEncoding("UTF-8");
+       return templateResolver;
+    }
+
+    @Bean
+    public SpringTemplateEngine templateEngine() {
+       SpringTemplateEngine templateEngine = new SpringTemplateEngine();
+       templateEngine.setTemplateResolver(templateResolver());
+       return templateEngine;
+    }
+
+    @Bean
+    public ThymeleafViewResolver viewResolver() {
+       ThymeleafViewResolver viewResolver = new ThymeleafViewResolver();
+       viewResolver.setTemplateEngine(templateEngine());
+       viewResolver.setCharacterEncoding("UTF-8");
+    return viewResolver;
+ }
+}
+3.2. Tạo và cài đặt file AppInitializer:
+
+package com.codegym.configuration;
+
+import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+
+public class AppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
+    @Override
+    protected Class<?>[] getRootConfigClasses() {
+       return new Class[]{AppConfiguration.class};
+    }
+
+    @Override
+    protected Class<?>[] getServletConfigClasses() {
+       return new Class[]{};
+    }
+
+    @Override
+    protected String[] getServletMappings() {
+       return new String[]{"/"};
+    }
+}
+3.3. Tạo resource upload_file.properties trong thư mục resource để chứa các tài nguyên:
+
+- Chuột phải vào resource -> New -> chọn Resource Bundle:
+
+
+
+- Đặt tên file là upload_file.properties:
+
+
+
+- Cấu hình code trong upload_file.properties:
+
+file-upload = D:\\image\\
+- file-upload: chứa đường dẫn lưu trữ file sau khi upload
+
+3.4. Bổ sung các cài đặt vào AppConfiguration để cấu hình upload file:
+
+@PropertySource("classpath:upload_file.properties")
+- Annotation @PropertySource(): cung cấp địa chỉ chứa tài nguyên của Resource Bundle, nhằm cho phép truy xuất tài nguyên.
+
+//Upload file
+@Override
+public void addResourceHandlers(ResourceHandlerRegistry registry) {
+    registry.addResourceHandler("/image/**")
+            .addResourceLocations("file:" + upload);
+}
+
+@Bean(name = "multipartResolver")
+public CommonsMultipartResolver getResolver() {
+    CommonsMultipartResolver resolver = new CommonsMultipartResolver();
+    resolver.setMaxUploadSizePerFile(52428800);
+    return resolver;
+}
+- addResourceHandlers(): đăng ký tài nguyên đường dẫn và tạo đường dẫn tĩnh cho file trong dự án.
+
+- getResolver(): cho phép nhận/gửi file và giới hạn kích thước file thao tác.
+
+Bước 4: Tạo lớp Product trong thư mục model
+
+package com.codegym.model;
+
+public class Product {
+    private int id;
+    private String name;
+    private String description;
+    private String image;
+
+    public Product() {
+    }
+
+    public Product(int id, String name, String description, String image) {
+       this.id = id;
+       this.name = name;
+       this.description = description;
+       this.image = image;
+    }
+
+    public int getId() {
+       return id;
+    }
+
+    public void setId(int id) {
+       this.id = id;
+    }
+
+    public String getName() {
+       return name;
+    }
+
+    public void setName(String name) {
+       this.name = name;
+    }
+
+    public String getDescription() {
+       return description;
+    }
+
+    public void setDescription(String description) {
+       this.description = description;
+    }
+
+    public String getImage() {
+       return image;
+    }
+
+    public void setImage(String image) {
+       this.image = image;
+    }
+}
+- Trong lớp Product cần có đầy đủ các phương thức getter/setter để cho phép truy cập các thuộc tính trong view.
+
+Bước 5: Tạo lớp ProductForm trong thư mục model
+
+package com.codegym.model;
+
+public class ProductForm {
+    private int id;
+    private String name;
+    private String description;
+    private MultipartFile image;
+
+    public ProductForm() {
+    }
+
+    public ProductForm(int id, String name, String description, MultipartFile image) {
+       this.id = id;
+       this.name = name;
+       this.description = description;
+       this.image = image;
+    }
+
+    public int getId() {
+       return id;
+    }
+
+    public void setId(int id) {
+       this.id = id;
+    }
+
+    public String getName() {
+       return name;
+    }
+
+    public void setName(String name) {
+       this.name = name;
+    }
+
+    public String getDescription() {
+       return description;
+    }
+
+    public void setDescription(String description) {
+       this.description = description;
+    }
+
+    public MultipartFile getImage() {
+       return image;
+    }
+
+    public void setImage(MultipartFile image) {
+       this.image = image;
+    }
+}
+- Trong lớp ProductForm vẫn có đầy đủ các thuộc tính như model Product nhưng kiểu dữ liệu của thuộc tính image sẽ đổi từ String thành MultipathFile để chứa được file khi upload.
+
+Bước 6: Tạo interface IProductService
+
+package com.codegym.service;
+
+import com.codegym.model.Product;
+
+import java.util.List;
+
+public interface IProductService {
+    List<Product> findAll();
+
+    void save(Product product);
+
+    Product findById(int id);
+
+    void update(int id, Product product);
+
+    void remove(int id);
+}
+Bước 7: Triển khai interface với lớp ProductService
+
+- Lớp ProductService triển khai các phương thức nguyên mẫu trong interface IProductService
+
+package com.codegym.service;
+
+import com.codegym.model.Product;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ProductService implements IProductService {
+    private final List<Product> products;
+
+    public ProductService() {
+       products = new ArrayList<>();
+    }
+
+    @Override
+    public List<Product> findAll() {
+       return products;
+    }
+
+    @Override
+    public void save(Product product) {
+       products.add(product);
+    }
+
+    @Override
+    public Product findById(int id) {
+       return products.get(id);
+    }
+
+    @Override
+    public void update(int id, Product product) {
+       int index = products.indexOf(findById(id));
+       products.set(index, product);
+    }
+
+    @Override
+    public void remove(int id) {
+       products.remove(findById(id));
+    }
+}
+Bước 8: Hiển thị danh sách sản phẩm
+
+8.1. Controller
+
+package com.codegym.controller;
+
+import com.codegym.model.Product;
+import com.codegym.service.IProductService;
+import com.codegym.service.ProductService;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import java.util.List;
+
+@Controller
+@RequestMapping("/product")
+public class ProductController {
+    private final IProductService productService = new ProductService();
+
+    @GetMapping("")
+    public String index(Model model) {
+    List<Product> products = productService.findAll();
+       model.addAttribute("products", products);
+       return "/index";
+    }
+}
+8.2. Giao diện
+
+- File index.html
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Title</title>
+</head>
+<body>
+<h3>Product Management</h3>
+<table id = "products">
+    <thead>
+    <tr>
+       <th>Name</th>
+       <th>Description</th>
+       <th>Image</th>
+    </tr>
+    </thead>
+    <tbody>
+       <tr th:each="product : ${products}">
+       <td th:text="${product.name}"></td>
+       <td th:text="${product.description}"></td>
+       <td><img width="100" height="100" th:src="@{'/image/' + ${product.image}}" alt="" src=""></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
+8.3. Chạy ứng dụng và quan sau kết quả
+
+- Lưu ý chỉnh sửa đường dẫn mặc định của Tomcat khi cài đặt.
+
+Bước 9: Upload file
+
+- Bổ sung đường dẫn đến giao diện thêm mới sản phẩm:
+
+<p>
+    <a th:href="@{/product/create}">
+       Add new product
+    </a>
+</p>
+- Trong class ProductController bổ sung phương thức showCreateForm() như sau:
+
+@GetMapping("/create")
+public ModelAndView showCreateForm() {
+    ModelAndView modelAndView = new ModelAndView("/create");
+    modelAndView.addObject("productForm", new ProductForm());
+    return modelAndView;
+}
+- Trong model gửi đi chứa ProductForm, trong đó có chứa thuộc tính image là MultipathFile để xử lý upload file.
+
+- File create.html
+
+- Lưu ý: trong form có chứa thuộc tính enctype="multipath/form-data"
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Title</title>
+</head>
+<body>
+<h3>Add Product</h3>
+<p>
+    <a th:href="@{/product}">
+       Back to product list
+    </a>
+</p>
+<div id="form">
+    <form th:action="@{/product/save}" th:object="${productForm}"
+          method="POST" novalidate="novalidate" enctype="multipart/form-data">
+       <input type="hidden" th:field="*{id}"/>
+       <table>
+          <tr>
+             <td><label for="name">Name</label></td>
+             <td><input type="text" id="name" th:field="*{name}"/></td>
+          </tr>
+          <tr>
+             <td><label for="description">Description</label></td>
+             <td><input type="text" id="description" th:field="*{description}"/></td>
+          </tr>
+          <tr>
+             <td><label for="image">Image</label></td>
+             <td><input type="file" id="image" th:field="*{image}"/></td>
+          </tr>
+          <tr>
+             <td></td>
+             <td><input type="submit" value="Save"/></td>
+          </tr>
+       </table>
+    </form>
+</div>
+</body>
+</html>
+- Trong class ProductController bổ sung @Value để lấy đường dẫn để xử lý upload file:
+
+@Value("${file-upload}")
+private String fileUpload;
+- Thêm phương thức POST saveProduct() trong ProductController:
+
+@PostMapping("/save")
+public ModelAndView saveProduct(@ModelAttribute ProductForm productForm) {
+    MultipartFile multipartFile = productForm.getImage();
+    String fileName = multipartFile.getOriginalFilename();
+    try {
+       FileCopyUtils.copy(productForm.getImage().getBytes(), new File(fileUpload + fileName));
+    } catch (IOException ex) {
+       ex.printStackTrace();
+    }
+    Product product = new Product(productForm.getId(), productForm.getName(),
+                                  productForm.getDescription(), fileName);
+    productService.save(product);
+    ModelAndView modelAndView = new ModelAndView("/create");
+    modelAndView.addObject("productForm", productForm);
+    modelAndView.addObject("message", "Created new product successfully !");
+    return modelAndView;
+}
+Bước 10: Chạy chương trình và quan sát kết quả

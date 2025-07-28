@@ -1,0 +1,393 @@
+[Thực hành] Thêm sản phẩm vào giỏ hàng (v.2023)
+Mục tiêu
+- Luyện tập sử dụng session vào dự án thực tế.
+
+Điều kiện
+- Có hiểu biết và sử dụng được session trong Spring MVC.
+
+Mô tả
+- Trong phần này, chúng ta sẽ phát triển một tính năng cho phép người dùng có thể thêm một sản phẩm, thay đổi số lượng sản phẩm trong giỏ hàng của mình.
+
+Hướng dẫn
+Bước 1: Tạo dự án Spring MVC và đặt tên shopping-cart
+
+- Bổ sung thư viện và các cài đặt:
+
+dependencies {
+    compileOnly('javax.servlet:javax.servlet-api:4.0.1')
+
+    // https://mvnrepository.com/artifact/org.springframework/spring-webmvc
+    implementation group: 'org.springframework', name: 'spring-webmvc', version: '5.3.23'
+
+    // https://mvnrepository.com/artifact/org.thymeleaf/thymeleaf-spring5
+    implementation group: 'org.thymeleaf', name: 'thymeleaf-spring5', version: '3.1.1.RELEASE'
+    // https://mvnrepository.com/artifact/nz.net.ultraq.thymeleaf/thymeleaf-layout-dialect
+    implementation group: 'nz.net.ultraq.thymeleaf', name: 'thymeleaf-layout-dialect', version: '3.1.0'
+ 
+    // https://mvnrepository.com/artifact/mysql/mysql-connector-java
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.30'
+    // https://mvnrepository.com/artifact/org.hibernate/hibernate-core
+    implementation group: 'org.hibernate', name: 'hibernate-core', version: '5.6.10.Final'
+
+    implementation group: 'org.springframework.data', name: 'spring-data-jpa', version: '2.7.0'
+}
+- Cấu trúc thư mục dự án sau khi hoàn thiện:
+
+
+
+Bước 2: Xây dựng package model
+
+- Lớp Product:
+
+package com.codegym.model;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name = "product")
+public class Product {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String name;
+    private double price;
+    private String description;
+
+    public Product() {
+    }
+
+    public Product(String name, double price, String description) {
+       this.name = name;
+       this.price = price;
+       this.description = description;
+    }
+
+    public Long getId() {
+       return id;
+    }
+
+    public void setId(Long id) {
+       this.id = id;
+    }
+
+    public String getName() {
+       return name;
+    }
+
+    public void setName(String name) {
+       this.name = name;
+    }
+
+    public double getPrice() {
+       return price;
+    }
+
+    public void setPrice(double price) {
+       this.price = price;
+    }
+
+    public String getDescription() {
+       return description;
+    }
+
+    public void setDescription(String description) {
+       this.description = description;
+    }
+}
+- Lớp Cart
+
+package com.codegym.model;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Cart {
+    private Map<Product,Integer> products = new HashMap<>();
+
+    public Cart() {
+    }
+
+    public Cart(Map<Product,Integer> products) {
+       this.products = products;
+    }
+
+    public Map<Product,Integer> getProducts() {
+       return products;
+    }
+
+    private boolean checkItemInCart(Product product){
+       for (Map.Entry<Product, Integer> entry : products.entrySet()) {
+          if(entry.getKey().getId().equals(product.getId())){
+             return true;
+          }
+       }
+       return false;
+    }
+
+    private Map.Entry<Product, Integer> selectItemInCart(Product product){
+       for (Map.Entry<Product, Integer> entry : products.entrySet()) {
+          if(entry.getKey().getId().equals(product.getId())){
+             return entry;
+          }
+       }
+       return null;
+    }
+
+    public void addProduct(Product product){
+       if (!checkItemInCart(product)){
+          products.put(product,1);
+       } else {
+          Map.Entry<Product, Integer> itemEntry = selectItemInCart(product);
+          Integer newQuantity = itemEntry.getValue() + 1;
+          products.replace(itemEntry.getKey(),newQuantity);
+       }
+    }
+
+    public Integer countProductQuantity(){
+       Integer productQuantity = 0;
+       for (Map.Entry<Product, Integer> entry : products.entrySet()) {
+          productQuantity += entry.getValue();
+       }
+       return productQuantity;
+    }
+
+    public Integer countItemQuantity(){
+       return products.size();
+    }
+
+    public Float countTotalPayment(){
+       float payment = 0;
+       for (Map.Entry<Product, Integer> entry : products.entrySet()) {
+          payment += entry.getKey().getPrice() * (float) entry.getValue();
+       }
+       return payment;
+    }
+}
+- Trong đó:
+
+Phương thức checkItemInCart(): kiểm tra xem sản phẩm đã có trong giỏ hàng hay chưa.
+Phương thức addProduct(): sử dụng để thêm sản phẩm vào giỏ hàng.
+Phương thức countProductQuantity(): sử dụng để đếm số lượng sản phẩm trong giỏ hàng.
+Phương thức countItemQuantity(): sử dụng để đếm tổng số lượng sản phẩm hiện có trong giỏ hàng.
+Phương thức countTotalPayment(): sử dụng để tính tổng tiền cần thanh toán của giỏ hàng.
+Bước 3: Xây dựng interface IProductRepository
+
+package com.codegym.repository;
+
+import com.codegym.model.Product;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface IProductRepository extends JpaRepository<Product, Long> {
+}
+Bước 4: Xây dựng package service
+
+- Interface IProductService
+
+package com.codegym.service;
+
+import com.codegym.model.Product;
+
+import java.util.Optional;
+
+public interface IProductService {
+    Iterable<Product> findAll();
+
+    Optional<Product> findById(Long id);
+}
+- Lớp ProductService
+
+package com.codegym.service;
+
+import com.codegym.model.Product;
+import com.codegym.repository.IProductRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import java.util.Optional;
+
+@Service
+public class ProductService implements IProductService{
+    @Autowired
+    private IProductRepository productRepository;
+
+    @Override
+    public Iterable<Product> findAll() {
+       return productRepository.findAll();
+    }
+
+    @Override
+    public Optional<Product> findById(Long id) {
+       return productRepository.findById(id);
+    }
+}
+Bước 5: Xây dưng package controller
+
+- Lớp ProductController: để hiển thị và điều hướng ở trang shop
+
+package com.codegym.controller;
+
+import com.codegym.model.Cart;
+import com.codegym.model.Product;
+import com.codegym.service.IProductService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
+
+import java.util.Optional;
+
+@Controller
+@SessionAttributes("cart")
+public class ProductController {
+    @Autowired
+    private IProductService productService;
+
+    @ModelAttribute("cart")
+       public Cart setupCart() {
+       return new Cart();
+    }
+
+    @GetMapping("/shop")
+    public ModelAndView showShop() {
+       ModelAndView modelAndView = new ModelAndView("/shop");
+       modelAndView.addObject("products", productService.findAll());
+       return modelAndView;
+    }
+
+    @GetMapping("/add/{id}")
+    public String addToCart(@PathVariable Long id,
+                            @ModelAttribute Cart cart,
+                            @RequestParam("action") String action) {
+       Optional<Product> productOptional = productService.findById(id);
+       if (!productOptional.isPresent()) {
+          return "/error_404";
+       }
+       if (action.equals("show")) {
+          cart.addProduct(productOptional.get());
+          return "redirect:/shopping-cart";
+       }
+       cart.addProduct(productOptional.get());
+       return "redirect:/shop";
+    }
+}
+- Lớp ShoppingController: để hiển thị và điều hướng ở trang cart
+
+package com.codegym.controller;
+
+import com.codegym.model.Cart;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.SessionAttribute;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+public class ShoppingController {
+    @ModelAttribute("cart")
+    public Cart setupCart(){
+       return new Cart();
+    }
+
+    @GetMapping("/shopping-cart")
+    public ModelAndView showCart (@SessionAttribute("cart") Cart cart){
+       ModelAndView modelAndView = new ModelAndView("/cart");
+       modelAndView.addObject("cart",cart);
+       return modelAndView;
+    }
+}
+Bước 6: Xây dựng các giao diện của dự án
+
+- View shop.html
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+    <a href="/shopping-cart">Your cart</a>
+</p>
+<table border="1">
+    <tr>
+       <td>Name</td>
+       <td>Price</td>
+       <td>Add To Cart</td>
+    </tr>
+    <th:block th:each="product:${products}">
+    <tr>
+       <td th:text="${product.name}"></td>
+       <td th:text="${product.price}"></td>
+       <td><a th:href="@{/add/__${product.id}__(action='list')}">Add To Cart</a></td>
+    </tr>
+    </th:block>
+</table>
+</body>
+</html>
+- View cart.html
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+    <a href="/shop">Shop</a>
+</p>
+<h1>Your Cart</h1>
+<form th:action="@{/shop}" th:object="${cart}" method="post">
+    <h3>Total Items: <span th:text="${cart.countItemQuantity()}"></span></h3>
+    <h3>Total Products: <span th:text="${cart.countProductQuantity()}"></span></h3>
+    <table border="1">
+       <tr>
+          <th>Item</th>
+          <th>Quantity</th>
+          <th>Price</th>
+       </tr>
+       <tr th:each="product: ${cart.products}">
+          <td th:text="${product.getKey().name}"></td>
+          <td>
+             <a id="decrease_button" th:text="${'-'}"></a>
+             <span th:text="${product.getValue()}"></span>
+             <a id="increase_button" th:href="@{/add/__${product.getKey().id}__(action='show')}"
+                th:text="${'+'}"></a>
+          </td>
+          <td th:text="${product.getKey().price}"></td>
+       </tr>
+       <tr>
+          <td>Total</td>
+          <td></td>
+          <td th:text="${cart.countTotalPayment()}"></td>
+       </tr>
+    </table>
+</form>
+</body>
+</html>
+- View error_404.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>NOT FOUND</h1>
+</body>
+</html>
+Bước 7: Chạy ứng dụng và thử nghiệm tính năng
+
+- Shop:
+
+
+
+- Cart:
+
+
+
+- Bạn hãy thử bổ sung xử lý giảm số lượng sản phẩm trong giỏ hàng?

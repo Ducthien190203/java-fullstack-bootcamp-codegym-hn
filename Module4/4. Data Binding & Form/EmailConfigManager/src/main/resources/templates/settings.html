@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Email Settings</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        select, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+        }
+        .checkbox-group input {
+            margin-right: 10px;
+        }
+        .button-group {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button-group button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 0 10px;
+        }
+        .button-group button.cancel {
+            background-color: #6c757d;
+        }
+        .button-group button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Email Settings</h1>
+        <form th:action="@{/settings}" th:object="${mailSettings}" method="post">
+            <div class="form-group">
+                <label for="language">Languages:</label>
+                <select id="language" th:field="*{language}">
+                    <option th:each="lang : ${languages}" th:value="${lang}" th:text="${lang}"></option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="pageSize">Page Size:</label>
+                <select id="pageSize" th:field="*{pageSize}">
+                    <option th:each="size : ${pageSizes}" th:value="${size}" th:text="${size}"></option>
+                </select>
+            </div>
+
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="spamsFilter" th:field="*{spamsFilter}" />
+                <label for="spamsFilter">Enable spams filter</label>
+            </div>
+
+            <div class="form-group">
+                <label for="signature">Signature:</label>
+                <textarea id="signature" th:field="*{signature}"></textarea>
+            </div>
+
+            <div class="button-group">
+                <button type="submit">Update</button>
+                <button type="button" class="cancel" onclick="window.location.href='/settings'">Cancel</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

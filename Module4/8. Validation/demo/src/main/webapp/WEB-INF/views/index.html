@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký người dùng</title>
+</head>
+<body>
+<form th:object="${user}" th:action=" @{/validateUser}" method="post" >
+    <table>
+       <tr>
+          <td>Tên:</td>
+          <td><input th:field="*{name}"></td>
+          <td th:if="${#fields.hasErrors('name')}" th:errors="*{name}" style="color:red;">Lỗi tên</td>
+       </tr>
+       <tr>
+          <td>Tuổi:</td>
+          <td><input th:field="*{age}"></td>
+          <td th:if="${#fields.hasErrors('age')}" th:errors="*{age}" style="color:red;">Lỗi tuổi</td>
+       </tr>
+       <tr>
+          <td>
+             <button type="submit">Gửi</button>
+          </td>
+       </tr>
+    </table>
+</form>
+</body>
+</html>
