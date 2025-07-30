@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog List</title>
+</head>
+<body>
+<div th:insert="~{menu :: menu}"></div>
+<h1>Blogs</h1>
+<p>
+    <a th:href="@{/create-blog}">Create new blog</a>
+    | <a th:href="@{/categories}">Manage Categories</a>
+</p>
+<form th:action="@{/blogs}" method="get">
+    <input type="text" name="s" placeholder="Search by title">
+    <input type="submit" value="Search">
+</form>
+
+<table border="1">
+    <tr>
+        <td width="20%">Title</td>
+        <td width="50%">Content</td>
+        <td width="15%">Category</td>
+        <td width="5%">Edit</td>
+        <td width="5%">Delete</td>
+        <td width="5%">View</td>
+    </tr>
+    <tr th:each="blog : ${blogs.content}">
+        <td th:text="${blog.title}"></td>
+        <td th:text="${blog.content.length() > 100 ? blog.content.substring(0, 100) + '...' : blog.content}"></td>
+        <td th:text="${blog.category.name}"></td>
+        <td style="text-align: center;"><a th:href="@{/edit-blog/{id}(id=${blog.id})}">Edit</a></td>
+        <td style="text-align: center;"><a th:href="@{/delete-blog/{id}(id=${blog.id})}">Delete</a></td>
+        <td style="text-align: center;"><a th:href="@{/view-blog/{id}(id=${blog.id})}">View</a></td>
+    </tr>
+</table>
+<div>
+    <a th:if="${blogs.hasPrevious()}" th:href="@{/blogs(page=${blogs.number - 1})}">Previous</a>
+    <span th:text="${blogs.number + 1} + '/' + ${blogs.totalPages}"></span>
+    <a th:if="${blogs.hasNext()}" th:href="@{/blogs(page=${blogs.number + 1})}">Next</a>
+</div>
+</body>
+</html>
