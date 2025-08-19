@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Effects Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        #animationBox {
+            background-color: lightblue;
+            color: white;
+            padding: 20px;
+            width: 100px;
+            text-align: center;
+            position: relative; /* Required for animation */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Show/Hide Effect</h2>
+    <p id="textToToggle">This is a paragraph that you can hide and show.</p>
+    <button id="hideBtn">Hide</button>
+    <button id="showBtn">Show</button>
+
+    <hr>
+
+    <h2>Animate Effect</h2>
+    <button id="animateBtn">Start Animation</button>
+    <br><br>
+    <div id="animationBox">HELLO</div>
+
+    <script>
+        $(document).ready(function(){
+            // Show/Hide functionality
+            $("#hideBtn").click(function(){
+                $("#textToToggle").hide();
+            });
+            $("#showBtn").click(function(){
+                $("#textToToggle").show();
+            });
+
+            // Animation functionality
+            $("#animateBtn").click(function(){
+                $("#animationBox").animate({
+                    left: '100px',
+                    fontSize: '50px'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

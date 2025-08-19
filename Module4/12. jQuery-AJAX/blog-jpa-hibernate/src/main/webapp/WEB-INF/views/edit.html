@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Blog</title>
+</head>
+<body>
+<h1>Edit blog</h1>
+<p th:if="${message}">
+    <span class="message" th:text="${message}"></span>
+</p>
+<p>
+    <a th:href="@{/blogs}">Back to blog list</a>
+</p>
+<form th:object="${blog}" th:action="@{/edit-blog}" method="post">
+    <input type="hidden" th:field="*{id}"/>
+    <table>
+        <tr>
+            <td>Title:</td>
+            <td><input type="text" th:field="*{title}"/></td>
+        </tr>
+        <tr>
+            <td>Content:</td>
+            <td><textarea th:field="*{content}"></textarea></td>
+        </tr>
+        <tr>
+            <td>Category:</td>
+            <td>
+                <select th:field="*{category.id}">
+                    <option value="">-- Select a category --</option>
+                    <option th:each="category : ${categories}"
+                            th:value="${category.id}"
+                            th:text="${category.name}"
+                            th:selected="${blog.category != null and blog.category.id == category.id}"></option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Update blog"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phone Management</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #phone-list {
+            width: 500px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .delete-phone {
+            color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<h1>Phone Management</h1>
+
+<h2>Create a new phone</h2>
+<form id="add-phone-form">
+    <table>
+        <tr>
+            <td>Producer:</td>
+            <td><input type="text" id="producer" placeholder="Producer"></td>
+        </tr>
+        <tr>
+            <td>Model:</td>
+            <td><input type="text" id="model" placeholder="Model"></td>
+        </tr>
+        <tr>
+            <td>Price:</td>
+            <td><input type="text" id="price" placeholder="Price"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Add"></td>
+        </tr>
+    </table>
+</form>
+
+<h2>Phone List</h2>
+<div id="phone-list">
+    <table id="phone-table">
+        <thead>
+        <tr>
+            <th>Producer</th>
+            <th>Model</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
+<script>
+    $(document).ready(function () {
+        // Get all phones
+        function getAllPhones() {
+            $.ajax({
+                type: "GET",
+                url: "/api/smartphones",
+                success: function (data) {
+                    let content = '';
+                    for (let i = 0; i < data.length; i++) {
+                        content += `<tr>
+                                    <td>${data[i].producer}</td>
+                                    <td>${data[i].model}</td>
+                                    <td>${data[i].price}</td>
+                                    <td><span class="delete-phone" data-id="${data[i].id}">Delete</span></td>
+                                  </tr>`;
+                    }
+                    $('#phone-table tbody').html(content);
+                }
+            });
+        }
+
+        getAllPhones();
+
+        // Add a new phone
+        $('#add-phone-form').submit(function (event) {
+            event.preventDefault();
+            let producer = $('#producer').val();
+            let model = $('#model').val();
+            let price = $('#price').val();
+            let newPhone = {
+                producer: producer,
+                model: model,
+                price: price
+            };
+
+            $.ajax({
+                type: "POST",
+                url: "/api/smartphones",
+                data: JSON.stringify(newPhone),
+                contentType: "application/json",
+                success: function () {
+                    getAllPhones();
+                    $('#add-phone-form')[0].reset();
+                }
+            });
+        });
+
+        // Delete a phone
+        $(document).on('click', '.delete-phone', function () {
+            let phoneId = $(this).data('id');
+            $.ajax({
+                type: "DELETE",
+                url: `/api/smartphones/${phoneId}`,
+                success: function () {
+                    getAllPhones();
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

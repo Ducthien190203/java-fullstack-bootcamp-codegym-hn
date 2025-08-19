@@ -5,23 +5,66 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec5d9365-dec9-4bdc-b17e-8bed0b8cd6ad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../spring-count-view/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-count-view/src/main/resources/application_en.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-count-view/src/main/resources/application_ja.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-count-view/src/main/resources/application_ko.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-count-view/src/main/resources/application_vi.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../spring-count-view/src/main/resources/application_zh.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4. Data Binding &amp; Form/EmailConfigManager/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4. Data Binding &amp; Form/EmailConfigManager/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../4. Data Binding &amp; Form/EmailConfigManager/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../8. Validation/demo/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../8. Validation/demo/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../8. Validation/demo/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../8. Validation/demo/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../8. Validation/demo/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Module2/08. Clean Code &amp; Refactoring/apj-2023-calculator" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module2/08. Clean Code &amp; Refactoring/apj-2023-calculator" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Module2/08. Clean Code &amp; Refactoring/apj-2023-fizzbuzz" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module2/08. Clean Code &amp; Refactoring/apj-2023-fizzbuzz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../Module2/case-study-project-management-software" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module2/case-study-project-management-software" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../01. Tong quan Spring MVC/ThucHanh1/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../01. Tong quan Spring MVC/ThucHanh1/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/components.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/components/ui/button.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/eslint.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/postcss.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/public/vite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/src/App.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/src/assets/react.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/src/components/layout/Navbar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/src/components/layout/Sidebar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/src/components/theme-provider.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/src/components/ui/alert-dialog.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/src/components/ui/button.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/src/components/ui/card.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/src/components/ui/dialog.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/src/components/ui/dropdown-menu.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/src/components/ui/form.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/src/components/ui/input.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/src/components/ui/label.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/src/components/ui/pagination.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/src/components/ui/select.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/src/components/ui/table.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/src/components/ui/textarea.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/src/lib/api.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/src/lib/utils.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/src/main.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/src/pages/BlogPostDetail.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/src/pages/CategoryManagement.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/src/pages/CreateBlogPost.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/src/pages/EditBlogPost.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/src/pages/HomePage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/src/vite-env.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/tailwind.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/tsconfig.node.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/blog-web-app/vite.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/src/main/java/vn/codegym/blogjpahibernate/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/src/main/java/vn/codegym/blogjpahibernate/ApplicationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/src/main/java/vn/codegym/blogjpahibernate/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/src/main/java/vn/codegym/blogjpahibernate/controller/BlogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/src/main/java/vn/codegym/blogjpahibernate/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/src/main/java/vn/codegym/blogjpahibernate/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/src/main/webapp/WEB-INF/views/category/create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/src/main/webapp/WEB-INF/views/category/delete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/src/main/webapp/WEB-INF/views/category/edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11. Web Service and RESTful/blog-jpa-hibernate/src/main/webapp/WEB-INF/views/category/list.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,18 +82,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Ducthien190203"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Ducthien190203&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Ducthien190203/java-fullstack-bootcamp-codegym-hn.git",
-    "accountId": "df20d851-e3ab-47ae-9d83-9148fb3da95e"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Ducthien190203/java-fullstack-bootcamp-codegym-hn.git&quot;,
+    &quot;accountId&quot;: &quot;df20d851-e3ab-47ae-9d83-9148fb3da95e&quot;
   }
-}]]></component>
+}</component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -61,10 +104,10 @@
   <component name="OptimizeOnSaveOptions">
     <option name="myRunOnSave" value="true" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="30UgOukOTdIqFMRnKWeRrxSuhcq" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -75,12 +118,17 @@
     "Gradle.Build shopping-cart.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "Tomcat Server.Tomcat 9.0.106.executor": "Run",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/java-fullstack-bootcamp-codegym-hn/Module4/10. Session & Cookie trong Spring/shopping-cart",
+    "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "actions.on.save"
+    "settings.editor.selected.configurable": "actions.on.save",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager">
@@ -189,6 +237,7 @@
       <updated>1751596409706</updated>
       <workItem from="1751596412073" duration="67000" />
       <workItem from="1753687543493" duration="4987000" />
+      <workItem from="1754053487286" duration="843000" />
     </task>
     <servers />
   </component>
